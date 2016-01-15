@@ -1,0 +1,109 @@
+/* Global styles */
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+
+/* Event hero */
+.event-hero {
+	background-color: #4EA1FF;
+	color: #FFFFFF;
+	margin-top: 50px;
+	height: 50px;
+}
+
+.event-hero .hero-text {
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* Main hero */
+.main-hero.jumbotron {
+	background: url('../img/hero.jpg') no-repeat center center;
+	background-size: cover;
+	height: 600px;
+}
+
+.jumbotron .hero-text {
+	text-align: center;
+	font-size: 20px;
+	padding: 50px;
+	margin-top: 10em;
+	margin-left: 10em;
+	margin-right: 10em;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* About */
+.about.jumbotron {
+	background-color: #FFAD05;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.about-title {
+	font-size: 48px;
+}
+
+.about-items {
+	margin-top: 50px;
+}
+
+/* Contact */
+.contact.jumbotron {
+	background-color: #4EA1FF;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.contact-title {
+	font-size: 48px;
+}
+
+/* Partners */
+.partners.jumbotron {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.partners-title {
+	font-size: 48px;
+}
+
+.partner-logos {
+	margin-top: 50px;
+}
+
+/* Code of Conduct */
+.coc.jumbotron {
+	background-color: #FFAD05;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.coc-title {
+	font-size: 48px;
+}
+
+/* Footer */
+.footer.jumbotron {
+	background-color: #4EA1FF;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 12px;
+}
+
+.footer-love {
+	text-transform: uppercase;
+}
