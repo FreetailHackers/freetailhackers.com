@@ -6,6 +6,7 @@
 
 /* Event hero */
 .event-hero {
+	background: url('../img/cubes.png') repeat;
 	background-color: #4EA1FF;
 	color: #FFFFFF;
 	margin-top: 50px;
@@ -16,6 +17,10 @@
 	font-size: 20px;
 	text-align: center;
 	padding-top: 10px;
+}
+
+.hero-text > a {
+	color: #FFFFFF;
 }
 
 /* Main hero */
