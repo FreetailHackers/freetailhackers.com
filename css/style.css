@@ -1,4 +1,8 @@
 /* Global styles */
+* {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
 .jumbotron {
 	margin-bottom: 0px;
 }
@@ -50,6 +54,7 @@
 }
 
 .about-title {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 }
 
@@ -67,6 +72,7 @@
 }
 
 .contact-title {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 }
 
@@ -100,6 +106,7 @@
 }
 
 .coc-title {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 }
 
