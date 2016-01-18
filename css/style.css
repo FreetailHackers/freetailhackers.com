@@ -7,6 +7,10 @@
 	margin-bottom: 0px;
 }
 
+.jumbotron p {
+	font-size: 0.9em;
+}
+
 
 /* Event hero */
 .event-hero {
@@ -23,6 +27,14 @@
 	padding-top: 10px;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 .hero-text > a {
 	color: #FFFFFF;
 }
@@ -31,7 +43,7 @@
 .main-hero.jumbotron {
 	background: url('../img/hero.jpg') no-repeat center center;
 	background-size: cover;
-	height: 600px;
+	height: 700px;
 }
 
 .jumbotron .hero-text {
@@ -43,8 +55,12 @@
 	margin-left: 10em;
 	margin-right: 10em;
 	background-color: rgba(255, 255, 255, 0.9);
+	display: table-cell;
 }
 
+.invisible {
+	margin-top: 21em;
+}
 /* About */
 .about.jumbotron {
 	background-color: #FFAD05;
