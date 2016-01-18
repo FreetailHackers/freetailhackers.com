@@ -18,7 +18,8 @@
 	background-color: #4EA1FF;
 	color: #FFFFFF;
 	margin-top: 50px;
-	height: 50px;
+	height: 61px;
+	text-align: center;
 }
 
 .event-hero .hero-text {
@@ -61,7 +62,37 @@
 .invisible {
 	margin-top: 21em;
 }
+
+/* Nav */
+
+/*.navbar-nav {
+	width: 75%;
+}
+
+.navbar-nav li {
+	width: 33%;
+}
+
+.active {
+	width:100%;
+}*/
+/*.nav li {
+	padding-left: 4em;
+}*/
 /* About */
+
+/* join */
+.join.jumbotron {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.partners .container {
+	max-width: 70%;
+}
+
 .about.jumbotron {
 	background-color: #FFAD05;
 	text-align: center;
