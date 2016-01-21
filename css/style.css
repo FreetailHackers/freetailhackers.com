@@ -11,6 +11,10 @@
 	font-size: 0.9em;
 }
 
+.img-circle {
+    padding-bottom: 10px;
+}
+
 
 /* Event hero */
 .event-hero {
