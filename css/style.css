@@ -1,6 +1,7 @@
 /* Global styles */
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic);
 * {
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Asap', sans-serif;
 }
 
 .jumbotron {
