@@ -181,3 +181,26 @@
 .footer-links a{
     color: #FFFFFF;
 }
+
+/* Smaller Screens */
+@media (max-device-width: 480px) {
+	.event-hero .hero-text {
+		font-size: 16px;
+	}
+
+	.about-title {
+		font-size: 36px;
+	}
+
+	.about-items {
+		margin-top: 20px;
+	}
+
+	.contact-title {
+		font-size: 36px;
+	}
+
+	.coc-title {
+		font-size: 32px;
+	}
+}
