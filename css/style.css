@@ -114,7 +114,7 @@
 }
 
 .about-items {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 /* Contact */
@@ -191,10 +191,6 @@
 
 	.about-title {
 		font-size: 36px;
-	}
-
-	.about-items {
-		margin-top: 20px;
 	}
 
 	.contact-title {
