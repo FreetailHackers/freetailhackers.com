@@ -22,7 +22,7 @@
 	background-color: #990600;
 	color: #FFFFFF;
 	margin-top: 50px;
-	height: 61px;
+	height: 100%;
 	text-align: center;
 }
 
@@ -30,6 +30,7 @@
 	font-size: 20px;
 	text-align: center;
 	padding-top: 18px;
+	margin-bottom: 10px;
 }
 
 .vertical-center {
