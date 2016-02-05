@@ -19,7 +19,7 @@
 /* Event hero */
 .event-hero {
 	background: url('../img/cubes.png') repeat;
-	background-color: #4EA1FF;
+	background-color: #990600;
 	color: #FFFFFF;
 	margin-top: 50px;
 	height: 61px;
@@ -29,7 +29,7 @@
 .event-hero .hero-text {
 	font-size: 20px;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 18px;
 }
 
 .vertical-center {
@@ -42,6 +42,7 @@
 
 .hero-text > a {
 	color: #FFFFFF;
+	font-weight: 800;
 }
 
 /* Main hero */
