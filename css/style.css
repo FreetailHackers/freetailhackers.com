@@ -46,7 +46,7 @@
 
 /* Main hero */
 .main-hero.jumbotron {
-	background: url('../img/hero.jpg') no-repeat center center;
+	background: #FF554E;
 	background-size: cover;
 	height: 700px;
 }
@@ -87,7 +87,7 @@
 
 /* join */
 .join.jumbotron {
-	background-color: #FFFFFF;
+	background-color: #ECF0F1;
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -98,7 +98,7 @@
 }
 
 .about.jumbotron {
-	background-color: #FFAD05;
+	background-color: #1ABC9C;
 	text-align: center;
 	color: #FFFFFF;
 	padding-left: 50px;
@@ -116,7 +116,7 @@
 
 /* Contact */
 .contact.jumbotron {
-	background-color: #4EA1FF;
+	background-color: #1ABC9C;
 	text-align: center;
 	color: #FFFFFF;
 	padding-left: 50px;
@@ -130,7 +130,7 @@
 
 /* Partners */
 .partners.jumbotron {
-	background-color: #FFFFFF;
+	background-color: #ECF0F1;
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -144,9 +144,13 @@
 	margin-top: 50px;
 }
 
+#partners-contact {
+	margin-top: 50px;
+}
+
 /* Code of Conduct */
 .coc.jumbotron {
-	background-color: #FFAD05;
+	background-color: #FF554E;
 	text-align: center;
 	color: #FFFFFF;
 	padding-left: 50px;
@@ -160,7 +164,7 @@
 
 /* Footer */
 .footer.jumbotron {
-	background-color: #4EA1FF;
+	background-color: #1ABC9C;
 	text-align: center;
 	color: #FFFFFF;
 	padding-left: 50px;
