@@ -175,3 +175,7 @@
 .footer-love {
 	text-transform: uppercase;
 }
+
+.footer-links a{
+    color: #FFFFFF;
+}
