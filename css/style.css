@@ -129,14 +129,15 @@
 
 /* Partners */
 .partners.jumbotron {
-	background-color: #ECF0F1;
+	background-color: #FF554E;
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
+    color: #FFFFFF;
 }
 
 .partners a{
-    color: #333;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -154,15 +155,15 @@
 
 /* Code of Conduct */
 .coc.jumbotron {
-	background-color: #FF554E;
+	background-color: #ECF0F1;
 	text-align: center;
-	color: #FFFFFF;
+	color: #333333;
 	padding-left: 50px;
 	padding-right: 50px;
 }
 
 .coc a {
-    color: #FFFFFF;
+    color: #333333;
     font-weight: bold;
 }
 
