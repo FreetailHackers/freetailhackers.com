@@ -4,10 +4,6 @@
 	font-family: 'Asap', sans-serif;
 }
 
-a {
-    font-weight: bold;
-}
-
 .jumbotron {
 	margin-bottom: 0px;
 }
@@ -141,6 +137,7 @@ a {
 
 .partners a{
     color: #333;
+    font-weight: bold;
 }
 
 .partners-title {
@@ -166,6 +163,7 @@ a {
 
 .coc a {
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 .coc-title {
