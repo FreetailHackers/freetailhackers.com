@@ -4,12 +4,12 @@
 	font-family: 'Asap', sans-serif;
 }
 
-.jumbotron {
-	margin-bottom: 0px;
+a {
+    font-weight: bold;
 }
 
-.jumbotron p {
-	font-size: 0.9em;
+.jumbotron {
+	margin-bottom: 0px;
 }
 
 .sponsor-image {
@@ -139,6 +139,10 @@
 	padding-right: 50px;
 }
 
+.partners a{
+    color: #333;
+}
+
 .partners-title {
 	font-size: 48px;
 }
@@ -160,6 +164,10 @@
 	padding-right: 50px;
 }
 
+.coc a {
+    color: #FFFFFF;
+}
+
 .coc-title {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
@@ -179,7 +187,7 @@
 	text-transform: uppercase;
 }
 
-.footer-links a{
+.footer-links a {
     color: #FFFFFF;
 }
 
