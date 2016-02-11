@@ -12,42 +12,29 @@
     padding-bottom: 10px;
 }
 
-
-/* Event hero */
-.event-hero {
-	background: url('../img/cubes.png') repeat;
-	background-color: #990600;
-	color: #FFFFFF;
-	margin-top: 50px;
-	height: 100%;
-	text-align: center;
+/* Navbar */
+.navbar-default {
+  font-size: 20px;
+}
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: transparent;
 }
 
-.event-hero .hero-text {
-	font-size: 20px;
-	text-align: center;
-	padding-top: 18px;
-	margin-bottom: 10px;
-}
-
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
-
-.hero-text > a {
-	color: #FFFFFF;
-	font-weight: 800;
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -80px;
 }
 
 /* Main hero */
 .main-hero.jumbotron {
 	background: #FF554E;
 	background-size: cover;
-	height: 700px;
+	padding-top: 200px;
 }
 
 .jumbotron .hero-text {
@@ -66,25 +53,7 @@
 	margin-top: 21em;
 }
 
-/* Nav */
-
-/*.navbar-nav {
-	width: 75%;
-}
-
-.navbar-nav li {
-	width: 33%;
-}
-
-.active {
-	width:100%;
-}*/
-/*.nav li {
-	padding-left: 4em;
-}*/
-/* About */
-
-/* join */
+/* Join */
 .join.jumbotron {
 	background-color: #ECF0F1;
 	text-align: center;
@@ -96,6 +65,7 @@
 	max-width: 80%;
 }
 
+/* About */
 .about.jumbotron {
 	background-color: #1ABC9C;
 	text-align: center;

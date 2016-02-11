@@ -12,6 +12,7 @@
 /* Main hero */
 .main-hero.jumbotron {
 	background: #FEEC69;
+	padding-top: 125px;
 	background-size: cover;
 }
 
@@ -24,3 +25,5 @@
 	color: #A89C45;
 	font-size: 2.5em;
 }
+
+/* Navbar */
