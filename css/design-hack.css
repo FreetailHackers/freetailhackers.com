@@ -46,6 +46,9 @@
     padding-bottom: 10px;
 }
 
+.img-responsive {
+    min-height: 250px;
+}
 
 /* Event hero */
 
