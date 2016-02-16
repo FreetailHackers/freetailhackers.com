@@ -170,15 +170,15 @@
 /* Partners */
 
 .partners.jumbotron {
-    background-color: #FFB400;
+    background-color: #ECF0F1;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-    color: #FFFFFF;
+    color: #333333;
 }
 
 .partners a {
-    color: #FFFFFF;
+    color: #333333;
     font-weight: bold;
 }
 
@@ -194,6 +194,38 @@
     margin-top: 50px;
 }
 
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+
+.partners-info .row {
+  /*min-height: 1em;*/
+  vertical-align: middle;
+}
+
+.partners-info .row img {
+  -moz-transform: scale(.5, .5);
+  -ms-transform: scale(.5, .5);
+  -webkit-transform: scale(.5, .5);
+  transform: scale(.5, .5);
+
+  padding: 10px;
+}
+
+.partners-info .row p {
+  color: #51504E;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* Code of Conduct */
 
