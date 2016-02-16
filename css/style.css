@@ -151,7 +151,9 @@
 }
 
 #partners-contact {
-	margin-top: 2em;
+    margin-top: 2em;
+    width: 100%;
+    font-size: 2em;
 }
 
 
