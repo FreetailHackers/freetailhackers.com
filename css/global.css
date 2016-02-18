@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic);
 * {
-  font-family: 'Asap', sans-serif; }
+  font-family: "Asap", sans-serif; }
 
 .jumbotron {
   margin-bottom: 0px; }
@@ -14,6 +14,25 @@
     margin-right: 10em;
     background-color: rgba(255, 255, 255, 0.9);
     display: table-cell; }
+  .jumbotron .main-hero {
+    background-size: cover; }
+  .jumbotron .about {
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .jumbotron .partners {
+    background-color: #ECF0F1;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #333333; }
+  .jumbotron .footer {
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 12px; }
 
 .sponsor-image {
   padding-bottom: 10px; }
@@ -46,15 +65,6 @@
 .invisible {
   margin-top: 21em; }
 
-.main-hero.jumbotron {
-  background-size: cover; }
-
-.about .jumbotron {
-  text-align: center;
-  color: #FFFFFF;
-  padding-left: 50px;
-  padding-right: 50px; }
-
 .about-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px; }
@@ -63,13 +73,6 @@
   margin-top: 20px; }
 
 /* Partners */
-.partners.jumbotron {
-  background-color: #ECF0F1;
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  color: #333333; }
-
 .partners a {
   color: #333333;
   font-weight: bold; }
@@ -99,28 +102,19 @@
 .partners-info .row {
   /*min-height: 1em;*/
   vertical-align: middle; }
-
-.partners-info .row img {
-  -moz-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
-  padding: 10px; }
-
-.partners-info .row p {
-  color: #51504E;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 20px; }
+  .partners-info .row img {
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    padding: 10px; }
+  .partners-info .row p {
+    color: #51504E;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px; }
 
 /* Footer */
-.footer.jumbotron {
-  text-align: center;
-  color: #FFFFFF;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 12px; }
-
 .footer-love {
   text-transform: uppercase; }
 

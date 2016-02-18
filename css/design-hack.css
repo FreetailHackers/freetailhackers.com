@@ -1,21 +1,13 @@
-
-
 @media only screen and (max-device-height: 700px) {
     .main-hero.jumbotron {
         height: 100%;
     }
 }
 
-
-
-
-
 /*Imported from global styles*/
 
 
 /* Global styles */
-
-
 
 .img-responsive {
     min-height: 250px;

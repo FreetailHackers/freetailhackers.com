@@ -1,6 +1,8 @@
+@import "_vars.scss";
+
 @import url(https://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic);
 * {
-    font-family: 'Asap', sans-serif;
+    font-family: $freetail-font;
 }
 
 .jumbotron {
@@ -30,7 +32,7 @@
     }
 
     .partners {
-        background-color: #ECF0F1;
+        background-color: $off-white;
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
