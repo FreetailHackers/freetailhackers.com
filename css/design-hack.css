@@ -10,6 +10,8 @@
 
 
 
+
+
 /*Imported from global styles*/
 
 
@@ -85,6 +87,12 @@
 
 .schedule .container {
     max-width: 80%;
+}
+
+@media (max-width: 480px) {
+    .schedule-times p{
+        font-size: 14px;
+    }
 }
 
 .about.jumbotron {
