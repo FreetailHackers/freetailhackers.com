@@ -126,3 +126,7 @@
 .footer.jumbotron {
     background-color: #00CFCB;
 }
+
+.footer #disclaimer {
+    font-size: 14px;
+}
