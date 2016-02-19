@@ -15,10 +15,11 @@
     <link rel="icon" href="img/FreetailLogo.png" type="image/png">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/date-fix.js"></script>
 
 </head>
 
-<body>
+<body onload="checkDate()">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -43,7 +44,7 @@
     </nav>
 
     <section class="event-hero">
-        <div class="hero-text">
+        <div class="hero-text" id="registration-info">
             Registration opens Friday at 4 PM!
             <!--            Comment above and uncomment below to open registration link-->
             <!--            Registration is available now at <a href="//my.freetailhackers.com">MyFreetail</a>-->
