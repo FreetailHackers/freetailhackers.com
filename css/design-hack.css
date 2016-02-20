@@ -42,6 +42,23 @@
     text-align: center;
 }
 
+.action-button {
+    background-color: #FF009B;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.action-button:hover {
+    background-color: #ff4db8;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .jumbotron .design-text {
     color: #A89C45;
     font-size: 3em;

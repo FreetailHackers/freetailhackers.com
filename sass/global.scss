@@ -59,6 +59,13 @@
 
 .main-hero {
 	background-size: cover;
+    text-align: center;
+}
+
+.action-button {
+    margin: 0 auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 .about {

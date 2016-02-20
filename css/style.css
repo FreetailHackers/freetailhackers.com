@@ -4,7 +4,7 @@
 }
 
 /* Main hero */
-.main-hero.jumbotron {
+.main-hero {
 	background: #FF554E;
 	height: 700px;
 }
