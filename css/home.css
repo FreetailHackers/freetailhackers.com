@@ -1,0 +1,117 @@
+/* Freetail Colors */
+/* Event hero */
+.event-hero {
+  background-color: #73A8B8; }
+
+/* Main hero */
+.main-hero {
+  background: #124E78;
+  height: 700px; }
+
+/* Nav */
+.navbar-default {
+  background-color: #2F2922;
+  border-color: #4a4036; }
+  .navbar-default .navbar-brand {
+    color: #ecf0f1; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #E5CCA8; }
+  .navbar-default .navbar-text {
+    color: #ecf0f1; }
+  .navbar-default .navbar-nav > li > a {
+    color: #ecf0f1; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #E5CCA8; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #E5CCA8;
+    background-color: #4a4036; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #E5CCA8;
+    background-color: #4a4036; }
+  .navbar-default .navbar-toggle {
+    border-color: #4a4036; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #4a4036; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #ecf0f1; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #ecf0f1; }
+  .navbar-default .navbar-link {
+    color: #ecf0f1; }
+    .navbar-default .navbar-link:hover {
+      color: #E5CCA8; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1; }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #E5CCA8; }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #E5CCA8;
+    background-color: #4a4036; } }
+/*.navbar-nav {
+	width: 75%;
+}
+
+.navbar-nav li {
+	width: 33%;
+}
+
+.active {
+	width:100%;
+}*/
+/*.nav li {
+	padding-left: 4em;
+}*/
+/* About */
+.about.jumbotron {
+  background-color: #E45243; }
+
+/* join */
+.join.jumbotron {
+  background-color: #EA863B;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #FFFFFF; }
+
+.join .container {
+  max-width: 80%; }
+
+/* Contact */
+/*
+.contact.jumbotron {
+	background-color: #1ABC9C;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.contact-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+}
+*/
+/* Code of Conduct */
+.coc.jumbotron {
+  background-color: #E45243;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.coc a {
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.coc-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; }
+
+/* Footer */
+.footer.jumbotron {
+  background-color: #73A8B8; }
+
+/*# sourceMappingURL=home.css.map */
