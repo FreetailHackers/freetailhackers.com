@@ -65,11 +65,11 @@
 	padding-left: 4em;
 }*/
 /* About */
-.about.jumbotron {
+.about {
   background-color: #E45243; }
 
 /* join */
-.join.jumbotron {
+.join {
   background-color: #EA863B;
   text-align: center;
   padding-left: 50px;
@@ -95,7 +95,7 @@
 }
 */
 /* Code of Conduct */
-.coc.jumbotron {
+.coc {
   background-color: #E45243;
   text-align: center;
   color: #FFFFFF;
@@ -111,7 +111,7 @@
   font-size: 48px; }
 
 /* Footer */
-.footer.jumbotron {
+.footer {
   background-color: #73A8B8; }
 
 /*# sourceMappingURL=home.css.map */

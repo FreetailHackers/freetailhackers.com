@@ -85,12 +85,12 @@ $colHighlight   : #E5CCA8;
 	padding-left: 4em;
 }*/
 /* About */
-.about.jumbotron {
+.about {
 	background-color: $freetailRed;
 }
 
 /* join */
-.join.jumbotron {
+.join {
 	background-color: $freetailOrange;
 	text-align: center;
 	padding-left: 50px;
@@ -120,7 +120,7 @@ $colHighlight   : #E5CCA8;
 
 
 /* Code of Conduct */
-.coc.jumbotron {
+.coc {
 	background-color: $freetailRed;
 	text-align: center;
 	color: #FFFFFF;
@@ -139,6 +139,6 @@ $colHighlight   : #E5CCA8;
 }
 
 /* Footer */
-.footer.jumbotron {
+.footer {
 	background-color: $freetailBlueHighlight;
 }
