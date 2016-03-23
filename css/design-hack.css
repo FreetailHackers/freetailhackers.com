@@ -71,7 +71,7 @@
 
 @media (max-width: 480px) {
   .schedule-times p {
-    font-size: 14px; } }
+    font-size: 1em; } }
 .about {
   background-color: #FFB400; }
 
