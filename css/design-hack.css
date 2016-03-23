@@ -13,19 +13,22 @@
   background: #00CFCB; }
 
 .main-hero p {
-  margin-top: 10%;
+  margin-top: 7%;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center; 
+  font-size: 3em;
+}
 
 .action-button {
   background-color: #FF009B;
   border: none;
   color: #FFFFFF;
   padding: 15px 32px;
+  margin-top: 5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; }
+  font-size: 2em; }
 
 .action-button:hover {
   background-color: #ff4db8;
