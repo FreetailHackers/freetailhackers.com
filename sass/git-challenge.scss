@@ -4,6 +4,7 @@ $freetailRed            : #E45243;
 $freetailOrange         : #EA863B;
 $freetailOrangeHighlight: #F9A027;
 $freetailBlue           : #124E78;
+$gitChallengeKhaki      : #E0D1B8;
 
 html, body {
   height: 100%;
@@ -14,6 +15,24 @@ html, body {
 	background: $freetailBlueHighlight;
   height: 100%;
 }
+
+.generated-row {
+  padding-top: 1%;
+  font-size: 125%;
+}
+
+.table {
+  border-color: black;
+}
+
+caption {
+  font-size: 150%;
+  color: black;
+}
+
+.table th, .table td {
+     border-top: none !important;
+ }
 
 /* Nav */
 

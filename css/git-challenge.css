@@ -7,6 +7,20 @@ html, body {
   background: #73A8B8;
   height: 100%; }
 
+.generated-row {
+  padding-top: 1%;
+  font-size: 125%; }
+
+.table {
+  border-color: black; }
+
+caption {
+  font-size: 150%;
+  color: black; }
+
+.table th, .table td {
+  border-top: none !important; }
+
 /* Nav */
 .navbar-default {
   background-color: #2F2922;
