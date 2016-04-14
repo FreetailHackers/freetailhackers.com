@@ -6,25 +6,44 @@ $freetailOrangeHighlight: #F9A027;
 $freetailBlue           : #124E78;
 $gitChallengeKhaki      : #E0D1B8;
 
-html, body {
-  height: 100%;
+html {
+  height: 100%
+}
+
+body {
+  min-height: 100% !important;
+  background: $freetailBlueHighlight;
 }
 
 /* Main hero */
 .main-hero {
 	background: $freetailBlueHighlight;
-  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100%;
+
+  p {
+      font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .generated-row {
   padding-top: 1%;
   font-size: 125%;
+
+
 }
 
 .table {
   border-color: black;
 }
 
+.commit-box {
+  li {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+  }
+}
 caption {
   font-size: 150%;
   color: black;
