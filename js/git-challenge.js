@@ -9,6 +9,7 @@ $(document).ready(function() {
 			var streak = div.find('.contrib-number').last().text();
 			$('#box').addClass('generated-row');
 			$('caption').text("Your GitHub streak is " + streak + ".");
+			$('#master-table tr').empty();
 			function addRow(text1, text2) {
 				console.log("Should be adding row with " + text1 + " " + text2);
 				$row = $('<tr></tr>');
