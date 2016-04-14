@@ -40,9 +40,24 @@ $(document).ready(function() {
 						}
 						if (ev.type === "PushEvent" || ev.type === "CreateEvent" && ev.payload.ref === ev.payload.master_branch) {
 							var dateText = formatDate(created_at);
-							var commitText = ev.type === 'PushEvent' ? "pushed to master at" : "created repository";
-							commitText = "<li>" + username + " " + commitText + " " + ev.repo.name + ".</li>";
-							$('.date-cell:contains(' + dateText + ')').next().append(commitText);
+							var ref = ev.payload.ref
+							// only care if its pushed to a master or gh-pages
+							if (ref.includes("master") || ref.includes("gh-pages"))
+							{
+								//update appropriately.
+								var indexStart = ref.indexOf("master");
+								if (indexStart == -1)
+								{
+									indexStart = ref.indexOf("gh-pages");
+								}
+								ref = ref.substring(indexStart);
+								var commitText = ev.type === 'PushEvent' ? "pushed to " + ref : "created repository";
+								commitText = "<li>" + username + " " + commitText + " " + ev.repo.name + ".</li>";
+								$('.date-cell:contains(' + dateText + ')').next().append(commitText);
+							}
+							// var commitText = ev.type === 'PushEvent' ? "pushed to master at" : "created repository";
+							// commitText = "<li>" + username + " " + commitText + " " + ev.repo.name + ".</li>";
+							// $('.date-cell:contains(' + dateText + ')').next().append(commitText);
 						}
 						return false;
 					});
