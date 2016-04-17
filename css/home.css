@@ -33,7 +33,7 @@
 
 .featured img {
   width: 50%;
-  margin-top: 150px;
+  margin-top: 275px;
   margin-right: 60px; 
 }
 
@@ -43,7 +43,7 @@
   width: 100%;
   text-align: center;
   padding-top: 50px;
-  padding-left: 200px; 
+  padding-left: 300px; 
 }
 
 .featured-img-sm {
@@ -64,9 +64,31 @@
   margin-top: 20px;
 }
 
+/* Past Events */
+.past-events {
+  color: white;
+  background-color: #E45243; 
+  text-align: center;
+}
+
+.past-events img {
+  width: 250px;
+  margin: auto 0;
+}
+
+.past-events-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.past-events-items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* About */
 .about {
-  background-color: #E45243; 
+  background-color: #73A8B8; 
 }
 
 /* join */
@@ -132,6 +154,10 @@
     margin-top: 0px;
     margin: 0 auto;
     display: block;
+  }
+
+  .past-events-item {
+    padding-bottom: 50px;
   }
 }
 

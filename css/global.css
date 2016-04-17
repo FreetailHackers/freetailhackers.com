@@ -54,7 +54,8 @@
 }
 
 .about-items {
-  margin-top: 20px; }
+  margin-top: 20px; 
+}
 
 /* Partners */
 .partners {
@@ -62,15 +63,20 @@
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-  color: #333333; }
-  .partners a {
-    color: #333333;
-    font-weight: bold; }
-  .partners logos {
-    margin-top: 2em; }
-  .partners info {
-    /*min-height: 1em;*/
-    vertical-align: middle; 
+  color: #333333; 
+}
+
+.partners a {
+  color: #333333;
+  font-weight: bold; 
+}
+
+.partners logos {
+  margin-top: 2em; 
+}
+
+.partners info {
+  vertical-align: middle; 
 }
 
 #partners-contact {
