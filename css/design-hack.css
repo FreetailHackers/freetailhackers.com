@@ -13,22 +13,19 @@
   background: #00CFCB; }
 
 .main-hero p {
-  margin-top: 7%;
+  margin-top: 10%;
   color: #FFFFFF;
-  text-align: center; 
-  font-size: 3em;
-}
+  text-align: center; }
 
 .action-button {
   background-color: #FF009B;
   border: none;
   color: #FFFFFF;
   padding: 15px 32px;
-  margin-top: 5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2em; }
+  font-size: 16px; }
 
 .action-button:hover {
   background-color: #ff4db8;
@@ -71,7 +68,7 @@
 
 @media (max-width: 480px) {
   .schedule-times p {
-    font-size: 1em; } }
+    font-size: 14px; } }
 .about {
   background-color: #FFB400; }
 
