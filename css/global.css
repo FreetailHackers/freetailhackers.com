@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic);
 * {
-  font-family: 'Asap', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif; }
 
 .jumbotron {
   margin-bottom: 0px; }
@@ -54,7 +53,7 @@
   padding-right: 50px; }
 
 .about-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 48px; }
 
 .about-items {
