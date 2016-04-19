@@ -4,6 +4,14 @@
 .img-responsive {
   min-height: 250px; }
 
+.header {
+  margin-bottom: -200px;
+}
+
+.logo {
+  margin-top: -50px;
+}
+
 /* Event hero */
 .event-hero {
   background-color: #FF009B; }
@@ -108,4 +116,37 @@
 .footer {
   background-color: #00CFCB; }
 
-/*# sourceMappingURL=design-hack.css.map */
+@media (max-width: 1200px) {
+  .logo {
+    margin-top: -65px;
+  }
+}
+
+@media (max-width: 990px) {
+  .logo {
+    margin-top: -76px;
+  }
+}
+
+@media (max-width: 770px) {
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    padding-top: 50px;
+  }
+
+  .main-hero p {
+    font-size: 1.5em;
+  }
+
+  .main-hero a {
+    font-size: 1.5em;
+  }
+}
