@@ -48,7 +48,7 @@
 
 .featured-img-sm {
   display: none;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .featured-img-sm img {
@@ -158,13 +158,5 @@
 
   .past-events-item {
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 100px;
-    margin: 0 auto;
-    margin-bottom: 24px;
   }
 }

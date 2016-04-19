@@ -153,5 +153,12 @@
 
   .coc-title {
     font-size: 32px; 
-  } 
+  }
+
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 24px;
+  }
 }
