@@ -17,6 +17,14 @@
   color: #FFFFFF;
   text-align: center; }
 
+a:link, a:visited, .recap {
+  text-align: center;
+  color: #333333;
+  font-weight: bold; }
+
+.container > .date {
+  margin-top: 0%; }
+
 .action-button {
   background-color: #FF009B;
   border: none;
