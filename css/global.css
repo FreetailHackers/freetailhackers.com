@@ -2,36 +2,23 @@
 * {
   font-family: 'Josefin Sans', sans-serif; }
 
+/* Header */
+.header {
+  margin-bottom: -161px; }
+
+.logo {
+  width: 15%;
+  height: auto;
+  margin-top: -10px; }
+
 .jumbotron {
   margin-bottom: 0px; }
 
-.sponsor-image {
-  padding-bottom: 10px; }
-
-.event-hero {
-  background: url("../img/cubes_dark.png") repeat;
-  color: #FFFFFF;
-  margin-top: 50px;
-  height: 100%;
-  text-align: center; }
-
-.event-hero .hero-text {
-  font-size: 20px;
-  text-align: center;
-  padding-top: 18px;
-  margin-bottom: 10px; }
-
 .vertical-center {
   min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
-  /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center; }
-
-.hero-text > a {
-  color: #FFFFFF;
-  font-weight: 800; }
 
 /* Main hero*/
 .invisible {
@@ -44,7 +31,6 @@
 .action-button {
   margin: 0 auto;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s; }
 
 .about {
@@ -73,7 +59,6 @@
   .partners logos {
     margin-top: 2em; }
   .partners info {
-    /*min-height: 1em;*/
     vertical-align: middle; }
 
 #partners-contact {
@@ -87,9 +72,7 @@
 .col-centered {
   display: inline-block;
   float: none;
-  /* reset the text-align */
   text-align: left;
-  /* inline-block space fix */
   margin-right: -4px; }
 
 .partners-info .row img {
@@ -98,7 +81,6 @@
   -webkit-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
   padding: 10px; }
-
 .partners-info .row p {
   color: #51504E;
   font-size: 18px;
@@ -119,21 +101,24 @@
 .footer-love {
   text-transform: uppercase; }
 
+.footer #disclaimer {
+  font-size: 14px; }
+
 /* Smaller Screens */
 @media (max-width: 480px) {
-  .event-hero .hero-text {
+  .event-hero .hero-text, #partners-contact {
     font-size: 16px; }
 
-  #partners-contact {
-    font-size: 16px; }
-
-  .about-title {
-    font-size: 36px; }
-
-  .contact-title {
+  .about-title, .contact-title {
     font-size: 36px; }
 
   .coc-title {
-    font-size: 32px; } }
+    font-size: 32px; }
+
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 24px; } }
 
 /*# sourceMappingURL=global.css.map */

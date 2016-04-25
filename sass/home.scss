@@ -1,144 +1,156 @@
-/* Freetail Colors */
-$freetailBlueHighlight  : #73A8B8;
-$freetailRed            : #E45243;
-$freetailOrange         : #EA863B;
-$freetailOrangeHighlight: #F9A027;
-$freetailBlue           : #124E78;
+/* Featured */
 
-/* Event hero */
-.event-hero {
-	background-color: $freetailBlueHighlight;
+.featured {
+  width: 100%;
+  height: 100vh;
+  background-color: #E45243;
+  background-image: -webkit-linear-gradient(-60deg, #E45243 0%, #E45243 60%, #124E78 60%, #124E78 60%);
+  background-image: linear-gradient(-60deg, #E45243 0%, #E45243 60%, #124E78 60%, #124E78 60%);
 }
 
-/* Main hero */
-.main-hero {
-	background: $freetailBlue;
-	height: 700px;
+.featured-buttons {
+  padding-top: 300px;
 }
 
-/* Nav */
-
-$bgDefault      : #2F2922;
-$bgHighlight    : #4a4036;
-$colDefault     : #ecf0f1;
-$colHighlight   : #E5CCA8;
-.navbar-default {
-  background-color: $bgDefault;
-  border-color: $bgHighlight;
-  .navbar-brand {
-    color: $colDefault;
-    &:hover, &:focus {
-      color: $colHighlight; }}
-  .navbar-text {
-    color: $colDefault; }
-  .navbar-nav {
-    > li {
-      > a {
-        color: $colDefault;
-        &:hover,  &:focus {
-          color: $colHighlight; }}}
-    > .active {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $bgHighlight; }}
-    > .open {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $bgHighlight; }}}
-  .navbar-toggle {
-    border-color: $bgHighlight;
-    &:hover, &:focus {
-      background-color: $bgHighlight; }
-    .icon-bar {
-      background-color: $colDefault; }}
-  .navbar-collapse,
-  .navbar-form {
-    border-color: $colDefault; }
-  .navbar-link {
-    color: $colDefault;
-    &:hover {
-      color: $colHighlight; }}}
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    > li > a {
-      color: $colDefault;
-      &:hover, &:focus {
-        color: $colHighlight; }}
-    > .active {
-      > a, > a:hover, > a:focus, {
-        color: $colHighlight;
-        background-color: $bgHighlight; }}}
+.action-button {
+  background-color: #E45243;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  margin-top: 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  &:hover {
+    background-color: #e97468;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
 }
 
-/*.navbar-nav {
-	width: 75%;
+.featured img {
+  width: 50%;
+  margin-top: 275px;
+  margin-right: 60px;
 }
 
-.navbar-nav li {
-	width: 33%;
+.featured-img p {
+  font-size: 2em;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 300px;
 }
 
-.active {
-	width:100%;
-}*/
-/*.nav li {
-	padding-left: 4em;
-}*/
+.featured-img-sm {
+  display: none;
+  margin-top: 200px;
+  img {
+    display: block;
+    margin: auto;
+  }
+  p {
+    font-size: 2em;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Past Events */
+
+.past-events {
+  color: white;
+  background-color: #E45243;
+  text-align: center;
+  img {
+    width: 250px;
+    margin: auto 0;
+  }
+}
+
+.past-events-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.past-events-items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* About */
+
 .about {
-	background-color: $freetailRed;
+  background-color: #73A8B8;
 }
 
 /* join */
+
 .join {
-	background-color: $freetailOrange;
-	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
-    color: #FFFFFF;
+  background-color: #EA863B;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #FFFFFF;
+  .container {
+    max-width: 80%;
+  }
 }
-
-.join .container {
-	max-width: 80%;
-}
-
-/* Contact */
-/*
-.contact.jumbotron {
-	background-color: #1ABC9C;
-	text-align: center;
-	color: #FFFFFF;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-.contact-title {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 48px;
-}
-*/
-
 
 /* Code of Conduct */
-.coc {
-	background-color: $freetailRed;
-	text-align: center;
-	color: #FFFFFF;
-	padding-left: 50px;
-	padding-right: 50px;
-}
 
-.coc a {
+.coc {
+  background-color: #E45243;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  a {
     color: #FFFFFF;
     font-weight: bold;
+  }
 }
 
 .coc-title {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
 }
 
 /* Footer */
+
 .footer {
-	background-color: $freetailBlueHighlight;
+  background-color: #73A8B8;
+}
+
+/* Smaller Screens */
+@media (max-width: 1200px) {
+  .featured {
+    background-color: #124E78;
+    background-image: none;
+  }
+  .featured-img {
+    display: none;
+  }
+  .featured-img-sm {
+    display: block;
+  }
+}
+
+@media (max-width: 990px) {
+  .featured-buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .action-button {
+    margin-top: 0px;
+    margin: 0 auto;
+    display: block;
+  }
+  .past-events-item {
+    padding-bottom: 50px;
+  }
 }
