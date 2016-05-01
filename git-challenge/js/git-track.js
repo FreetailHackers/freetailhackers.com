@@ -31,7 +31,7 @@ function run_validator(address_text, options) {
 
 	var TLD = address_text.substr(address_text.length - 4);
 	if (TLD != ".edu") {
-		sweetAlert("Oops...", "We need your .edu email unless you're a high school student. If you're a high school student, please email us with proof of enrollment at hello@freetailhackers.com", "error");
+		sweetAlert("Oops...", "We need your .edu email unless you're a high school student. If don't have a .edu email, please email us with proof of enrollment at a school in Texas at hello@freetailhackers.com", "error");
 		return;
 	}
 
