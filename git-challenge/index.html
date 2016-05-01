@@ -124,13 +124,13 @@
 				<div class="form-group">
 					<div id="locationField">
 						<div class="col-md-12">
-							<input id="autocomplete" class="required" placeholder="Mailing Address" onFocus="geolocate()" type="text" required></input>
+							<input id="autocomplete" name="address" class="required" placeholder="Mailing Address" onFocus="geolocate()" type="text" required></input>
 						</div>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-md-12">
-						<input placeholder="School Name" class="required" type="text" required></input>
+						<input placeholder="School Name" name="school" class="required" type="text" required></input>
 					</div>
 				</div>
 				<div class="form-group">
@@ -156,7 +156,8 @@
 				<div class="form-group">
 					<div class="col-md-12">
 						<label for="sel1">Shirt Size:</label>
-						<select id="shirt-size" required>
+						<select id="shirt-size" required name="shirt-size">
+							<option value="invalid">Choose your shirt size&#133;</option>
 							<option value="F-XS">Female - XS</option>
 							<option value="F-S">Female - S</option>
 							<option value="F-M">Female - M</option>

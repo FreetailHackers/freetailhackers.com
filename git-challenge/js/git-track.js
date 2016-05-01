@@ -127,6 +127,11 @@ function validateForm() {
 		sweetAlert("Oops...", "Please make sure to fill out all required fields", "error");
 		return false;
 	}
+	if (document.getElementById('shirt-size').selectedIndex == 0) {
+		sweetAlert('Oops...', 'Please make sure you provide your shirt size', 'error');
+		return false;
+	}
+	
 	if (document.getElementById('github').value.length == 0 && document.getElementById('other').value.length == 0) {
 		sweetAlert("Oops...", "Please make sure to give us a way to verify your commit history", "error");
 		return false;
