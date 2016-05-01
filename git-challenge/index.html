@@ -112,47 +112,56 @@
 				<p>Thanks for participating in the Freetail Hackers 30-Day Git Challenge! We understand it was tough to keep it going for 30 days straight, but we're really happy that you made it through. We accept commits that were pushed to any type of Git server, as long as you can provide us with an ability to publicly view your entire commit history in one place.</p>
 				<p>If you used GitHub, you can take advantage of our automated <a href="https://check.freetailhackers.com">GitHub Streak Tracker</a> so you can be certain there are no surprises. If you didn't use GitHub, please let us know in the form below, and we'll reach out to you if we have any questions.</p>
 			</div>
-			<form action="https://formspree.io/tech@freetailhackers.com" method="POST" id="check" onsubmit="return validateForm();">
+			<form action="https://formspree.io/hello@freetailhackers.com" method="POST" id="check" onsubmit="return validateForm();">
 				<div class="form-group">
 					<div class="col-md-6">
-						<input type="text" name="name" placeholder="Full Name" required>
+						<input type="text" name="name" class="required" placeholder="Full Name" required>
 					</div>
 					<div class="col-md-6">
-						<input type="text" name="email" placeholder="School Email" id="email" required>
+						<input type="text" name="email" class="required" placeholder="School Email" id="email" required>
 					</div>
 				</div>
 				<div class="form-group">
 					<div id="locationField">
 						<div class="col-md-12">
-							<input id="autocomplete" placeholder="Mailing Address" onFocus="geolocate()" type="text"></input>
+							<input id="autocomplete" class="required" placeholder="Mailing Address" onFocus="geolocate()" type="text" required></input>
 						</div>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-md-12">
-						<input placeholder="School Name" type="text" required></input>
+						<input placeholder="School Name" class="required" type="text" required></input>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-md-12">
-						<label for="btn-input">What service did you use to commit to?</label>
+						<label for="btn-input">What service did you use to track commits?</label>
 						<br>
-						<div class="btn-group" data-toggle="buttons-radio">
-							<button id="github-button" type="button" data-toggle="button">GitHub</button>
-							<button id="other-button" type="button" data-toggle="button" id="other-button">Something Else</button>
-						</div>
+					</div>
+					<!--						<div class="btn-group" data-toggle="buttons-radio">-->
+					<div class="col-md-6">
+						<button id="github-button" type="button" data-toggle="button">GitHub</button>
+						<!--								Hello-->
+					</div>
+					<div class="col-md-6">
+						<button id="other-button" type="button" data-toggle="button">Something Else</button>
+						<!--								2-->
+					</div>
+					<!--						</div>-->
+					<div class="col-md-12">
 						<div id="github-field" hidden>
-							<input type="text" placeholder="GitHub Username">
+							<input type="text" id="github" name="github" placeholder="GitHub Username">
 						</div>
 						<div id="other-field" hidden>
-							<input type="url" placeholder="Link to Complete Commit History">
+							<input type="url" id="other" name="other" placeholder="Link to Complete Commit History">
 						</div>
+						<!--					</div>-->
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-md-12">
 						<label for="sel1">Shirt Size:</label>
-						<select id="shirt-size">
+						<select id="shirt-size" required>
 							<option value="F-XS">Female - XS</option>
 							<option value="F-S">Female - S</option>
 							<option value="F-M">Female - M</option>
@@ -166,8 +175,10 @@
 						</select>
 					</div>
 				</div>
-				<div class="form-group center">
-					<button type="submit" id="submit-button">Submit</button>
+				<div class="col-md-12">
+					<div class="form-group center">
+						<button type="submit" id="submit-button">Submit</button>
+					</div>
 				</div>
 			</form>
 		</div>

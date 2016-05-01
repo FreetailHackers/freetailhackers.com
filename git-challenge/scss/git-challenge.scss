@@ -227,7 +227,7 @@ form {
 		padding: 10px 15px;
 		color: $freetailBlue;
 		border-radius: 3px;
-		width: 250px;
+		width: 100%;
 		cursor: pointer;
 		font-size: 18px;
 		transition-duration: 0.25s;
@@ -236,7 +236,7 @@ form {
 		display: block;
 		}
 		&:hover{
-			background-color: rgb(245, 247, 249);
+			background-color: #dfe6ec;
 			&.submitted {
 				background-color: white;
 			}
