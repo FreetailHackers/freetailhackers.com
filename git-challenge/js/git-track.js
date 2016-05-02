@@ -1,5 +1,13 @@
 
 $(document).ready(function() {
+	function isWindows() {
+		return navigator.platform.indexOf('Win') > -1
+	}
+	
+	if (isWindows()) {
+		document.getElementById('shirt-size').style.color ='#E0D1B8';
+	}
+	
 	$("#github-button").click(function() {
 		$("#github-button").toggleClass("selected");
 		$("#other-button").removeClass("selected");
