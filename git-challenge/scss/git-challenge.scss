@@ -53,6 +53,7 @@ body {
 	a {
 		font-weight: 600;
 		color: $gitChallengeKhaki;
+		border-bottom: 1px $gitChallengeKhaki dotted;
 		&:hover {
 			color: rgba($gitChallengeKhaki, 0.8);
 			text-decoration: none;
