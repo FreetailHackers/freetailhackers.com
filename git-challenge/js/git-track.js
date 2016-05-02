@@ -137,8 +137,16 @@ function validateForm() {
 		return false;
 	}
 	if ($('#github-button').hasClass('selected')) {
+		if (document.getElementById('github').value.length == 0) {
+			sweetAlert("Oops...", "Please make sure to give us a way to verify your commit history", "error");
+			return false;
+		}
 		document.getElementById('other').value = "";
 	} else {
+		if (document.getElementById('other').value.length == 0) {
+			sweetAlert("Oops...", "Please make sure to give us a way to verify your commit history", "error");
+			return false;
+		}
 		document.getElementById('github').value = "";
 	}
 	return true;
