@@ -6,10 +6,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Freetail Hackers - Git Challenge Submission</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 	<meta name="google-site-verification" content="KtC40rwNDPKqLIXt5X7VlRa3lN9fH5bqc4nAjW1wumM" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="icon" href="../img/FreetailLogo.png" type="image/png">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="css/git-challenge.css"></script>
+	<script src="js/sweetalert.min.js"></script>
 	<link href="css/git-challenge.css" rel="stylesheet">
+	<link href="css/sweetalert.css" rel="stylesheet">
+	<script src="js/git-track.js"></script>
+  <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+  <script type="text/javascript" src="js/autocomplete.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -19,6 +29,78 @@
       ga('create', 'UA-74341110-1', 'auto');
       ga('send', 'pageview');
     </script>
+	<script>
+		// This example displays an address form, using the autocomplete feature
+		// of the Google Places API to help users fill in the information.
+
+		// This example requires the Places library. Include the libraries=places
+		// parameter when you first load the API. For example:
+		// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+		var placeSearch, autocomplete;
+		var componentForm = {
+			street_number: 'short_name',
+			route: 'long_name',
+			locality: 'long_name',
+			administrative_area_level_1: 'short_name',
+			country: 'long_name',
+			postal_code: 'short_name'
+		};
+
+		function initAutocomplete() {
+			// Create the autocomplete object, restricting the search to geographical
+			// location types.
+			autocomplete = new google.maps.places.Autocomplete(
+				/** @type {!HTMLInputElement} */
+				(document.getElementById('autocomplete')), {
+					types: ['geocode']
+				});
+
+			// When the user selects an address from the dropdown, populate the address
+			// fields in the form.
+			autocomplete.addListener('place_changed', fillInAddress);
+		}
+
+		function fillInAddress() {
+			// Get the place details from the autocomplete object.
+			var place = autocomplete.getPlace();
+
+			for (var component in componentForm) {
+				document.getElementById(component).value = '';
+				document.getElementById(component).disabled = false;
+			}
+
+			// Get each component of the address from the place details
+			// and fill the corresponding field on the form.
+			for (var i = 0; i < place.address_components.length; i++) {
+				var addressType = place.address_components[i].types[0];
+				if (componentForm[addressType]) {
+					var val = place.address_components[i][componentForm[addressType]];
+					document.getElementById(addressType).value = val;
+				}
+			}
+		}
+
+		// Bias the autocomplete object to the user's geographical location,
+		// as supplied by the browser's 'navigator.geolocation' object.
+		function geolocate() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(function (position) {
+					var geolocation = {
+						lat: position.coords.latitude,
+						lng: position.coords.longitude
+					};
+					var circle = new google.maps.Circle({
+						center: geolocation,
+						radius: position.coords.accuracy
+					});
+					autocomplete.setBounds(circle.getBounds());
+				});
+			}
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmS0_dbodx_7gEVCrgD6pXdt3cAw33RPA
+&libraries=places&callback=initAutocomplete" async defer></script>
 </head>
 
 <body>
@@ -27,8 +109,79 @@
 			<img class="img-responsive" class="center" src="../img/30Day.svg" width=200>
 			<div class="center">
 				<h1>30 Day Git Challenge Submission</h1>
-				<p>Thanks for participating in the Freetail Hackers 30-Day Git Challenge! Our deadline for ordering a shirt if you have an active streak has unfortunately passed. However, we'd love for you to keep up your streak regardless. You can use our automated <a href="https://check.freetailhackers.com">GitHub Streak Tracker</a> to take a look at how you've been faring since the beginning of the challenge.</p>	
+				<p>Thanks for participating in the Freetail Hackers 30-Day Git Challenge! We understand it was tough to keep it going for 30 days straight, but we're really happy that you made it through. We accept commits that were pushed to any type of Git server, as long as you can provide us with an ability to publicly view your entire commit history in one place.</p>
+				<p>If you used GitHub, you can take advantage of our automated <a href="https://check.freetailhackers.com">GitHub Streak Tracker</a> so you can be certain there are no surprises. If you didn't use GitHub, please let us know in the form below, and we'll reach out to you if we have any questions.</p>
+				<p><h2><strong>This form is due TUESDAY, May 3, 2016, at 12:00 PM Central Time.</strong></h2></p>
+			<p><em>We cannot guarantee shirts for anyone who submits their info after this time. You'll also need to continue committing for the full 30 days to receive a shirt. Completion of this form alone does not guarantee you will receive a shirt.</em></p>
 			</div>
+			<form action="https://formspree.io/meqjwvrm" method="POST" id="check" onsubmit="return validateForm();">
+				<div class="form-group">
+					<div class="col-md-6">
+						<input type="text" name="name" class="required" placeholder="Full Name" required>
+					</div>
+					<div class="col-md-6">
+						<input type="text" name="email" class="required" placeholder="School Email" id="email" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div id="locationField">
+						<div class="col-md-10 col-xs-8">
+							<input id="autocomplete" name="address" class="required" placeholder="Mailing Address" onFocus="geolocate()" type="text" required></input>
+						</div>
+					<div class="col-md-2 col-xs-4">
+							<input name="apt" placeholder="Apt" type="text" required></input>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+							<input placeholder="School Name" id="school" name="school" class="required" type="text" required></input>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<label for="btn-input">What service did you use to track commits?</label>
+						<br>
+					</div>
+					<div class="col-md-6">
+						<button id="github-button" type="button" data-toggle="button">GitHub</button>
+					</div>
+					<div class="col-md-6">
+						<button id="other-button" type="button" data-toggle="button">Something Else</button>
+					</div>
+					<div class="col-md-12">
+						<div id="github-field" hidden>
+							<input type="text" id="github" name="github" placeholder="GitHub Username">
+						</div>
+						<div id="other-field" hidden>
+							<input type="url" id="other" name="other" placeholder="Link to Complete Commit History">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<label for="sel1">Shirt Size:</label>
+						<select id="shirt-size" required name="shirt-size">
+							<option value="invalid">Choose your shirt size&#133;</option>
+							<option value="F-XS">Female - XS</option>
+							<option value="F-S">Female - S</option>
+							<option value="F-M">Female - M</option>
+							<option value="F-L">Female - L</option>
+							<option value="F-XL">Female - XL</option>
+							<option value="U-XS">Unisex - XS</option>
+							<option value="U-S">Unisex - S</option>
+							<option value="U-M">Unisex - M</option>
+							<option value="U-L">Unisex - L</option>
+							<option value="U-XL">Unisex - XL</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group center">
+						<button type="submit" id="submit-button">Submit</button>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	<footer class="footer">
