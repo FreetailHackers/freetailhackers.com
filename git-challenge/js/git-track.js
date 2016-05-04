@@ -119,10 +119,8 @@ function validateForm() {
 	if (!isEmail && userEmail.length != 0) {
 		if (userEmail.length > 40) {
 			sweetAlert("Sorry " + document.getElementById("name").value, "I need a shorter email", "error");
-		} else {
-			sweetAlert("Oops...",  userEmail + " is not a valid email", "error");
+					return false;
 		}
-		return false;
 	}
 	var requiredElements = document.getElementsByClassName("required");
 	var i = 0;
