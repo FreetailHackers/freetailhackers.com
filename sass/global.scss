@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
+* {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: -161px;
+}
+
+.logo {
+  width: 15%;
+  height: auto;
+  margin-top: -10px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Main hero*/
+
+.invisible {
+  margin-top: 21em;
+}
+
+.main-hero {
+  background-size: cover;
+  text-align: center;
+}
+
+.action-button {
+  margin: 0 auto;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.about {
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+}
+
+.about-items {
+  margin-top: 20px;
+}
+
+/* Partners */
+
+.partners {
+  background-color: #ECF0F1;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #333333;
+  a {
+    color: #333333;
+    font-weight: bold;
+  }
+  logos {
+    margin-top: 2em;
+  }
+  info {
+    vertical-align: middle;
+  }
+}
+
+#partners-contact {
+  margin-top: 2em;
+  width: 100%;
+  font-size: 2em;
+}
+
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
+}
+
+.partners-info .row {
+  img {
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    padding: 10px;
+  }
+  p {
+    color: #51504E;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 12px;
+  a {
+    color: #FFFFFF;
+    padding-right: 1em;
+  }
+}
+
+.footer-love {
+  text-transform: uppercase;
+}
+
+.footer #disclaimer {
+  font-size: 14px;
+}
+
+/* Smaller Screens */
+@media (max-width: 480px) {
+  .event-hero .hero-text, #partners-contact {
+    font-size: 16px;
+  }
+  .about-title, .contact-title {
+    font-size: 36px;
+  }
+  .coc-title {
+    font-size: 32px;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 24px;
+  }
+}
