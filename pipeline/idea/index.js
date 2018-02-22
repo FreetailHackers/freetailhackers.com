@@ -58,7 +58,7 @@ async function playleaders() {
 	while (true) {
 		rand_lead = get_random_leader()
 		leader_videos.eq(rand_lead)[0].play();
-		await sleep(4500)
+		await sleep(2400)
 	}
 }
 
