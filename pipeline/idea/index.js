@@ -24,11 +24,41 @@ leader_videos.on("mouseleave", (e)=>{
 // 	e.target.currentTime=0;
 // })
 
+var leader_played = []
+var num_not_played = leader_videos.length
+for (let i = 0; i < leader_videos.length; i++)
+	leader_played.push(false);
+
+
+function get_random_leader() {
+	if (num_not_played == 0) {
+		num_not_played = leader_videos.length
+		leader_played = leader_played.map(()=>false)
+	}
+	let chance = num_not_played;
+	for (let entry of leader_played.entries()) {
+		idx = entry[0]
+		leader = entry[1]
+		if (!leader) {
+			if (Math.random() <= 1.0/chance) {
+				num_not_played -= 1;
+				leader_played[idx] = true;
+				return idx
+			}
+			else {
+				chance -= 1;
+			}
+		}
+	}
+	console.log("should never get to this point")
+	return -1
+}
+
 async function playleaders() {
 	while (true) {
-		let rand_leader = Math.floor(Math.random()*leader_videos.length)
-		leader_videos.eq(rand_leader)[0].play();
-		await sleep(8000)
+		rand_lead = get_random_leader()
+		leader_videos.eq(rand_lead)[0].play();
+		await sleep(4500)
 	}
 }
 
