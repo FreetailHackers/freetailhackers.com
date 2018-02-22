@@ -1,10 +1,10 @@
----
-The dashes are needed to make Jekyll (used by GitHub pages) compile this file.
+// ---
+// The dashes are needed to make Jekyll (used by GitHub pages) compile this file.
 
-This file uses:
-* Hero Patterns (http://www.heropatterns.com/)
-* tilt.js (https://gijsroge.github.io/tilt.js/)
----
+// This file uses:
+// * Hero Patterns (http://www.heropatterns.com/)
+// * tilt.js (https://gijsroge.github.io/tilt.js/)
+// ---
 
 
 $pad: 8px;
@@ -279,6 +279,7 @@ h2 {
 		.headshot {
 			width: 100%;
 			height: 200px;
+			overflow: hidden;
 			background: grey;
 		}
 		h3 {
@@ -353,4 +354,11 @@ footer {
 			}
 		}
 	}
+}
+
+video {
+	max-height: 100%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
