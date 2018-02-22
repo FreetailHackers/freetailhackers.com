@@ -150,8 +150,7 @@ h2 {
 
 #intro {
 	.wrap {
-		@include puffy(padding-top, 2);
-		@include puffy(padding-bottom, 2+1);
+		padding: $pad*2;
 		font-size: 1.1em;
 		text-align: center;
 	}
@@ -278,9 +277,14 @@ h2 {
 		@include puffy(margin-bottom);
 		.headshot {
 			width: 100%;
-			height: 200px;
 			overflow: hidden;
 			background: grey;
+			video {
+				max-width: 100%;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 		h3 {
 			margin: 0;
@@ -354,11 +358,4 @@ footer {
 			}
 		}
 	}
-}
-
-video {
-	max-height: 100%;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
 }
