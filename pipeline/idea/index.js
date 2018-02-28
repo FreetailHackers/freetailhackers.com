@@ -11,18 +11,16 @@ $("#hackathons .main a").tilt({
 });
 
 let leader_videos = $(".leader .headshot video")
-leader_videos.on("mouseenter", (e)=>{
-	e.target.play();
-})
+// leader_videos.on("mouseenter", (e)=>{
+// 	e.target.play();
+// })
 
-leader_videos.on("mouseleave", (e)=>{
-	e.target.pause();
-	e.target.currentTime=0;
-})
-
-// leader_videos.on("ended", (e)=>{
+// leader_videos.on("mouseleave", (e)=>{
+// 	e.target.pause();
 // 	e.target.currentTime=0;
 // })
+
+
 
 var leader_played = []
 var num_not_played = leader_videos.length
@@ -31,10 +29,6 @@ for (let i = 0; i < leader_videos.length; i++)
 
 
 function get_random_leader() {
-	if (num_not_played == 0) {
-		num_not_played = leader_videos.length
-		leader_played = leader_played.map(()=>false)
-	}
 	let chance = num_not_played;
 	for (let entry of leader_played.entries()) {
 		idx = entry[0]
@@ -55,11 +49,28 @@ function get_random_leader() {
 }
 
 async function playleaders() {
-	while (true) {
+	if (num_not_played != 0) {
 		rand_lead = get_random_leader()
 		leader_videos.eq(rand_lead)[0].play();
-		await sleep(2400)
 	}
 }
 
-playleaders();
+var in_view = false;
+$(window).scroll(() => {
+	if ($("#leadership-vids").visible() && !in_view) {
+		in_view = true
+		playleaders()
+	}
+	else if(!$("#leadership-vids").visible() && in_view) {
+		in_view = false;
+		num_not_played = leader_videos.length
+		leader_played = leader_played.map(()=>false)
+		leader_videos.each((idx, video) => {
+			video.pause()
+			video.currentTime = 0;
+		})
+	}
+})
+leader_videos.on("ended", (e)=>{
+	playleaders()
+})
