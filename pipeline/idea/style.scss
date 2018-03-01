@@ -178,6 +178,9 @@ h2 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	@media only screen and (max-device-width: 1366px) {
+		background-attachment: scroll;
+	}
 }
 
 #hackathons {
