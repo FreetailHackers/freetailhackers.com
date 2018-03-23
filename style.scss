@@ -32,6 +32,7 @@ html, body {
 	font-size: 16px;
 	font-family: "Lora", Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
 	color: $black;
+	background: #f8f8f8
 }
 
 .textured {
@@ -188,6 +189,7 @@ h2 {
 		display: flex;
 		@include puffy(margin-top, 2);
 		a {
+			box-shadow: 0px 0px 20px 0px #DDDDDD;
 			display: block;
 			flex: 1;
 			transform-style: preserve-3d;
@@ -275,26 +277,37 @@ h2 {
 			}
 		}
 	}
-	.leader {
+	.leader-wrapper {
 		@include puffy(padding-right);
 		@include puffy(margin-bottom);
-		.headshot {
-			width: 100%;
-			height: 200px;
+		.leader {
+			border-radius: 16px;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 20px 0px #DDDDDD;
 			overflow: hidden;
-			background: grey;
-			video {	
-				object-fit: cover;
-				position: relative;
+			.headshot {
+				width: 100%;
 				height: 200px;
-				left: 50%;
-				transform: translateX(-50%);
+				overflow: hidden;
+				background: grey;
+				video {	
+					object-fit: cover;
+					position: relative;
+					height: 200px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			h3 {
+				margin: 0;
+				margin-left: 3px;
+				@include puffy(margin-top, 0.5);
+			}
+			i {
+				margin-left: 3px;
 			}
 		}
-		h3 {
-			margin: 0;
-			@include puffy(margin-top, 0.5);
-		}
+
 	}
 }
 
