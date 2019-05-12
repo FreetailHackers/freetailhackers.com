@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="370px" height="189px" viewBox="0 0 370 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-441.000000, -686.000000)" fill="#FFFFFF">
+            <g id="cloud2" sketch:type="MSLayerGroup" transform="translate(441.000000, 686.000000)">
+                <rect id="Rectangle-6-Copy" sketch:type="MSShapeGroup" x="49.3235867" y="84.7841621" width="266.676413" height="103.767173"></rect>
+                <ellipse id="Oval-14-Copy-2" sketch:type="MSShapeGroup" cx="49.7110755" cy="136.667748" rx="49.2110755" ry="51.8835863"></ellipse>
+                <ellipse id="Oval-14-Copy-3" sketch:type="MSShapeGroup" cx="315.815581" cy="136.667748" rx="53.7072289" ry="51.8835863"></ellipse>
+                <ellipse id="Oval-21-Copy" sketch:type="MSShapeGroup" cx="160" cy="88.9347582" rx="72" ry="88.9347582"></ellipse>
+                <path d="M98.5,179.869516 C138.264502,179.869516 170.5,147.88713 170.5,108.434857 C170.5,68.9825845 138.264502,37.0001982 98.5,37.0001982 C58.735498,37.0001982 26.5,68.9825845 26.5,108.434857 C26.5,147.88713 58.735498,179.869516 98.5,179.869516 Z" id="Oval-21-Copy-3" sketch:type="MSShapeGroup"></path>
+                <ellipse id="Oval-21-Copy-2" sketch:type="MSShapeGroup" transform="translate(246.407791, 98.936227) rotate(1.000000) translate(-246.407791, -98.936227) " cx="246.407791" cy="98.9362269" rx="68.3230025" ry="62.7531855"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

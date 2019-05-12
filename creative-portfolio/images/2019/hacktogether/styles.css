@@ -1,0 +1,223 @@
+@font-face {
+  font-family: AttachBold;
+  src: url("fonts/attachbold.otf") format("opentype");
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #1D0F20;
+  color: white;
+  line-height: 1.6;
+  font-family: AttachBold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  font-size: 2vw;
+  position: relative;
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 0;
+}
+
+#more {
+  margin-top: -13em;
+}
+@media only screen and (min-width: 700px) {
+  #more {
+    margin-bottom: -20em;
+  }
+}
+
+.small-only {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  .small-only {
+    display: block;
+  }
+}
+
+.big-only {
+  display: block;
+}
+@media only screen and (max-width: 700px) {
+  .big-only {
+    display: none;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+}
+h2 a {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+#register {
+  display: block;
+  background-image: url(images/register.svg);
+  background-size: 100% 100%;
+  position: absolute;
+  right: 7em;
+  top: 15em;
+  width: 8em;
+  height: 7.7em;
+  text-indent: -9em;
+  overflow: hidden;
+}
+#register:hover {
+  background-image: url(images/register-hover.svg);
+}
+
+@media only screen and (max-width: 700px) {
+  #about {
+    margin-top: -4em;
+  }
+}
+@media only screen and (min-width: 700px) {
+  #about {
+    position: absolute;
+    top: 30.5em;
+    left: 10em;
+    transform: rotateX(55deg) rotateZ(-45deg);
+    width: 16em;
+  }
+  #about h2 {
+    text-indent: -99em;
+    overflow: hidden;
+  }
+  #about p {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #freetail {
+    position: absolute;
+    top: 51em;
+    right: 8em;
+    width: 17em;
+  }
+  #freetail div {
+    transform: rotateX(55deg) rotateZ(45deg);
+    margin-top: -6em;
+    padding-left: 2em;
+  }
+  #freetail div p {
+    font-size: 0.9em;
+  }
+  #freetail h2 {
+    font-size: 1.6em;
+    margin-left: auto;
+  }
+  #freetail a {
+    display: block;
+    background-image: url(images/freetail.svg);
+    background-repeat: no-repeat;
+    width: 6em;
+    height: 6em;
+    text-indent: -99em;
+    margin-left: auto;
+  }
+  #freetail a:hover {
+    background-image: url(images/freetail-hover.svg);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #about, #freetail {
+    font-size: 1rem;
+  }
+}
+header > div,
+main > div {
+  padding: 0 2em;
+  margin-bottom: 4em;
+}
+@media only screen and (min-width: 700px) {
+  header > div,
+main > div {
+    position: relative;
+    margin-left: 200px;
+  }
+  header > div h2,
+main > div h2 {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px;
+    font-size: 0;
+  }
+  header > div h2 img,
+main > div h2 img {
+    margin-right: 2em;
+    margin-left: auto;
+  }
+}
+
+header > div {
+  margin-left: 0;
+}
+header > div h2 {
+  position: static;
+}
+
+.table > div {
+  display: flex;
+}
+.table strong {
+  text-align: right;
+  color: #92A4CC;
+  font-weight: normal;
+  width: 5em;
+  padding-right: 1.5em;
+}
+
+#schedule h2 img {
+  width: 86%;
+}
+
+#workshops > div {
+  margin-bottom: 2em;
+}
+
+#faq h2 img {
+  width: 73%;
+}
+#faq summary {
+  cursor: pointer;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+#faq details p {
+  color: #92A4CC;
+}
+
+footer {
+  background-image: url(images/footer.svg);
+  height: 46.2vw;
+  color: #1D0F20;
+  text-align: center;
+  display: flex;
+}
+footer div {
+  flex: 1;
+  align-self: flex-end;
+  padding-bottom: 1em;
+}
+footer span {
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

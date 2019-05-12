@@ -1,0 +1,224 @@
+$dark-purple: #1D0F20;
+$light-purple: #92A4CC;
+$breakpoint: 700px;
+
+@font-face {
+	font-family: AttachBold;
+	src: url("fonts/attachbold.otf") format("opentype");
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background: $dark-purple;
+	color: white;
+	line-height: 1.6;
+	font-family: AttachBold, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+	font-size: 2vw;
+	position: relative;
+	margin-top: 2em;
+}
+
+h1 {
+	font-size: 0;
+}
+
+#more {
+	margin-top: -13em;
+	@media only screen and (min-width: $breakpoint) {
+		margin-bottom: -20em;
+	}
+}
+
+.small-only {
+	display: none;
+	@media only screen and (min-width: $breakpoint) {
+		display: block;
+	}
+}
+
+.big-only {
+	display: block;
+	@media only screen and (max-width: $breakpoint) {
+		display: none;
+	}
+}
+
+h2 {
+	text-transform: uppercase;
+	a {
+		text-decoration: none;
+	}
+}
+
+a {
+	color: inherit;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+#register {
+	display: block;
+	background-image: url(images/register.svg);
+	background-size: 100% 100%;
+	position: absolute;
+	right: 7em;
+	top: 15em;
+	width: 8em;
+	height: 7.7em;
+	text-indent: -9em;
+	overflow: hidden;
+	&:hover {
+		background-image: url(images/register-hover.svg);
+	}
+}
+
+#about {
+	@media only screen and (max-width: $breakpoint) {
+		margin-top: -4em;
+	}
+	@media only screen and (min-width: $breakpoint) {
+		position: absolute;
+		top: 30.5em;
+		left: 10em;
+		transform: rotateX(55deg) rotateZ(-45deg);
+		width: 16em;
+		h2 {
+			text-indent: -99em;
+			overflow: hidden;
+		}
+		p {
+			font-size: 0.9em;
+		}
+	}
+}
+
+#freetail {
+	@media only screen and (min-width: $breakpoint) {
+		position: absolute;
+		top: 51em;
+		right: 8em;
+		width: 17em;
+		div {
+			transform: rotateX(55deg) rotateZ(45deg);
+			margin-top: -6em;
+			padding-left: 2em;
+			p {
+				font-size: 0.9em;
+			}
+		}
+		h2 {
+			font-size: 1.6em;
+			margin-left: auto;
+		}
+		a {
+			display: block;
+			background-image: url(images/freetail.svg);
+			background-repeat: no-repeat;
+			width: 6em;
+			height: 6em;
+			text-indent: -99em;
+			margin-left: auto;
+			&:hover {
+				background-image: url(images/freetail-hover.svg);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+	#about, #freetail {
+		font-size: 1rem;
+	}
+}
+
+header > div,
+main > div {
+	padding: 0 2em;
+	margin-bottom: 4em;
+	@media only screen and (min-width: $breakpoint) {
+		position: relative;
+		margin-left: 200px;
+		h2 {
+			position: absolute;
+			top: 0;
+			right: 100%;
+			width: 200px;
+			font-size: 0;
+			img {
+				margin-right: 2em;
+				margin-left: auto;
+			}
+		}
+	}
+}
+
+header > div {
+	margin-left: 0;
+	h2 {
+		position: static;
+	}
+}
+
+.table {
+	> div {
+		display: flex;
+	}
+	strong {
+		text-align: right;
+		color: $light-purple;
+		font-weight: normal;
+		width: 5em;
+		padding-right: 1.5em;
+	}
+}
+
+#schedule {
+	h2 img {
+		width: 86%;
+	}
+}
+
+#workshops {
+	> div {
+		margin-bottom: 2em;
+	}
+}
+
+#faq {
+	h2 img {
+		width: 73%;
+	}
+	summary {
+		cursor: pointer;
+		margin-left: 1em;
+		text-indent: -1em;
+	}
+	details {
+		p {
+			color: $light-purple;
+		}
+	}
+}
+
+footer {
+	background-image: url(images/footer.svg);
+	height: 46.2vw;
+	color: $dark-purple;
+	text-align: center;
+	display: flex;
+	div {
+		flex: 1;
+		align-self: flex-end;
+		padding-bottom: 1em;
+	}
+	span {
+		font-family: sans-serif;
+	}
+}
