@@ -1,123 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Creative Portfolio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div id="creative-names">
-        Melody Park | Bryant Peng | Ross McNulty | Raul Camacho | Nancy Tran | Bongani Mbigi | Josh Luo | Zahra Atzuri | Jenna Ma | Dumebi Nwabuisi
+    <div id="outer">
+        <div class="container-fluid">
+
+            <img class="img-fluid mx-auto d-block" id="freetail-logo" src="images/2018/Freetail/FreetailLogo.png"
+                alt="Freetail logo">
+
+            <div class="row" style="margin: 0px 0px 50px 0px">
+
+                <div class="d-flex justify-content-center col-sm-1">
+                    <!-- Left arrow -->
+                    <a class="carousel-control-prev main-carousel-controller" href="#portfolio-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
+
+                <div class="col-sm-10">
+                    <!-- Carousel of collages -->
+                    <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <a data-toggle="modal" href="#hack-together-modal">
+                                            <img class="img-fluid mx-auto d-block carousel-img"
+                                                src="images/collages/hack-together.png" alt="Hack together collage">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid mx-auto d-block carousel-img"
+                                            src="images/collages/hacktx2018.png" alt="Hack Texas 2018 collage">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid mx-auto d-block carousel-img" src="images/collages/wh.png"
+                                            alt="Wholesome Hacks collage"></div>
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid mx-auto d-block carousel-img"
+                                            src="images/collages/hacktx2015.png" alt="Hack Texas 2015 collage">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <img src="images/collages/musichacks.png"
+                                            class="img-fluid mx-auto d-block carousel-img" alt="Music Hacks collage">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/collages/hacktx2016.png"
+                                            class="img-fluid mx-auto d-block carousel-img"
+                                            alt="Hack Texas 2016 collage">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/collages/misc-icons.png"
+                                            class="img-fluid mx-auto d-block carousel-img"
+                                            alt="Miscellaneous icons collage">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/collages/shirts.png"
+                                            class="img-fluid mx-auto d-block carousel-img" alt="Shirts collage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center col-sm-1">
+                    <!-- Right arrow -->
+                    <a class="carousel-control-next main-carousel-controller" href="#portfolio-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- HackTogether Modal -->
+            <div class="modal fade" id="hack-together-modal">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">HackTogether 2019</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="hack-together-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#hack-together-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#hack-together-carousel" data-slide-to="1"></li>
+                                    <li data-target="#hack-together-carousel" data-slide-to="2"></li>
+                                    <li data-target="#hack-together-carousel" data-slide-to="3"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="hack-together-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2019/hacktogether/assets/banner.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2019/hacktogether/assets/favicon.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2019/hacktogether/images/top.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2019/hacktogether/devpost.png">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#hack-together-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#hack-together-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid text-center" id="remaining-container">
+            <div class="text-center" id="profile-icon">
+                <div>CREATIVE PROFILES</div>
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </div>
+        </div>
     </div>
-    <h1>Artwork from our Freetail Organizers</h1>>
-    <img src="images/2018/Freetail/FreetailLogo.png" alt="Freetail logo">
-    <h2>Organizer Shirts</h2>
-    <img src="images/2016/Organizer Shirt Assets/Organizer_shirt_front.png">
-    <img src="images/2016/Organizer Shirt Assets/Organizer_shirt_back.png">
-    <img src="images/2016/Organizer Shirt Assets/Pocket_Logo.png">
-    <img src="images/2016/Organizer Shirt Assets/Pocket_Mockup.png">
-    <br><br>
-
-    <br><br>
-
-    <!-- 2019 -->
-    <!-- HackTogether -->
-    <h2>Spring 2019: Hack Together</h2>
-    <img src="images/2019/hacktogether/assets/banner.png">
-    <img src="images/2019/hacktogether/assets/favicon.png">
-    <img src="images/2019/hacktogether/images/top.png">
-    <br><br>
-
-    <!-- **************************************************** -->
-    <!-- 2018 -->
-    <!-- HackTX 2018 -->
-    <h2>Fall 2018: HackTX</h2>
-    <img src="images/2018/HackTX/Attendee Back.png">
-    <img src="images/2018/HackTX/Attendee Front.png">
-    <img src="images/2018/HackTX/FBAd.png">
-    <img src="images/2018/HackTX/Favicon.png">
-    <img src="images/2018/HackTX/GDCPoster.png">
-    <img src="images/2018/HackTX/sticker1@2x.png">
-    <img src="images/2018/HackTX/sticker2@2x.png">
-    <img src="images/2018/HackTX/hacktx-poster1.jpg">
-    <img src="images/2018/HackTX/hacktx-poster2.jpg">
-    <br><br>
-
-    <!-- WholesomeHacks (2018) -->
-    <h2>Spring 2018: Wholesome Hacks</h2>
-    <img src="images/2018/Wholesomehacks/Wholesome Hacks sticker.png">
-    <img src="images/2018/Wholesomehacks/favi.png">
-    <img src="images/2018/Wholesomehacks/wholesomehacks_mental-page-001.jpg">
-    <img src="images/2018/Wholesomehacks/wholesomehacks_physical-page-001.jpg">
-    <br><br>
-
-    <!-- MinuteMen -->
-    <h2>MinuteMen</h2>
-    <img src="images/2018/MinuteMen/MMC Logo1-1.jpg">
-    <img src="images/2018/MinuteMen/MMC Logo2-1.jpg">
-    <img src="images/2018/MinuteMen/MMC Logo3-1.jpg">
-    <br><br>
-
-    <!-- **************************************************** -->
-    <!-- 2017 -->
-
-    <!-- HackTX 2017 -->
-    <h2>Fall 2017: HackTX</h2>
-    <img src="images/2017/15x3.png">
-    <img src="images/2017/7x2.png">
-    <img src="images/2017/logo.png">
-    <br><br>
-
-    <!-- MusicHacks -->
-    <h2>Spring 2017: Music Hacks</h2>
-    <img src="images/2017/MusicHacks/cover_photo.png">
-    <img src="images/2017/MusicHacks/digitalsign.png">
-    <img src="images/2017/MusicHacks/event_photo.png">
-    <img src="images/2017/MusicHacks/music_hacks_sticker.png">
-    <br><br>
-
-    <!-- **************************************************** -->
-    <!-- 2016 -->
-
-    <!-- HackTX 2016 -->
-    <h2>Fall 2016: HackTX</h2>
-    <img src="images/2016/sanatflier.png">
-    <img src="images/2016/Banner Assets/banner_7x2_MLH.png">
-    <img src="images/2016/Banner Assets/banner_15x3_MLH.png">
-    <img src="images/2016/Hype Video Assets/Logo.png">
-    <img src="images/2016/Social Media Assets/coverpic.png">
-    <img src="images/2016/Social Media Assets/fb_cover_mlh.png">
-    <img src="images/2016/Website Assets/siteMockup.png">
-    <br><br>
-
-    <!-- Shirt Assets -->
-    <h2>Shirt Assets</h2>
-    <img src="images/2016/Shirt Assets/ShirtFront.png">
-    <img src="images/2016/Shirt Assets/T-Shirt Mock-Up Back.png">
-    <br><br>
-
-    <!-- **************************************************** -->
-    <!-- 2015 -->
-
-    <!-- HackTX 2015 -->
-    <h2>Fall 2015: HackTX</h2>
-    <img src="images/2015/HackTX 2015/app icons/ios/hacktx-app-icon-ios-appstore.png">
-    <img src="images/2015/HackTX 2015/assets/website mock.png">
-    <img src="images/2015/HackTX 2015/Branding/slide.png">
-    <img src="images/2015/HackTX 2015/diff logos/hacktx logo monocolor blue.png">
-    <img src="images/2015/HackTX 2015/diff logos/hacktx logo monocolor.png">
-    <img src="images/2015/HackTX 2015/frontshirt.jpg">
-    <img src="images/2015/HackTX 2015/backshirt.png">
-    <img src="images/2015/HackTX 2015/night-page.png">
-    <br><br>
-
-    <!-- DesignHacks -->
-    <h2>Spring 2015: Design Hacks</h2>
-    <img src="images/2015/Design Hacks Assets/design-hacks-logo-no-background.png">
-    <img src="images/2015/Design Hacks Assets/Shirt/shirtfront.png">
-    <img src="images/2015/Design Hacks Assets/Shirt/shirtback.png">
-    <br><br>
 
 </body>
 
