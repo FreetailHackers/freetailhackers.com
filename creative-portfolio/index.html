@@ -80,18 +80,24 @@
                                         </a>
                                     </div>
                                     <div class="col-sm-3">
-                                        <img src="images/collages/hacktx2016.png"
-                                            class="img-fluid mx-auto d-block carousel-img"
-                                            alt="Hack Texas 2016 collage">
+                                        <a data-toggle="modal" href="#hack-tx-2016-modal">
+                                            <img src="images/collages/hacktx2016.png"
+                                                class="img-fluid mx-auto d-block carousel-img"
+                                                alt="Hack Texas 2016 collage">
+                                        </a>
                                     </div>
                                     <div class="col-sm-3">
-                                        <img src="images/collages/misc-icons.png"
-                                            class="img-fluid mx-auto d-block carousel-img"
-                                            alt="Miscellaneous icons collage">
+                                        <a data-toggle="modal" href="#misc-icons-modal">
+                                            <img src="images/collages/misc-icons.png"
+                                                class="img-fluid mx-auto d-block carousel-img"
+                                                alt="Miscellaneous icons collage">
+                                        </a>
                                     </div>
                                     <div class="col-sm-3">
-                                        <img src="images/collages/shirts.png"
-                                            class="img-fluid mx-auto d-block carousel-img" alt="Shirts collage">
+                                        <a data-toggle="modal" href="#shirts-modal">
+                                            <img src="images/collages/shirts.png"
+                                                class="img-fluid mx-auto d-block carousel-img" alt="Shirts collage">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -387,62 +393,260 @@
 
             <!-- Music Hacks Modal -->
             <div class="modal fade" id="music-hacks-modal">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-    
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Music Hacks</h4>
-                                <button type="button" class="close" data-dismiss="modal"
-                                    style="color:white">&times;</button>
-                            </div>
-    
-                            <!-- Modal Body -->
-                            <div class="modal-body">
-                                <div class="carousel slide" data-ride="carousel" id="music-hacks-carousel">
-                                    <!-- Indicators -->
-                                    <ul class="carousel-indicators">
-                                        <li data-target="#music-hacks-carousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#music-hacks-carousel" data-slide-to="1"></li>
-                                        <li data-target="#music-hacks-carousel" data-slide-to="2"></li>
-                                        <li data-target="#music-hacks-carousel" data-slide-to="3"></li>
-                                    </ul>
-    
-                                    <!-- Slideshow -->
-                                    <div class="carousel-inner" id="music-hacks-inner-carousel">
-                                        <div class="carousel-item active detailed-view-img">
-                                            <img class="img-fluid mx-auto d-block"
-                                                src="images/2017/MusicHacks/cover_photo.png">
-                                        </div>
-                                        <div class="carousel-item detailed-view-img">
-                                            <img class="img-fluid mx-auto d-block"
-                                                src="images/2017/MusicHacks/digitalsign.png">
-                                        </div>
-                                        <div class="carousel-item detailed-view-img">
-                                            <img class="img-fluid mx-auto d-block"
-                                                src="images/2017/MusicHacks/event_photo.png">
-                                        </div>
-                                        <div class="carousel-item detailed-view-img">
-                                            <img class="img-fluid mx-auto d-block"
-                                                src="images/2017/MusicHacks/music_hacks_sticker.png">
-                                        </div>
-                                    </div>
-    
-                                    <!-- Left and right controls -->
-                                    <a class="carousel-control-prev" href="#music-hacks-carousel" data-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#music-hacks-carousel" data-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </a>
-    
-                                </div>
-    
-                            </div>
-    
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Music Hacks</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
                         </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="music-hacks-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#music-hacks-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#music-hacks-carousel" data-slide-to="1"></li>
+                                    <li data-target="#music-hacks-carousel" data-slide-to="2"></li>
+                                    <li data-target="#music-hacks-carousel" data-slide-to="3"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="music-hacks-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2017/MusicHacks/cover_photo.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2017/MusicHacks/digitalsign.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2017/MusicHacks/event_photo.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2017/MusicHacks/music_hacks_sticker.png">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#music-hacks-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#music-hacks-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
+            </div>
+
+            <!-- HackTX 2016 Modal -->
+            <div class="modal fade" id="hack-tx-2016-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">HackTX 2016</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="hack-tx-2016-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="1"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="2"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="3"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="4"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="5"></li>
+                                    <li data-target="#hack-tx-2016-carousel" data-slide-to="6"></li>
+
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="hack-tx-2016-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2016/sanatflier.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Banner Assets/banner_7x2_MLH.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Banner Assets/banner_15x3_MLH.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Hype Video Assets/Logo.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Social Media Assets/coverpic.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Social Media Assets/fb_cover_mlh.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Website Assets/siteMockup.png">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#hack-tx-2016-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#hack-tx-2016-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Misc Icons Modal -->
+            <div class="modal fade" id="misc-icons-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">More Designs!</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="misc-icons-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#misc-icons-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#misc-icons-carousel" data-slide-to="1"></li>
+                                    <li data-target="#misc-icons-carousel" data-slide-to="2"></li>
+                                    <li data-target="#misc-icons-carousel" data-slide-to="3"></li>
+                                    <li data-target="#misc-icons-carousel" data-slide-to="4"></li>
+
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="misc-icons-inner-carousel">
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Organizer Shirt Assets/Pocket_Logo.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Organizer Shirt Assets/Pocket_Mockup.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/MinuteMen/MMC Logo1-1.jpg">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/MinuteMen/MMC Logo2-1.jpg">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/MinuteMen/MMC Logo3-1.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#misc-icons-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#misc-icons-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shirts Modal -->
+            <div class="modal fade" id="shirts-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Shirt Designs</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="shirts-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#shirts-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#shirts-carousel" data-slide-to="1"></li>
+                                    <li data-target="#shirts-carousel" data-slide-to="2"></li>
+                                    <li data-target="#shirts-carousel" data-slide-to="3"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="shirts-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Shirt Assets/ShirtFront.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Shirt Assets/T-Shirt Mock-Up Back.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Organizer Shirt Assets/Organizer_shirt_front.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2016/Organizer Shirt Assets/Organizer_shirt_back.png">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#shirts-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#shirts-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 

@@ -141,6 +141,60 @@ h2 {
 
 /* ----------------------------------------------- */
 
+/* HackTX 2016 Modal/Carousel */
+#hack-tx-2016-inner-carousel > .carousel-item {
+    height: 60vh;
+}
+
+#hack-tx-2016-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* Misc Icons Modal/Carousel */
+#misc-icons-inner-carousel > .carousel-item {
+    height: 80vh;
+}
+
+#misc-icons-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* Shirts Modal/Carousel */
+#shirts-inner-carousel > .carousel-item {
+    height: 70vh;
+}
+
+#shirts-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
 .main-carousel-controller {
     left: auto;
     right: auto;
