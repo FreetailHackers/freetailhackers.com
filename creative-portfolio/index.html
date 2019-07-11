@@ -30,7 +30,8 @@
 
                 <div class="d-flex justify-content-center col-sm-1">
                     <!-- Left arrow -->
-                    <a class="carousel-control-prev main-carousel-controller" href="#portfolio-carousel" data-slide="prev">
+                    <a class="carousel-control-prev main-carousel-controller" href="#portfolio-carousel"
+                        data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
                 </div>
@@ -49,15 +50,22 @@
                                         </a>
                                     </div>
                                     <div class="col-sm-3">
-                                        <img class="img-fluid mx-auto d-block carousel-img"
-                                            src="images/collages/hacktx2018.png" alt="Hack Texas 2018 collage">
+                                        <a data-toggle="modal" href="#hack-tx-2018-modal">
+                                            <img class="img-fluid mx-auto d-block carousel-img"
+                                                src="images/collages/hacktx2018.png" alt="Hack Texas 2018 collage">
+                                        </a>
                                     </div>
                                     <div class="col-sm-3">
-                                        <img class="img-fluid mx-auto d-block carousel-img" src="images/collages/wh.png"
-                                            alt="Wholesome Hacks collage"></div>
+                                        <a data-toggle="modal" href="#wholesomehacks-modal">
+                                            <img class="img-fluid mx-auto d-block carousel-img"
+                                                src="images/collages/wh.png" alt="Wholesome Hacks collage">
+                                        </a>
+                                    </div>
                                     <div class="col-sm-3">
-                                        <img class="img-fluid mx-auto d-block carousel-img"
-                                            src="images/collages/hacktx2015.png" alt="Hack Texas 2015 collage">
+                                        <a data-toggle="modal" href="#hack-tx-2015-modal">
+                                            <img class="img-fluid mx-auto d-block carousel-img"
+                                                src="images/collages/hacktx2015.png" alt="Hack Texas 2015 collage">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +73,11 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-sm-3">
-                                        <img src="images/collages/musichacks.png"
-                                            class="img-fluid mx-auto d-block carousel-img" alt="Music Hacks collage">
+                                        <a data-toggle="modal" href="#music-hacks-modal">
+                                            <img src="images/collages/musichacks.png"
+                                                class="img-fluid mx-auto d-block carousel-img"
+                                                alt="Music Hacks collage">
+                                        </a>
                                     </div>
                                     <div class="col-sm-3">
                                         <img src="images/collages/hacktx2016.png"
@@ -90,7 +101,8 @@
 
                 <div class="d-flex justify-content-center col-sm-1">
                     <!-- Right arrow -->
-                    <a class="carousel-control-next main-carousel-controller" href="#portfolio-carousel" data-slide="next">
+                    <a class="carousel-control-next main-carousel-controller" href="#portfolio-carousel"
+                        data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
@@ -155,6 +167,282 @@
                     </div>
                 </div>
             </div>
+
+            <!-- HackTX 2018 Modal -->
+            <div class="modal fade" id="hack-tx-2018-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">HackTX 2018</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="hack-tx-2018-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="1"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="2"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="3"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="4"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="5"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="6"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="7"></li>
+                                    <li data-target="#hack-tx-2018-carousel" data-slide-to="8"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="hack-tx-2018-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/HackTX/Attendee Back.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/HackTX/Attendee Front.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2018/HackTX/FBAd.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2018/HackTX/Favicon.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2018/HackTX/GDCPoster.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2018/HackTX/sticker1@2x.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block" src="images/2018/HackTX/sticker2@2x.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/HackTX/hacktx-poster1.jpg">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/HackTX/hacktx-poster2.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#hack-tx-2018-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#hack-tx-2018-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wholesomehacks Modal -->
+            <div class="modal fade" id="wholesomehacks-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Wholesomehacks</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="wholesomehacks-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#wholesomehacks-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#wholesomehacks-carousel" data-slide-to="1"></li>
+                                    <li data-target="#wholesomehacks-carousel" data-slide-to="2"></li>
+                                    <li data-target="#wholesomehacks-carousel" data-slide-to="3"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="wholesomehacks-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/Wholesomehacks/Wholesome Hacks sticker.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/Wholesomehacks/favi.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/Wholesomehacks/wholesomehacks_mental-page-001.jpg">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2018/Wholesomehacks/wholesomehacks_physical-page-001.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#wholesomehacks-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#wholesomehacks-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- HackTX 2015 Modal -->
+            <div class="modal fade" id="hack-tx-2015-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">HackTX 2015</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                style="color:white">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="carousel slide" data-ride="carousel" id="hack-tx-2015-carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="1"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="2"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="3"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="4"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="5"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="6"></li>
+                                    <li data-target="#hack-tx-2015-carousel" data-slide-to="7"></li>
+                                </ul>
+
+                                <!-- Slideshow -->
+                                <div class="carousel-inner" id="hack-tx-2015-inner-carousel">
+                                    <div class="carousel-item active detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/app icons/ios/hacktx-app-icon-ios-appstore.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/assets/website mock.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/Branding/slide.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/diff logos/hacktx logo monocolor blue.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/diff logos/hacktx logo monocolor.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/frontshirt.jpg">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/backshirt.png">
+                                    </div>
+                                    <div class="carousel-item detailed-view-img">
+                                        <img class="img-fluid mx-auto d-block"
+                                            src="images/2015/HackTX 2015/night-page.png">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#hack-tx-2015-carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#hack-tx-2015-carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Hacks Modal -->
+            <div class="modal fade" id="music-hacks-modal">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Music Hacks</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    style="color:white">&times;</button>
+                            </div>
+    
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                <div class="carousel slide" data-ride="carousel" id="music-hacks-carousel">
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#music-hacks-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#music-hacks-carousel" data-slide-to="1"></li>
+                                        <li data-target="#music-hacks-carousel" data-slide-to="2"></li>
+                                        <li data-target="#music-hacks-carousel" data-slide-to="3"></li>
+                                    </ul>
+    
+                                    <!-- Slideshow -->
+                                    <div class="carousel-inner" id="music-hacks-inner-carousel">
+                                        <div class="carousel-item active detailed-view-img">
+                                            <img class="img-fluid mx-auto d-block"
+                                                src="images/2017/MusicHacks/cover_photo.png">
+                                        </div>
+                                        <div class="carousel-item detailed-view-img">
+                                            <img class="img-fluid mx-auto d-block"
+                                                src="images/2017/MusicHacks/digitalsign.png">
+                                        </div>
+                                        <div class="carousel-item detailed-view-img">
+                                            <img class="img-fluid mx-auto d-block"
+                                                src="images/2017/MusicHacks/event_photo.png">
+                                        </div>
+                                        <div class="carousel-item detailed-view-img">
+                                            <img class="img-fluid mx-auto d-block"
+                                                src="images/2017/MusicHacks/music_hacks_sticker.png">
+                                        </div>
+                                    </div>
+    
+                                    <!-- Left and right controls -->
+                                    <a class="carousel-control-prev" href="#music-hacks-carousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#music-hacks-carousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
 
         </div>
 

@@ -26,8 +26,16 @@ h2 {
     opacity: 0.95;
 }
 
+#freetail-logo {
+    max-width: 15%;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------------------------- */
+
+/* HackTogether Modal/Carousel */
 #hack-together-inner-carousel > .carousel-item {
-    height: 100vh;
+    height: 80vh;
 }
 
 #hack-together-inner-carousel > .carousel-item > img {
@@ -41,11 +49,105 @@ h2 {
     width: auto;
 }
 
+/* ----------------------------------------------- */
+
+/* HackTX 2018 Modal/Carousel */
+#hack-tx-2018-inner-carousel > .carousel-item {
+    height: 90vh;
+}
+
+#hack-tx-2018-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* HackTogether Modal/Carousel */
+#hack-together-inner-carousel > .carousel-item {
+    height: 80vh;
+}
+
+#hack-together-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* Wholesomehacks Modal/Carousel */
+#wholesomehacks-inner-carousel > .carousel-item {
+    height: 85vh;
+}
+
+#wholesomehacks-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* HackTX 2015 Modal/Carousel */
+#hack-tx-2015-inner-carousel > .carousel-item {
+    height: 100vh;
+}
+
+#hack-tx-2015-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* Music Hacks Modal/Carousel */
+#music-hacks-inner-carousel > .carousel-item {
+    height: 80vh;
+}
+
+#music-hacks-inner-carousel > .carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+
 .main-carousel-controller {
     left: auto;
     right: auto;
 }
+/* ----------------------------------------------- */
 
+/* Modals */
 .modal-header {
     border-bottom: none;
 }
@@ -59,6 +161,9 @@ h2 {
     margin: 20px auto;
 }
 
+/* ----------------------------------------------- */
+
+/* Styling to fill up remaining container and position 'Creative Profiles text + down arrow'*/
 #outer {
     display: flex;
     flex-flow: column;
@@ -75,11 +180,6 @@ h2 {
     height: 100%;
 }
 
-#freetail-logo {
-    max-width: 15%;
-    margin-bottom: 50px;
-}
-
 #outer #remaining-container #profile-icon {
     display: inline-block;
     color: #B4B4B4;
@@ -90,3 +190,4 @@ h2 {
     position: absolute;
 }
 
+/* ----------------------------------------------- */
