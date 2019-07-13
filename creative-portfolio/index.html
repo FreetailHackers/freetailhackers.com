@@ -17,6 +17,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Handlebars library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <!-- Handlebars template for person biography-->
+    <script id="person" type="text/x-handlebars-template">
+        <div class="person-container col-12 col-lg-6">
+            <div class="top-row">
+                <div class="person-image" style="background-image: url('images/people/{{ image_url }}');"></div>
+                <div class="person-subcontainer flex-grow-1">
+                    <h1 class="display-4 person-name">{{ name }}</h1>
+                    <div class="person-links d-flex justify-content-between">
+                        <a href="https://google.com"><div class="logo facebook"></div></a>
+                        <a href="https://google.com"><div class="logo behance"></div></a>
+                        <a href="https://google.com"><div class="logo linkedin"></div></a>
+                        <a href="https://google.com"><div class="logo twitter"></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="person-bio">
+                <p class="lead">{{ bio }}</p>
+            </div>
+        </div>
+    </script>
+    <!-- other javascript code-->
+    <script src='js/main.js'></script>
 </head>
 
 <body>
@@ -649,13 +673,12 @@
             </div>
 
         </div>
-
-        <div class="container-fluid text-center" id="remaining-container">
-            <div class="text-center" id="profile-icon">
-                <div>CREATIVE PROFILES</div>
-                <i class="fas fa-chevron-down fa-2x"></i>
-            </div>
+        <div class="text-center" id="profile-icon">
+            <div>CREATIVE PROFILES</div>
+            <i class="fas fa-chevron-down fa-2x"></i>
         </div>
+    </div>
+    <div class="container" id="biography-container">       
     </div>
 
 </body>
