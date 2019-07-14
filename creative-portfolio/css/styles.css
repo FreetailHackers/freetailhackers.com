@@ -1,6 +1,7 @@
 body {
     background-color: #1B181B;
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 h1, h2 {
@@ -24,8 +25,6 @@ h2 {
     -webkit-filter: contrast(98%);
     filter: contrast(98%);
     opacity: 0.95;
-    height: 215px;
-    width: 215px;
 }
 
 /* ----------------------------------------------- */
