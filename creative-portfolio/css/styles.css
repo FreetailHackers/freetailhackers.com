@@ -336,7 +336,6 @@ body {
     max-height: 300px;
 }
 
-
 @media (max-width: 767px) {
     .top-row {
         display: block;
