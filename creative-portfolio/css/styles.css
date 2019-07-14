@@ -24,6 +24,8 @@ h2 {
     -webkit-filter: contrast(98%);
     filter: contrast(98%);
     opacity: 0.95;
+    height: 215px;
+    width: 215px;
 }
 
 /* ----------------------------------------------- */
@@ -48,6 +50,10 @@ h2 {
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.577);
+}
+
+#portfolio-carousel {
+    height: 215px;
 }
 
 .text {
@@ -357,3 +363,10 @@ h2 {
     }
 }
 
+.carousel-control-next {
+    min-width: 20px;
+}
+
+.carousel-control-prev {
+    min-width: 20px;
+}

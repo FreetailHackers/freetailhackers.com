@@ -3,7 +3,8 @@ let text = "Arjun Kunjilwar\\tLorem Epsum ditum blah blah blah cblah blah\\tme.j
 let collages = null
 
 let widthBreakPoints = [768, 992, 1200]
-let widthIndex = -1
+let widthIndex = 3 // html starts off with 4 collages per row, but this may not be correct if the user loads page on smaller screen
+let startIndex = 0 //the collage index for the leftmost collage visible on the screen
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,21 +29,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (row != null) {
                 grid.innerHTML += row.innerHTML
             }
-            widthIndex = getWidthIndex()
         // }
     // )
 
     collages = document.querySelectorAll('.collage-container')
-    console.log(collages)
+    resizeIfNecessary()
+    $('#portfolio-carousel').on('slide.bs.carousel', function (e) {
+        startIndex = (e.to) * (widthIndex + 1)
+    })
 
 })
 
-$(window).resize(function() {
+$(window).resize(resizeIfNecessary);
+
+function resizeIfNecessary() {
     let newWidthIndex = getWidthIndex()
-    console.log(newWidthIndex)
-    console.log(widthIndex)
     if (newWidthIndex != widthIndex) {
-        console.log("YOWHAT")
         // need to resize carousel
         widthIndex = newWidthIndex
         //remove all carousel nodes
@@ -50,22 +52,28 @@ $(window).resize(function() {
         while (carousel.firstChild) {
             carousel.removeChild(carousel.firstChild);
         }
-        // add back 
-        let numRows = collages.length / (widthIndex + 1)
+        // add back
         let itemsPerRow = widthIndex + 1
-        for (let row = 0; i < numRows; i++) {
+        let itemIndex = 0
+        let rowNum = 0;
+        while (itemIndex < collages.length) {
             let carousel_item = document.createElement("div")
             carousel_item.className = 'carousel-item'
             let row = document.createElement("div")
             row.className = 'row'
-            for (let item = 0; item < itemsPerRow; item++) {
-                row.appendChild(collages[(row * itemsPerRow) + item])
-            } 
-            carousel_item.appendChild(row)
-            carousel.appendChild(carousel_item)
+            for (let i = 0; i < itemsPerRow && itemIndex < collages.length; i++) {
+                row.innerHTML += (collages[(rowNum * itemsPerRow) + itemIndex]).outerHTML
+                if (itemIndex == startIndex) {
+                    carousel_item.className = 'carousel-item active'
+                }
+                itemIndex += 1
+            }
+            carousel_item.innerHTML += row.outerHTML
+            carousel.innerHTML += carousel_item.outerHTML
         }
+        rowNum += 1
     }
-  });
+}
 
 function createPerson(name, bio, image_url) {
     let context = {name: name, bio: bio, image_url: image_url};
@@ -74,11 +82,11 @@ function createPerson(name, bio, image_url) {
 
 function getWidthIndex() {
     let i = 0;
-    console.log($(window.width))
     for (; i < widthBreakPoints.length; i++) {
-       if ($(window.width) < widthBreakPoints[i]) {
+       if ($(window).width() < widthBreakPoints[i]) {
            break;
        } 
     }
     return i;
 }
+
