@@ -186,14 +186,38 @@ h2 {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-  #hackathons .main .left {
-    background-color: #22215b;
+  #hackathons .main .left19 {
+    background-color: #1D0F20;
     margin-right: 8px; }
     @media all and (min-width: 30em) {
-      #hackathons .main .left {
+      #hackathons .main .left19 {
         margin-right: 16px; } }
-  #hackathons .main .right {
-    background-image: linear-gradient(to bottom, #AC219C 0%, #EB3E58 100%); }
+  #hackathons .main .left18 {
+    background-color: #ffffff;
+    margin-right: 8px; }
+    @media all and (min-width: 30em) {
+      #hackathons .main .left18 {
+        margin-right: 16px; } }
+  #hackathons .main .right18 {
+    background-color: #ff4014; }
+  #hackathons .main .left17 {
+    background-image: linear-gradient(to bottom, #AC219C 0%, #EB3E58 100%);
+    margin-right: 8px; }
+    @media all and (min-width: 30em) {
+      #hackathons .main .left17 {
+        margin-right: 16px; } }
+  #hackathons .main .right17 {
+    background-color: #22215b; }
+  #hackathons .main .left16 {
+    background-color: #00CFCB;
+    margin-right: 8px; }
+    @media all and (min-width: 30em) {
+      #hackathons .main .left16 {
+        margin-right: 16px; } }
+  #hackathons .main .right16 {
+    background-color: #124e78; }
+  #hackathons .main .right15 {
+    background-color: #7ED3F2; }
   @media all and (max-width: 30em) {
     #hackathons .main {
       display: block; }
@@ -220,14 +244,14 @@ h2 {
   @media all and (min-width: 30em) {
     #hackathons .more {
       margin-bottom: -8px; } }
-  #hackathons .more a {
+  #hackathons .more a, #hackathons .more div {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     color: inherit;
     padding-bottom: 4px; }
     @media all and (min-width: 30em) {
-      #hackathons .more a {
+      #hackathons .more a, #hackathons .more div {
         padding-bottom: 8px; } }
   #hackathons .more i {
     font-style: normal; }
@@ -268,22 +292,14 @@ h2 {
   @media all and (min-width: 30em) {
     #leadership .leader-wrapper {
       margin-bottom: 16px; } }
+  #leadership .leader-wrapper a {
+    color: inherit;
+    text-decoration: none; }
   #leadership .leader-wrapper .leader {
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px 0px #DDDDDD;
     overflow: hidden; }
-    #leadership .leader-wrapper .leader .headshot {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      background: grey; }
-      #leadership .leader-wrapper .leader .headshot video {
-        object-fit: cover;
-        position: relative;
-        height: 200px;
-        left: 50%;
-        transform: translateX(-50%); }
     #leadership .leader-wrapper .leader h3 {
       margin: 0;
       margin-left: 3px;
