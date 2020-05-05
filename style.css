@@ -186,6 +186,15 @@ h2 {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
+    #hackathons .main a .centerImage {
+      max-width: none; }
+  #hackathons .main .left20 {
+    background-color: #ffffff;
+    max-width: none;
+    margin-right: 8px; }
+    @media all and (min-width: 30em) {
+      #hackathons .main .left19 {
+        margin-right: 16px; } }
   #hackathons .main .left19 {
     background-color: #1D0F20;
     margin-right: 8px; }
