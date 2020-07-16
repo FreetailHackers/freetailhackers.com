@@ -7,7 +7,13 @@ html, body {
 
 p {
   font-family: "Avenir Medium";
-  font-size: 1.2em; }
+  font-size: 1.0em; }
+  @media only screen and (min-width: 1071px) {
+    p {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 670px) {
+    p {
+      font-size: 0.9em; } }
 
 .container {
   margin: 5%;
@@ -15,25 +21,80 @@ p {
 
 .navbar {
   display: flex;
-  max-height: 100px;
-  height: 8vh;
-  margin-left: 2%;
-  margin-right: 2%; }
+  height: 64px;
+  padding: 1% 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+  @media only screen and (max-width: 1070px) {
+    .navbar {
+      font-size: 14px; } }
+  @media only screen and (max-width: 870px) {
+    .navbar {
+      font-size: 12px; } }
+  @media only screen and (max-width: 670px) {
+    .navbar {
+      height: 32px;
+      flex-direction: column;
+      background-color: #411ba3; } }
+
+.navbar.scrolled {
+  background-color: #411ba3; }
 
 .logo {
   display: block;
-  flex: 30%; }
+  height: 100%;
+  margin-left: 2%; }
+  @media only screen and (max-width: 870px) {
+    .logo {
+      height: 80%; } }
 
 .options {
   display: flex;
-  flex: 70%;
+  margin-left: auto;
+  margin-right: 2%;
   font-family: "Avenir Light";
   font-size: 1.2em;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  z-index: 100; }
+  @media only screen and (max-width: 670px) {
+    .options {
+      width: 100%;
+      display: none;
+      padding-top: 8px;
+      background-color: rgba(65, 27, 163, 0.8); }
+      .options a {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #fbfffe;
+        padding: 8px 0; } }
   .options a {
     text-decoration: none;
-    color: #fbfffe; }
+    color: #fbfffe;
+    margin: 0 16px; }
+    @media only screen and (max-width: 870px) {
+      .options a {
+        margin: 0 8px; } }
+
+.toggle {
+  display: none; }
+  @media only screen and (max-width: 670px) {
+    .toggle {
+      display: block;
+      align-self: flex-end;
+      cursor: pointer;
+      position: absolute;
+      font-size: 28px;
+      right: 2%; } }
+
+.options-show {
+  display: none; }
+  @media only screen and (max-width: 670px) {
+    .options-show {
+      display: flex;
+      flex-direction: column; } }
 
 #splash {
   background: #471bae;
@@ -42,17 +103,30 @@ p {
   background: -o-linear-gradient(top left, #471bae, #db935f);
   background: linear-gradient(to bottom right, #471bae, #db935f);
   padding-bottom: 10%;
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 64px; }
+  @media only screen and (max-width: 1070px) {
+    #splash {
+      height: auto; } }
 
 #about-container {
   display: flex;
   padding: 15vh 5%;
   max-width: 1500px; }
+  @media only screen and (max-width: 870px) {
+    #about-container {
+      display: block;
+      padding: 15vh 10%; } }
 
 #aboutDescription {
   flex: 40%;
   margin-right: 2%;
   text-align: justify; }
+  @media only screen and (max-width: 870px) {
+    #aboutDescription img {
+      width: 60%;
+      display: block;
+      margin: auto; } }
 
 #familyPhoto {
   flex: 60%;
@@ -65,16 +139,32 @@ p {
   background-position: center; }
 
 #hackathons-container {
-  padding: 5%; }
+  padding: 15vh 5%; }
 
 #hackathon-title {
   width: 38.4%; }
+  @media only screen and (max-width: 870px) {
+    #hackathon-title {
+      width: 100%; } }
+  @media only screen and (max-width: 870px) {
+    #hackathon-title img {
+      width: 60%;
+      display: block;
+      margin: auto; } }
 
 #comingSoon {
   height: 15vh;
   max-height: 150px;
   margin-top: 15vh;
   margin-bottom: 8vh; }
+  @media only screen and (max-width: 870px) {
+    #comingSoon {
+      max-height: 80px;
+      margin-top: 8vh; } }
+  @media only screen and (max-width: 670px) {
+    #comingSoon {
+      max-height: 60px;
+      margin: 6vh 0; } }
   #comingSoon img {
     display: block;
     margin-left: auto;
@@ -86,20 +176,45 @@ p {
   max-width: 1200px;
   justify-content: space-between;
   height: 400px; }
+  @media only screen and (max-width: 1070px) {
+    .yearRow {
+      height: 300px; } }
+  @media only screen and (max-width: 870px) {
+    .yearRow {
+      height: 200px; } }
+  @media only screen and (max-width: 670px) {
+    .yearRow {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 2vh; } }
   .yearRow div {
     width: 550px; }
+    @media only screen and (max-width: 670px) {
+      .yearRow div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center; } }
     .yearRow div h4 {
       font-family: "Avenir Medium";
       font-weight: bolder;
-      font-size: 1.2em;
       margin: 16px; }
     .yearRow div img {
       display: block; }
       .yearRow div img:hover {
         transform: scale(1.1); }
+      @media only screen and (max-width: 670px) {
+        .yearRow div img {
+          height: auto;
+          transform: none; } }
 
 .leftHackathon {
   margin-right: 5%; }
+  @media only screen and (max-width: 670px) {
+    .leftHackathon {
+      margin-right: 0px; } }
 
 .rightHackathon {
   margin-left: 5%;
@@ -107,6 +222,9 @@ p {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column; }
+  @media only screen and (max-width: 670px) {
+    .rightHackathon {
+      margin-left: 0px; } }
 
 #supersection {
   background: #471bae;
@@ -115,12 +233,18 @@ p {
   background: -o-linear-gradient(top left, #471bae, #db935f);
   background: linear-gradient(to bottom right, #471bae, #db935f);
   padding-bottom: 50vh; }
+  @media only screen and (max-width: 870px) {
+    #supersection {
+      padding-bottom: 20vh; } }
 
 .infoSlide {
   margin: auto;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding: 15vh 0;
   max-width: 1200px; }
+  @media only screen and (max-width: 670px) {
+    .infoSlide {
+      max-width: 300px;
+      padding: 8vh 0; } }
   .infoSlide img {
     display: block;
     margin-left: auto;
@@ -128,6 +252,8 @@ p {
 
 #contact {
   border-bottom: 1px solid #fbfffe; }
+  #contact img {
+    height: 70px; }
 
 #contactInfo {
   display: block;
@@ -140,6 +266,13 @@ p {
   padding: 3%;
   margin-top: 3%;
   color: #23282b; }
+  @media only screen and (max-width: 670px) {
+    #contactInfo {
+      width: 80%; } }
+
+@media only screen and (max-width: 670px) {
+  #sponsor img {
+    height: 80px; } }
 
 #sponsorContainer {
   display: flex;
@@ -147,34 +280,59 @@ p {
   margin: 10vh auto;
   max-width: 1200px;
   padding-bottom: 30vh; }
+  @media only screen and (max-width: 670px) {
+    #sponsorContainer {
+      padding-bottom: 10vh; } }
 
 #laptopLeft {
   width: 400px; }
+  @media only screen and (max-width: 1070px) {
+    #laptopLeft {
+      width: 350px; } }
+  @media only screen and (max-width: 870px) {
+    #laptopLeft {
+      display: none; } }
   #laptopLeft img {
     transform: translateY(-100px); }
 
 #sponsorInformation {
   width: 350px;
   text-align: center; }
+  @media only screen and (max-width: 870px) {
+    #sponsorInformation {
+      margin: auto; } }
 
 #laptopRight {
   width: 400px;
   z-index: 1; }
+  @media only screen and (max-width: 1070px) {
+    #laptopRight {
+      width: 350px; } }
+  @media only screen and (max-width: 870px) {
+    #laptopRight {
+      display: none; } }
   #laptopRight img {
     width: 150%;
     transform: translate(-200px, 30px);
     z-index: 1; }
+    @media only screen and (max-width: 1070px) {
+      #laptopRight img {
+        width: 100%;
+        transform: translate(-50px, 80px); } }
+
+#sponsorButtonLink {
+  display: block;
+  width: 100%;
+  height: 100px; }
 
 #sponsorButton {
   width: 100%;
-  height: 25%;
-  max-height: 100px;
+  height: 100%;
   background-image: url("img/assets/SponsorUsButton.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  display: block;
   border: none;
   border-radius: 30%;
   z-index: 100;
@@ -185,13 +343,37 @@ p {
   background-image: url("img/assets/SponsorUsButton(HOVER).png");
   z-index: 100; }
 
+@media only screen and (max-width: 870px) {
+  #family img {
+    width: 90%; } }
+
+@media only screen and (max-width: 670px) {
+  #family img {
+    width: 90%; } }
+
+@media only screen and (max-width: 670px) {
+  .desktop {
+    display: none !important; } }
+
+.mobile {
+  display: none !important; }
+  @media only screen and (max-width: 670px) {
+    .mobile {
+      display: flex; } }
+
 #leaders {
-  margin-top: 64px; }
+  margin: 0 5%;
+  margin-top: 64px;
+  max-width: 1500px; }
 
 .row {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 20px; }
+  @media only screen and (max-width: 870px) {
+    .row {
+      display: block;
+      padding: 0px; } }
 
 .middleRow {
   justify-content: space-between; }
@@ -199,6 +381,12 @@ p {
 .person {
   width: 300px;
   text-align: center; }
+  @media only screen and (max-width: 1070px) {
+    .person {
+      width: 225px; } }
+  @media only screen and (max-width: 870px) {
+    .person {
+      margin: 50px auto; } }
   .person img {
     display: block;
     margin-left: auto;
@@ -206,4 +394,10 @@ p {
     border-radius: 50%; }
   .person p {
     margin: 10px;
-    font-family: "Avenir Light"; }
+    font-family: "Avenir Medium"; }
+    @media only screen and (max-width: 870px) {
+      .person p {
+        font-size: 1.2em; } }
+    @media only screen and (max-width: 670px) {
+      .person p {
+        font-size: 1.0em; } }
