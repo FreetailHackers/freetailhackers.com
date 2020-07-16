@@ -148,7 +148,6 @@ p {
 }
 
 .options-show {
-	display: none;
 	@include breakpoint(small) {
 		display: flex;
 		flex-direction: column;}

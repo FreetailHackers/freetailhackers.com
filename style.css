@@ -109,12 +109,10 @@ p {
       font-size: 28px;
       right: 2%; } }
 
-.options-show {
-  display: none; }
-  @media only screen and (max-width: 670px) {
-    .options-show {
-      display: flex;
-      flex-direction: column; } }
+@media only screen and (max-width: 670px) {
+  .options-show {
+    display: flex;
+    flex-direction: column; } }
 
 @media only screen and (max-width: 670px) {
   .navbar-toggled {
