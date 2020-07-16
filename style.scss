@@ -68,6 +68,24 @@ p {
 	@include breakpoint(small) {font-size: 0.8em;}
 }
 
+.heading {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+hr {
+	margin: 20px 0 40px 0;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+a:hover {
+	color: $navbarcolor;
+}  
+
 .container {
 	margin: $marginSize;
 	display: flex;
@@ -423,6 +441,10 @@ $containerSize: 90%;
 		@include breakpoint(medium) {width: 90%;}
 		@include breakpoint(small) {width: 90%;}
 	}
+	background-image: url('img/assets/batCircleTransparent.png');
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
 }
 .desktop {
 	@include breakpoint(small) {display: none !important;}
