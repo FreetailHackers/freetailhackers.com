@@ -10,10 +10,16 @@ p {
   font-size: 1.0em; }
   @media only screen and (min-width: 1071px) {
     p {
-      font-size: 1.2em; } }
+      font-size: 1.2em; } 
+    .smallText {
+      font-size: 1em;
+    }}
   @media only screen and (max-width: 670px) {
     p {
-      font-size: 0.9em; } }
+      font-size: 0.9em; }
+    .smallText {
+      font-size: 0.8em;
+    }}
 
 .container {
   margin: 5%;
@@ -232,7 +238,7 @@ p {
   background: -moz-linear-gradient(top left, #471bae, #db935f);
   background: -o-linear-gradient(top left, #471bae, #db935f);
   background: linear-gradient(to bottom right, #471bae, #db935f);
-  padding-bottom: 50vh; }
+  padding-bottom: 25vh; }
   @media only screen and (max-width: 870px) {
     #supersection {
       padding-bottom: 20vh; } }
@@ -279,7 +285,7 @@ p {
   justify-content: space-between;
   margin: 10vh auto;
   max-width: 1200px;
-  padding-bottom: 30vh; }
+  padding-bottom: 20vh; }
   @media only screen and (max-width: 670px) {
     #sponsorContainer {
       padding-bottom: 10vh; } }
@@ -335,13 +341,13 @@ p {
   background-color: transparent;
   border: none;
   border-radius: 30%;
-  z-index: 100;
+  z-index: 99;
   position: relative;
   outline: none; }
 
 #sponsorButton:hover {
   background-image: url("img/assets/SponsorUsButton(HOVER).png");
-  z-index: 100; }
+  z-index: 99; }
 
 @media only screen and (max-width: 870px) {
   #family img {

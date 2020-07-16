@@ -53,6 +53,11 @@ p {
 	font-size: 1.0em;
 }
 
+.smallText {
+	@include breakpoint(xlarge) {font-size: 1em;}
+	@include breakpoint(small) {font-size: 0.8em;}
+}
+
 .container {
 	margin: $marginSize;
 	display: flex;
@@ -280,7 +285,7 @@ $containerSize: 90%;
 // CONTACT SECTION
 #supersection {
 	@include bg-gradient();
-	padding-bottom: 50vh;
+	padding-bottom: 25vh;
 	@include breakpoint(medium) {padding-bottom: 20vh;}
 }
 
@@ -331,7 +336,7 @@ $containerSize: 90%;
 	justify-content: space-between;
 	margin: 10vh auto;
 	max-width: 1200px;
-	padding-bottom: 30vh;
+	padding-bottom: 20vh;
 	@include breakpoint(small) {padding-bottom: 10vh;}
 }
 
@@ -382,14 +387,14 @@ $containerSize: 90%;
 	background-color: transparent;
 	border: none;
 	border-radius: 30%;
-	z-index: 100;
+	z-index: 99;
 	position: relative;
 	outline: none;
 }
 
 #sponsorButton:hover {
 	background-image: url("img/assets/SponsorUsButton\(HOVER\).png");
-	z-index: 100;
+	z-index: 99;
 }
 
 // FAMILY SECTION
