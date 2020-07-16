@@ -132,27 +132,7 @@ p {
       height: auto; } }
 
 #title {
-  padding-top: 1vh; }
-  @media only screen and (max-width: 1070px) {
-    #title {
-      padding-top: 2vh; } }
-  @media only screen and (max-width: 670px) {
-    #title {
-      padding-top: 2vh; } }
-
-#learnMore {
-  height: 100px;
-  width: 100%; }
-  @media only screen and (max-width: 670px) {
-    #learnMore {
-      height: 60px; } }
-  #learnMore button {
-    display: block;
-    margin-left: auto;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none; }
+  padding-top: 32px; }
 
 #about-container {
   display: flex;
@@ -439,8 +419,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    border-radius: 50%; }
   .person p {
     margin: 10px;
     font-family: Avenir Light; }
