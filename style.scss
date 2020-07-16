@@ -68,6 +68,24 @@ p {
 	@include breakpoint(small) {font-size: 0.8em;}
 }
 
+.heading {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+hr {
+	margin: 20px 0 40px 0;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+a:hover {
+	color: lightblue;
+}  
+
 .container {
 	margin: $marginSize;
 	display: flex;
