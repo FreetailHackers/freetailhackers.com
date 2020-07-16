@@ -11,7 +11,8 @@ html, body {
   padding: 0;
   font-size: 16px;
   background: #23282b;
-  color: #fbfffe; }
+  color: #fbfffe;
+  scroll-behavior: smooth; }
 
 p {
   font-family: Avenir;
