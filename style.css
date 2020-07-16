@@ -1,12 +1,10 @@
 @font-face {
   font-family: Avenir;
-  src: url(./fonts/AvenirLTStd-Medium.otf);
-}
+  src: url(./fonts/AvenirLTStd-Medium.otf); }
 
 @font-face {
   font-family: Avenir Light;
-  src: url(./fonts/AvenirLTStd-Book.otf);
-}
+  src: url(./fonts/AvenirLTStd-Book.otf); }
 
 html, body {
   margin: 0;
@@ -20,16 +18,18 @@ p {
   font-size: 1.0em; }
   @media only screen and (min-width: 1071px) {
     p {
-      font-size: 1.2em; } 
-    .smallText {
-      font-size: 1em;
-    }}
+      font-size: 1.2em; } }
   @media only screen and (max-width: 670px) {
     p {
-      font-size: 0.9em; }
-    .smallText {
-      font-size: 0.8em;
-    }}
+      font-size: 0.9em; } }
+
+@media only screen and (min-width: 1071px) {
+  .smallText {
+    font-size: 1em; } }
+
+@media only screen and (max-width: 670px) {
+  .smallText {
+    font-size: 0.8em; } }
 
 .container {
   margin: 5%;
@@ -129,7 +129,8 @@ p {
 #about-container {
   display: flex;
   padding: 15vh 5%;
-  max-width: 1500px; }
+  max-width: 1500px;
+  margin: auto; }
   @media only screen and (max-width: 870px) {
     #about-container {
       display: block;
@@ -153,7 +154,9 @@ p {
   background-image: url("img/assets/transparentBatSparkleBackground.png");
   background-size: contain;
   background-repeat: repeat;
-  background-position: center; }
+  background-position: center;
+  max-width: 1500px;
+  margin: auto; }
 
 #hackathons-container {
   padding: 15vh 5%; }

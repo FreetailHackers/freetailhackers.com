@@ -175,6 +175,7 @@ $columnMargin : 2%;
 		padding: 15vh 10%;
 	}
 	max-width: 1500px;
+	margin: auto;
 }
 
 #aboutDescription {
@@ -204,6 +205,8 @@ $containerSize: 90%;
 	background-size: contain;
 	background-repeat: repeat;
 	background-position: center;
+	max-width: 1500px;
+	margin: auto;
 }
 
 #hackathons-container {
