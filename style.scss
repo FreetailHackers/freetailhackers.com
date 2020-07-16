@@ -69,6 +69,11 @@ p {
 	@include breakpoint(small) {font-size: 0.8em;}
 }
 
+.teamName {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
 .heading {
 	font-size: 1.5em;
 	text-align: center;
@@ -463,7 +468,7 @@ $containerSize: 90%;
 		@include breakpoint(small) {width: 90%;}
 	}
 	background-image: url('img/assets/batCircleTransparent.png');
-	background-size: contain;
+	background-size: 110%;
 	background-repeat: repeat;
 	background-position: center;
 }
