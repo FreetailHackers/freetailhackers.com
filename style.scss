@@ -38,6 +38,16 @@ $smallbp: 670px;
 	}
 }
 
+@font-face {
+	font-family: Avenir;
+	src: url(./fonts/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+	font-family: Avenir Light;
+	src: url(./fonts/AvenirLTStd-Book.otf);
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -47,7 +57,7 @@ html, body {
 }
 
 p {
-	font-family: $base-font + " Medium";
+	font-family: Avenir;
 	@include breakpoint(xlarge) {font-size: 1.2em;}
 	@include breakpoint(small) {font-size: 0.9em;}
 	font-size: 1.0em;
@@ -98,7 +108,7 @@ p {
 	display: flex;
 	margin-left: auto;
 	margin-right: 2%;
-	font-family: $base-font + " Light";
+	font-family: Avenir Light;
 	font-size: 1.2em;
 	justify-content: space-around;
 	align-items: center;
@@ -250,7 +260,7 @@ $containerSize: 90%;
 			align-items: center;
 			justify-content: center;}
 		h4 {
-			font-family: $base-font + " Medium";
+			font-family: Avenir;
 			font-weight: bolder;
 			margin: 16px;
 		}
@@ -444,7 +454,7 @@ $containerSize: 90%;
 	}
 	p {
 		margin: 10px;
-		font-family: $base-font + " Medium";
+		font-family: Avenir Light;
 		@include breakpoint(medium) {font-size: 1.2em;}
 		@include breakpoint(small) {font-size: 1.0em;}
 
