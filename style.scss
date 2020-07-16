@@ -441,6 +441,10 @@ $containerSize: 90%;
 		@include breakpoint(medium) {width: 90%;}
 		@include breakpoint(small) {width: 90%;}
 	}
+	background-image: url('img/assets/batCircleTransparent.png');
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
 }
 .desktop {
 	@include breakpoint(small) {display: none !important;}
