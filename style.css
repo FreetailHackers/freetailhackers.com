@@ -80,6 +80,9 @@ a:hover {
   @media only screen and (max-width: 870px) {
     .logo {
       height: 80%; } }
+  @media only screen and (max-width: 670px) {
+    .logo {
+      height: 32px; } }
 
 .options {
   display: flex;
@@ -120,12 +123,14 @@ a:hover {
       font-size: 28px;
       right: 2%; } }
 
-.options-show {
-  display: none; }
-  @media only screen and (max-width: 670px) {
-    .options-show {
-      display: flex;
-      flex-direction: column; } }
+@media only screen and (max-width: 670px) {
+  .options-show {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 670px) {
+  .navbar-toggled {
+    height: 240px; } }
 
 #splash {
   background: #471bae;
@@ -143,7 +148,8 @@ a:hover {
 #about-container {
   display: flex;
   padding: 15vh 5%;
-  max-width: 1500px; }
+  max-width: 1500px;
+  margin: auto; }
   @media only screen and (max-width: 870px) {
     #about-container {
       display: block;
@@ -167,7 +173,9 @@ a:hover {
   background-image: url("img/assets/transparentBatSparkleBackground.png");
   background-size: contain;
   background-repeat: repeat;
-  background-position: center; }
+  background-position: center;
+  max-width: 1500px;
+  margin: auto; }
 
 #hackathons-container {
   padding: 15vh 5%; }

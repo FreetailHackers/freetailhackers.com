@@ -1,6 +1,8 @@
 function toggleNavbar() {
     const options = document.querySelector('.options')
     options.classList.toggle('options-show')
+    const navbar = document.querySelector('.navbar')
+    navbar.classList.toggle('navbar-toggled')
 }
 
 window.onload = function() {

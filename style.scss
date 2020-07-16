@@ -121,6 +121,7 @@ a:hover {
 	height: 100%;
 	margin-left: 2%;
 	@include breakpoint(medium) {height: 80%;}
+	@include breakpoint(small) {height: 32px};
 }
 
 .options {
@@ -165,10 +166,15 @@ a:hover {
 }
 
 .options-show {
-	display: none;
 	@include breakpoint(small) {
 		display: flex;
 		flex-direction: column;}
+}
+
+.navbar-toggled {
+	@include breakpoint(small) {
+		height: 240px;
+	}
 }
 
 // TITLE SECTION
@@ -193,6 +199,7 @@ $columnMargin : 2%;
 		padding: 15vh 10%;
 	}
 	max-width: 1500px;
+	margin: auto;
 }
 
 #aboutDescription {
@@ -222,6 +229,8 @@ $containerSize: 90%;
 	background-size: contain;
 	background-repeat: repeat;
 	background-position: center;
+	max-width: 1500px;
+	margin: auto;
 }
 
 #hackathons-container {
