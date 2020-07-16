@@ -42,7 +42,8 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 1070px) {
     .navbar {
       font-size: 14px; } }
