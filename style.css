@@ -66,6 +66,9 @@ p {
   @media only screen and (max-width: 870px) {
     .logo {
       height: 80%; } }
+  @media only screen and (max-width: 670px) {
+    .logo {
+      height: 32px; } }
 
 .options {
   display: flex;
@@ -112,6 +115,10 @@ p {
     .options-show {
       display: flex;
       flex-direction: column; } }
+
+@media only screen and (max-width: 670px) {
+  .navbar-toggled {
+    height: 240px; } }
 
 #splash {
   background: #471bae;

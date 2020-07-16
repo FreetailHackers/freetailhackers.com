@@ -103,6 +103,7 @@ p {
 	height: 100%;
 	margin-left: 2%;
 	@include breakpoint(medium) {height: 80%;}
+	@include breakpoint(small) {height: 32px};
 }
 
 .options {
@@ -151,6 +152,12 @@ p {
 	@include breakpoint(small) {
 		display: flex;
 		flex-direction: column;}
+}
+
+.navbar-toggled {
+	@include breakpoint(small) {
+		height: 240px;
+	}
 }
 
 // TITLE SECTION
