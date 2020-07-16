@@ -1,19 +1,40 @@
-$pad: 8px;
-$pagewidth: 60em;
-$black: #1b1b1e;
+$color-stops: #471bae, #db935f;
+$black: #23282b;
 $white: #fbfffe;
-$vibrant: #ad343e; // 8e5572 ad343e
-$escapedwhite: '%23' + str-slice(ie-hex-str($white), 2);
-$escapedblack: '%23' + str-slice(ie-hex-str($black), 2);
+$navbarcolor: #411ba3;
+$base-font: "Avenir";
+$marginSize: 5%;
 
-@mixin puffy($property) {
-	@include puffy($property, 1);
+$largebp : 1070px;
+$mediumbp: 870px;
+$smallbp: 670px;
+
+@mixin bg-gradient() {
+	background: nth($color-stops, 1); // fallback
+	background: -webkit-linear-gradient(top left, $color-stops);
+  	background: -moz-linear-gradient(top left, $color-stops);
+  	background: -o-linear-gradient(top left, $color-stops);
+  	background: linear-gradient(to bottom right, $color-stops);
 }
 
-@mixin puffy($property, $multiplier: 1) {
-	#{$property}: $multiplier*$pad;
-	@media all and (min-width: ($pagewidth/2)) {
-		#{$property}: $multiplier*$pad*2;
+@mixin centered-image() {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin breakpoint($media) {
+	@if $media == xlarge {
+		@media only screen and (min-width: $largebp + 1) { @content; }
+	}
+	@else if $media == large {
+		@media only screen and (max-width: $largebp) { @content; }
+	}
+	@else if $media == medium {
+		@media only screen and (max-width: $mediumbp) {@content; }
+	}
+	@else if $media == small {
+		@media only screen and (max-width: $smallbp) {@content; }
 	}
 }
 
@@ -21,364 +42,406 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	font-family: "Lora", Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
-	color: $black;
-	background: #f8f8f8
+	background: $black;
+	color: $white;
 }
-
-.textured {
-	background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='"+$escapedblack+"' fill-opacity='0.02'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-h1, h2, h3, h4, .stat strong, .more strong {
-	font-family: "Istok Web", "Roboto", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-footer {
-	font-family: "Roboto", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-section {
-	max-width: $pagewidth;
-	margin: auto;
-	@include puffy(margin-top, 2);
-	@include puffy(padding);
-}
-
-h1, h2, h3, h4 {
-	margin: 0;
-	@include puffy(margin-bottom);
-	line-height: 1.2;
-}
-
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.7em; }
-h3 { font-size: 1.2em; }
-h4 { font-size: 1.1em; }
 
 p {
+	font-family: $base-font + " Medium";
+	@include breakpoint(xlarge) {font-size: 1.2em;}
+	@include breakpoint(small) {font-size: 0.9em;}
+	font-size: 1.0em;
+}
+
+.container {
+	margin: $marginSize;
+	display: flex;
+}
+
+// NAV BAR
+
+.navbar {
+	display: flex;
+	// transition:500ms ease;
+	height: 64px;
+	padding: 1% 0;
+	@include breakpoint(large) { font-size: 14px;}
+	@include breakpoint(medium) { font-size: 12px;}
+	@include breakpoint(small) {
+		height: 32px;
+		flex-direction: column;
+		background-color: $navbarcolor;
+	}
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.navbar.scrolled {
+	background-color: $navbarcolor;
+}
+
+.logo {
+	display: block;
+	height: 100%;
+	margin-left: 2%;
+	@include breakpoint(medium) {height: 80%;}
+}
+
+.options {
+	display: flex;
+	margin-left: auto;
+	margin-right: 2%;
+	font-family: $base-font + " Light";
 	font-size: 1.2em;
-	line-height: 1.6;
-	margin: 0;
-}
-
-h1, h2 {
-	color: $vibrant;
-}
-
-h2 {
-	$dropcolor: lighten($vibrant, 40%);
-	text-shadow:
-		1px 1px 0 $white, 2px 2px 0 $white,
-		3px 3px 0 $dropcolor, 4px 4px 0 $dropcolor;
-	&:after {
-		display: block;
-		content: "";
-		border-top: 4px solid $vibrant;
-		max-width: 80px;
-		@include puffy(margin-top);
-		@include puffy(margin-bottom, 1.5);
-	}
-}
-
-@keyframes slide {
-	from, 80%, to {
-		transform: translateY(0) translateX(-50%) rotate(-45deg);
-	}
-	90% {
-		transform: translateY(5px) translateX(-50%) rotate(-45deg);
-	}
-	85%, 95% {
-		transform: translateY(10px) translateX(-50%) rotate(-45deg);
-	}
-}
-
-#top, footer {
-	background: $black;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='"+$escapedwhite+"' fill-opacity='0.03'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	background-position: center;
-}
-
-#top {
-	position: relative;
-	min-height: 400px;
-	@media all and (min-height: 400px) {
-		min-height: 90vh;
-	}
-	img {
-		width: 300px;
-		max-width: 100%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.plsscroll {
-		position: absolute;
-		bottom: 2em;
-		left: 50%;
-		border: 0 solid $white;
-		border-width: 0 0 3px 3px;
-		width: 0.7em;
-		height: 0.7em;
-		transform: translateX(-50%) rotate(-45deg);
-		animation: 3s ease-in-out infinite slide;
-	}
-}
-
-.infobar {
-	background-color: $vibrant;
-	color: $white;
-	text-shadow: 0 2px 7px rgba(0,0,0,0.2);
-	section {
-		margin-top: 0;
-	}
-	a {
-		color: inherit;
-		border-bottom: 1px solid;
-		text-decoration: none;
-	}
-}
-
-#intro {
-	.wrap {
-		padding: $pad*2;
-		font-size: 1.1em;
-		text-align: center;
-	}
-	@media all and (min-height: 700px) {
-		position: relative;
-		min-height: 70vh;
-		.wrap {
-			@include puffy(padding);
-			box-sizing: border-box;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 1.5em;
+	justify-content: space-around;
+	align-items: center;
+	@include breakpoint(small) {
+		width: 100%;
+		display: none;
+		padding-top: 8px;
+		background-color: rgba($color: $navbarcolor, $alpha: 0.8);
+		a {
 			width: 100%;
-			max-width: 30em;
+			text-align: center;;
+			border-bottom: 1px solid $white;
+			padding: 8px 0;
+		}
+	}
+	z-index: 100;
+	a {
+		text-decoration: none;
+		color: $white;
+		margin: 0 16px;
+		@include breakpoint(medium) {margin: 0 8px;}
+	}
+}
+
+.toggle {
+	display: none;
+	@include breakpoint(small) {
+		display: block;
+		align-self: flex-end;
+		cursor: pointer;
+		position: absolute;
+		font-size: 28px;
+		right: 2%;
+	}
+}
+
+.options-show {
+	display: none;
+	@include breakpoint(small) {
+		display: flex;
+		flex-direction: column;}
+}
+
+// TITLE SECTION
+
+#splash {
+	@include bg-gradient();
+	padding-bottom: 10%;
+	height: 100vh;
+	@include breakpoint(large) {height: auto;}
+	padding-top: 64px;
+}
+
+// ABOUT SECTION
+$descriptionSize : 40%;
+$columnMargin : 2%;
+
+#about-container {
+	display: flex;
+	padding: 15vh 5%;
+	@include breakpoint(medium) {
+		display: block;
+		padding: 15vh 10%;
+	}
+	max-width: 1500px;
+}
+
+#aboutDescription {
+	flex: $descriptionSize;
+	margin-right: $columnMargin;
+	text-align: justify;
+	img {
+		@include breakpoint(medium) {
+			width: 60%;
+			display: block;
+			margin: auto;
 		}
 	}
 }
 
-#bigimage {
-	min-height: 60vh;
-	background-color: #463839;
-	background-image: url("img/assets/personcoding.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	@media only screen and (max-device-width: 1366px) {
-		background-attachment: scroll;
-	}
+#familyPhoto {
+	flex: 100% - $descriptionSize;
+	margin-left: $columnMargin;
 }
+
+// HACKATHONS SECTION
+$spacingMargin : 5%;
+$containerSize: 90%;
 
 #hackathons {
-	.main {
-		display: flex;
-		@include puffy(margin-top, 2);
-		a {
-			box-shadow: 0px 0px 20px 0px #DDDDDD;
+	background-image: url('img/assets/transparentBatSparkleBackground.png');
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+}
+
+#hackathons-container {
+	padding: 15vh 5%;
+}
+
+#hackathon-title {
+	width: (100% - (2 * $columnMargin)) * ($descriptionSize / 100%);
+	@include breakpoint(medium) {width: 100%;}
+	img {
+		@include breakpoint(medium) {
+			width: 60%;
 			display: block;
-			flex: 1;
-			transform-style: preserve-3d;
-			box-shadow: 0 0 1px transparent; // fixes render issue
-			@include puffy(padding, 2);
-			background-size: cover;
-			background-position: bottom center;
-			text-align: center;
-			@include puffy(border-radius);
-			text-decoration: none;
-			color: $white;
-			img {
-				font-size: 2em;
-				width: 80%;
-				max-width: ($pagewidth/8);
-				line-height: 2em;
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);
-			}
-		}
-        .left19 {
-            background-color: #1D0F20;
-			@include puffy(margin-right);
-        }
-        .right19 {
-        }
-        .left18 {
-            background-color: #ffffff;
-			@include puffy(margin-right);
-        }
-        .right18 {
-            background-color: #ff4014;   
-        }
-		.left17 {
-			background-image: linear-gradient(to bottom, #AC219C 0%, #EB3E58 100%);
-			@include puffy(margin-right);
-		}
-		.right17 {
-			background-color: #22215b;
-		}
-        .left16 {
-            background-color: #00CFCB;
-			@include puffy(margin-right);
-        }
-        .right16 {
-            background-color: #124e78;
-        }
-        .right15 {
-            background-color: #7ED3F2;
-        }
-		@media all and (max-width: ($pagewidth/2)) {
-			display: block;
-			a {
-				img {
-					position: static;
-					top: auto;
-					transform: none;
-					max-height: 2em;
-					max-width: 40%;
-					width: auto;
-				}
-			}
-			.left {
-				margin-right: auto;
-				margin-bottom: $pad;
-				padding: 2em 0;
-				img {
-					max-width: 60%;
-				}
-			}
+			margin: auto;
 		}
 	}
-	.more {
-		@include puffy(margin-top, 2);
-		@include puffy(margin-bottom, -0.5);
-		a, div {
+}
+
+#comingSoon {
+	height: 15vh;
+	max-height: 150px;
+	margin-top: 15vh;
+	margin-bottom: 8vh;
+	@include breakpoint(medium) {
+		max-height: 80px;
+		margin-top: 8vh;}
+	@include breakpoint(small) {
+		max-height: 60px;
+		margin: 6vh 0;}
+	img {
+		@include centered-image();
+	}
+
+}
+
+.yearRow {
+	display: flex;
+	margin: auto;
+	max-width: 1200px;
+	justify-content: space-between;
+	height: 400px;
+	@include breakpoint(large) { height: 300px;}
+	@include breakpoint(medium) { height: 200px;}
+	@include breakpoint(small) {
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 2vh;}
+	div {
+		width: 550px;
+		@include breakpoint(small) {
+			width: 80%;
 			display: flex;
-			justify-content: space-between;
-			text-decoration: none;
-			color: inherit;
-			@include puffy(padding-bottom, 0.5);
+			flex-direction: column;
+			margin: auto;
+			align-items: center;
+			justify-content: center;}
+		h4 {
+			font-family: $base-font + " Medium";
+			font-weight: bolder;
+			margin: 16px;
 		}
-		i {
-			font-style: normal;
-		}
-	}
-}
-
-#leadership {
-	.leadership {
-		@include puffy(margin-right, -1);
-		@include puffy(margin-top, 2);
-		@include puffy(margin-bottom, -1);
-		display: flex;
-		flex-wrap: wrap;
-		i {
-			font-style: normal;
-		}
-		> div {
-			box-sizing: border-box;
-			width: 100%;
-			@media all and (min-width: ($pagewidth/2)) {
-				width: 50%;
-			}
-			@media all and (min-width: ($pagewidth/3*2)) {
-				width: 33.33%;
-			}
-		}
-	}
-	.leader-wrapper {
-		@include puffy(padding-right);
-		@include puffy(margin-bottom);
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-		.leader {
-			border-radius: 16px;
-			background: #FFFFFF;
-			box-shadow: 0px 0px 20px 0px #DDDDDD;
-			overflow: hidden;
-			h3 {
-				margin: 0;
-				margin-left: 3px;
-				@include puffy(margin-top, 0.5);
-			}
-			i {
-				margin-left: 3px;
-			}
-		}
-
-	}
-}
-
-#stats {
-	.stats {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.stat {
-		width: 25%;
-		&:last-child {
-			display: none;
-		}
-		@media all and (max-width: ($pagewidth/4*3)) {
-			width: 33.33%;
-			&:last-child {
-				display: block;
-			}
-		}
-		@media all and (max-width: ($pagewidth/3*2)) {
-			width: 50%;
-			&:last-child {
-				display: none;
-			}
-		}
-		@media all and (max-width: ($pagewidth/5*2)) {
-			width: 100%;
-			display: none;
-			&:nth-child(-n+4){
-				display: block;
-			}
-		}
-		h3 {
-			margin: 0;
-		}
-		strong {
-			font-size: 4em;
+		img {
 			display: block;
+			&:hover {
+				transform: scale(1.1);
+			}
+			@include breakpoint(small) {
+				height: auto;
+				transform: none;
+			}
 		}
-		@include puffy(margin-top, 0.5);
 	}
 }
 
-footer {
+.leftHackathon {
+	margin-right: $spacingMargin;
+	@include breakpoint(small) {margin-right: 0px;}
+}
+
+.rightHackathon {
+	margin-left: $spacingMargin;
+	@include breakpoint(small) {
+		margin-left: 0px;}
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+// CONTACT SECTION
+#supersection {
+	@include bg-gradient();
+	padding-bottom: 50vh;
+	@include breakpoint(medium) {padding-bottom: 20vh;}
+}
+
+.infoSlide {
+	margin: auto;
+	padding: 15vh 0;
+	max-width: 1200px;
+	@include breakpoint(small) {
+		max-width: 300px;
+		padding: 8vh 0;
+	}
+	img {
+		@include centered-image();
+	}
+}
+
+
+#contact {
+	border-bottom: 1px solid $white;
+	img {
+		height: 70px;
+	}
+}
+
+#contactInfo {
+	@include centered-image();
+	width: 60%;
+	@include breakpoint(small) {width: 80%;}
+	max-width: 500px;
+	background-color: #ae9ccc;
 	text-align: center;
-	color: $white;
-	@include puffy(padding);
-	@include puffy(margin-top, 4);
-	color: fade($white, 30%);
-	.social {
-		@include puffy(margin-bottom);
-		a {
-			text-decoration: none;
-			font-size: 0;
+	padding: 3%;
+	margin-top: 3%;
+	color: $black;
+}
+
+// SPONSOR SECTION
+#sponsor {
+	@include breakpoint(small) {
+		img {
+			height: 80px;
 		}
-		svg {
-			width: $pad*6;
-			@include puffy(margin, 0.4);
-			rect { fill: $white; }
-			path { stroke: $white; }
-			[fill="#fff"] { fill: $black; }
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.7;
-			&:hover {
-				opacity: 1;
-			}
+	}
+}
+
+#sponsorContainer {
+	display: flex;
+	justify-content: space-between;
+	margin: 10vh auto;
+	max-width: 1200px;
+	padding-bottom: 30vh;
+	@include breakpoint(small) {padding-bottom: 10vh;}
+}
+
+#laptopLeft {
+	width: 400px;
+	@include breakpoint(large) {width: 350px;}
+	@include breakpoint(medium) {display: none;}
+	img {
+		transform: translateY(-100px);
+	}
+}
+
+#sponsorInformation {
+	width: 350px;
+	@include breakpoint(medium) {margin: auto};
+	text-align: center;
+}
+
+#laptopRight {
+	width: 400px;
+	@include breakpoint(large) {width: 350px;}
+	@include breakpoint(medium) {display: none;}
+	z-index: 1;
+	img {
+		width: 150%;
+		transform: translate(-200px, 30px);
+		@include breakpoint(large) {
+			width: 100%;
+			transform: translate(-50px, 80px);
 		}
+		z-index: 1;
+	}
+}
+
+#sponsorButtonLink {
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+#sponsorButton {
+	width: 100%;
+	height: 100%;
+	background-image: url("img/assets/SponsorUsButton.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	border-radius: 30%;
+	z-index: 100;
+	position: relative;
+	outline: none;
+}
+
+#sponsorButton:hover {
+	background-image: url("img/assets/SponsorUsButton\(HOVER\).png");
+	z-index: 100;
+}
+
+// FAMILY SECTION
+#family {
+	img {
+		@include breakpoint(medium) {width: 90%;}
+		@include breakpoint(small) {width: 90%;}
+	}
+}
+.desktop {
+	@include breakpoint(small) {display: none !important;}
+}
+
+.mobile {
+	display: none !important;
+	@include breakpoint(small) {display: flex;}
+}
+
+#leaders {
+	margin: 0 5%;
+	margin-top: 64px;
+	max-width: 1500px;
+}
+
+.row {
+	display: flex; 
+	justify-content: space-evenly;
+	padding-bottom: 20px;
+	@include breakpoint(medium) {
+		display: block;
+		padding: 0px;
+	}
+
+}
+.middleRow {
+	justify-content: space-between;
+}
+
+.person {
+	width: 300px;
+	@include breakpoint(large) {width: 225px;}
+	@include breakpoint(medium) {margin: 50px auto;}
+	text-align: center;
+	img {
+		@include centered-image();
+		border-radius: 50%;
+	}
+	p {
+		margin: 10px;
+		font-family: $base-font + " Medium";
+		@include breakpoint(medium) {font-size: 1.2em;}
+		@include breakpoint(small) {font-size: 1.0em;}
+
 	}
 }
