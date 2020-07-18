@@ -54,6 +54,7 @@ html, body {
 	font-size: 16px;
 	background: $black;
 	color: $white;
+	scroll-behavior: smooth;
 }
 
 p {
@@ -66,6 +67,11 @@ p {
 .smallText {
 	@include breakpoint(xlarge) {font-size: 1em;}
 	@include breakpoint(small) {font-size: 0.8em;}
+}
+
+.teamName {
+	font-weight: bolder;
+	text-decoration: underline;
 }
 
 .heading {
@@ -462,7 +468,7 @@ $containerSize: 90%;
 		@include breakpoint(small) {width: 90%;}
 	}
 	background-image: url('img/assets/batCircleTransparent.png');
-	background-size: contain;
+	background-size: 110%;
 	background-repeat: repeat;
 	background-position: center;
 }
