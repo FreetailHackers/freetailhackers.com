@@ -46,9 +46,11 @@ hr {
 a {
   text-decoration: none;
   color: #fbfffe; }
+  a:hover {
+    color: #411ba3; }
 
-a:hover {
-  color: #411ba3; }
+.nohover {
+  pointer-events: none; }
 
 .container {
   margin: 5%;

@@ -86,11 +86,14 @@ hr {
 a {
 	text-decoration: none;
 	color: $white;
+	&:hover {
+		color: $navbarcolor
+	}
 }
 
-a:hover {
-	color: $navbarcolor;
-}  
+.nohover {
+	pointer-events: none;
+}
 
 .container {
 	margin: $marginSize;
