@@ -45,7 +45,8 @@ hr {
 
 a {
   text-decoration: none;
-  color: #fbfffe; }
+  color: #fbfffe;
+  padding: 2px; }
   a:hover {
     color: #411ba3; }
 
