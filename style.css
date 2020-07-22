@@ -333,7 +333,7 @@ a {
   padding: 3%;
   margin-top: 3%;
   color: #23282b;
-  border: 2px solid white; }
+  border: 2px solid #fbfffe; }
   @media only screen and (max-width: 670px) {
     #contactInfo {
       width: 80%; } }
