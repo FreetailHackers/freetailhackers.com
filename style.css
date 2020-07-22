@@ -201,7 +201,7 @@ a {
   margin-left: 2%; }
 
 #hackathons {
-  background-image: url("img/assets/transparentBatSparkleBackground.png");
+  background-image: url("img/assets/transparentBatSparkleBackground.gif");
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
@@ -320,10 +320,8 @@ a {
     margin-left: auto;
     margin-right: auto; }
 
-#contact {
-  border-bottom: 1px solid #fbfffe; }
-  #contact img {
-    height: 70px; }
+#contact img {
+  height: 70px; }
 
 #contactInfo {
   display: block;
@@ -331,11 +329,11 @@ a {
   margin-right: auto;
   width: 60%;
   max-width: 500px;
-  background-color: #ae9ccc;
   text-align: center;
   padding: 3%;
   margin-top: 3%;
-  color: #23282b; }
+  color: #23282b;
+  border: 2px solid white; }
   @media only screen and (max-width: 670px) {
     #contactInfo {
       width: 80%; } }

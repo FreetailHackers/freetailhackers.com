@@ -255,7 +255,7 @@ $spacingMargin : 5%;
 $containerSize: 90%;
 
 #hackathons {
-	background-image: url('img/assets/transparentBatSparkleBackground.png');
+	background-image: url('img/assets/transparentBatSparkleBackground.gif');
 	background-size: contain;
 	background-repeat: repeat;
 	background-position: center;
@@ -372,7 +372,6 @@ $containerSize: 90%;
 
 
 #contact {
-	border-bottom: 1px solid $white;
 	img {
 		height: 70px;
 	}
@@ -383,11 +382,11 @@ $containerSize: 90%;
 	width: 60%;
 	@include breakpoint(small) {width: 80%;}
 	max-width: 500px;
-	background-color: #ae9ccc;
 	text-align: center;
 	padding: 3%;
 	margin-top: 3%;
 	color: $black;
+	border: 2px solid white;
 }
 
 // SPONSOR SECTION
