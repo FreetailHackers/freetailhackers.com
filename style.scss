@@ -237,6 +237,8 @@ $columnMargin : 2%;
 	flex: $descriptionSize;
 	margin-right: $columnMargin;
 	text-align: justify;
+	display: flex;
+	flex-direction: column;
 	img {
 		@include breakpoint(medium) {
 			width: 60%;
@@ -244,6 +246,10 @@ $columnMargin : 2%;
 			margin: auto;
 		}
 	}
+}
+
+#skyline {
+	margin-top: auto;
 }
 
 #familyPhoto {

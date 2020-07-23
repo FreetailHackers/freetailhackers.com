@@ -190,12 +190,17 @@ a {
 #aboutDescription {
   flex: 40%;
   margin-right: 2%;
-  text-align: justify; }
+  text-align: justify;
+  display: flex;
+  flex-direction: column; }
   @media only screen and (max-width: 870px) {
     #aboutDescription img {
       width: 60%;
       display: block;
       margin: auto; } }
+
+#skyline {
+  margin-top: auto; }
 
 #familyPhoto {
   flex: 60%;
