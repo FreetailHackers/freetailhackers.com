@@ -167,7 +167,8 @@ a {
   width: 100%; }
   @media only screen and (max-width: 670px) {
     #learnMore {
-      height: 60px; } }
+      height: 60px;
+      margin-bottom: 20px; } }
   #learnMore button {
     display: block;
     margin-left: auto;
