@@ -205,7 +205,7 @@ a {
 
 #learnMore {
 	height: 100px;
-	@include breakpoint(small) {height: 60px;}
+	@include breakpoint(small) {height: 60px; margin-bottom: 20px;}
 	width: 100%;
 	button {
 		display: block;
