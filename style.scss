@@ -257,6 +257,25 @@ $columnMargin : 2%;
 	margin-left: $columnMargin;
 }
 
+// HACKATHON AD SECTION
+#hacktx {
+	position: relative;
+}
+
+#hacktxbutton {
+	position: absolute;
+	width: 25vw;
+	height: 9.52vw;
+	left: 25%;
+	top: 72%;
+	background-image: url('img/assets/HackTxWebsiteButton.png');
+	background-size: cover;
+	&:hover {
+		background-image: url('img/assets/HackTxWebsiteButtonHover.png');
+		cursor: pointer;
+	}
+}
+
 // HACKATHONS SECTION
 $spacingMargin : 5%;
 $containerSize: 90%;

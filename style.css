@@ -207,6 +207,21 @@ a {
   flex: 60%;
   margin-left: 2%; }
 
+#hacktx {
+  position: relative; }
+
+#hacktxbutton {
+  position: absolute;
+  width: 25vw;
+  height: 9.52vw;
+  left: 25%;
+  top: 72%;
+  background-image: url("img/assets/HackTxWebsiteButton.png");
+  background-size: cover; }
+  #hacktxbutton:hover {
+    background-image: url("img/assets/HackTxWebsiteButtonHover.png");
+    cursor: pointer; }
+
 #hackathons {
   background-image: url("img/assets/transparentBatSparkleBackground.gif");
   background-size: contain;
