@@ -204,6 +204,7 @@ a {
 	@include breakpoint(small) {padding-top: 2vh;}
 }
 
+// Obsolete
 #learnMore {
 	height: 100px;
 	@include breakpoint(small) {height: 60px; margin-bottom: 20px;}
