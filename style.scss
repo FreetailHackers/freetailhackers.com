@@ -289,10 +289,10 @@ $columnMargin : 2%;
 	height: 11vw;
 	left: 5%;
 	top: 69%; // Nice
-	background-image: url('img/assets/comingSoon.png');
+	background-image: url('img/assets/joinButton.png');
 	background-size: cover;
 	&:hover {
-		background-image: url('img/assets/comingSoonHover.png');
+		background-image: url('img/assets/joinButtonHover.png');
 		cursor: pointer;
 	}
 }
