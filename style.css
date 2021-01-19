@@ -226,12 +226,24 @@ a {
 #recruiting {
   position: relative; }
 
+#infosessionbutton {
+  position: absolute;
+  width: 33vw;
+  height: 11vw;
+  left: 4%;
+  top: 34%;
+  background-image: url("img/assets/sessionButton.png");
+  background-size: cover; }
+  #infosessionbutton:hover {
+    background-image: url("img/assets/sessionButtonHover.png");
+    cursor: pointer; }
+
 #recruitingbutton {
   position: absolute;
   width: 33vw;
   height: 11vw;
-  left: 5%;
-  top: 69%;
+  left: 4%;
+  top: 71%;
   background-image: url("img/assets/joinButton.png");
   background-size: cover; }
   #recruitingbutton:hover {
