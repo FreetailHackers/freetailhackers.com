@@ -250,6 +250,21 @@ a {
     background-image: url("img/assets/joinButtonHover.png");
     cursor: pointer; }
 
+#learnathon {
+  position: relative; }
+
+#learnathonbutton {
+  position: absolute;
+  width: 33vw;
+  height: 11vw;
+  left: 30%;
+  top: 48%;
+  background-image: url("img/assets/siteButton.png");
+  background-size: cover; }
+  #learnathonbutton:hover {
+    background-image: url("img/assets/siteButtonHover.png");
+    cursor: pointer; }
+
 #hackathons {
   background-image: url("img/assets/transparentBatSparkleBackground.gif");
   background-size: contain;

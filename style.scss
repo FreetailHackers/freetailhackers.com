@@ -311,6 +311,24 @@ $columnMargin : 2%;
 	}
 }
 
+#learnathon {
+	position: relative;
+}
+
+#learnathonbutton {
+	position: absolute;
+	width: 33vw;
+	height: 11vw;
+	left: 30%;
+	top: 48%; 
+	background-image: url('img/assets/siteButton.png');
+	background-size: cover;
+	&:hover {
+		background-image: url('img/assets/siteButtonHover.png');
+		cursor: pointer;
+	}
+}
+
 // HACKATHONS SECTION
 $spacingMargin : 5%;
 $containerSize: 90%;
