@@ -251,7 +251,8 @@ a {
     cursor: pointer; }
 
 #learnathon {
-  position: relative; }
+  position: relative;
+  display: flex; }
 
 #learnathonbutton {
   position: absolute;
@@ -263,6 +264,21 @@ a {
   background-size: cover; }
   #learnathonbutton:hover {
     background-image: url("img/assets/siteButtonHover.png");
+    cursor: pointer; }
+
+#uhsg {
+  position: relative; }
+
+#uhsgbutton {
+  position: absolute;
+  width: 50vw;
+  height: 9.25vw;
+  left: 25%;
+  top: 60%;
+  background-image: url("img/assets/uhsgButton.png");
+  background-size: cover; }
+  #uhsgbutton:hover {
+    background-image: url("img/assets/uhsgButtonHover.png");
     cursor: pointer; }
 
 #hackathons {

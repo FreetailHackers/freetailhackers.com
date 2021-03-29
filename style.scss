@@ -313,6 +313,7 @@ $columnMargin : 2%;
 
 #learnathon {
 	position: relative;
+	display: flex;
 }
 
 #learnathonbutton {
@@ -325,6 +326,24 @@ $columnMargin : 2%;
 	background-size: cover;
 	&:hover {
 		background-image: url('img/assets/siteButtonHover.png');
+		cursor: pointer;
+	}
+}
+
+#uhsg {
+	position: relative;
+}
+
+#uhsgbutton {
+	position: absolute;
+	width: 50vw;
+	height: 9.25vw;
+	left: 25%;
+	top: 60%; 
+	background-image: url('img/assets/uhsgButton.png');
+	background-size: cover;
+	&:hover {
+		background-image: url('img/assets/uhsgButtonHover.png');
 		cursor: pointer;
 	}
 }
