@@ -267,7 +267,8 @@ a {
     cursor: pointer; }
 
 #uhsg {
-  position: relative; }
+  position: relative;
+  display: flex; }
 
 #uhsgbutton {
   position: absolute;
