@@ -316,7 +316,7 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 100vw;
+	height: 75vw;
 	@include breakpoint(small) {height: 25vw;}
 }
 
@@ -338,7 +338,7 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 100vw;
+	height: 75vw;
 	@include breakpoint(small) {height: 25vw;}
 }
 
