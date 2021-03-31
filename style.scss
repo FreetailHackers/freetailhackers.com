@@ -314,6 +314,10 @@ $columnMargin : 2%;
 #learnathon {
 	position: relative;
 	display: flex;
+	@include breakpoint(small) {
+		height: 100%;
+		display: block;
+	}
 }
 
 #learnathonbutton {
@@ -333,6 +337,10 @@ $columnMargin : 2%;
 #uhsg {
 	position: relative;
 	display: flex;
+	@include breakpoint(small) {
+		height: 100%;
+		display: block;
+	}
 }
 
 #uhsgbutton {

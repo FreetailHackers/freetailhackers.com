@@ -253,6 +253,10 @@ a {
 #learnathon {
   position: relative;
   display: flex; }
+  @media only screen and (max-width: 670px) {
+    #learnathon {
+      height: 100%;
+      display: block; } }
 
 #learnathonbutton {
   position: absolute;
@@ -269,6 +273,10 @@ a {
 #uhsg {
   position: relative;
   display: flex; }
+  @media only screen and (max-width: 670px) {
+    #uhsg {
+      height: 100%;
+      display: block; } }
 
 #uhsgbutton {
   position: absolute;
