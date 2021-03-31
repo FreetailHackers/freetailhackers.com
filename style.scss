@@ -315,7 +315,8 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 25vw;
+	height: 50vw;
+	@include breakpoint(small) {height: 25vw;}
 }
 
 #learnathonbutton {
@@ -336,7 +337,8 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 25vw;
+	height: 50vw;
+	@include breakpoint(small) {height: 25vw;}
 }
 
 #uhsgbutton {
