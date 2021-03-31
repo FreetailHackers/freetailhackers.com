@@ -311,9 +311,6 @@ $columnMargin : 2%;
 	}
 }
 
-#mobileImg {
-	@include breakpoint(small) {height: 100%;}
-}
 
 #learnathon {
 	position: relative;
