@@ -250,15 +250,11 @@ a {
     background-image: url("img/assets/joinButtonHover.png");
     cursor: pointer; }
 
-@media only screen and (max-width: 670px) {
-  #mobileImg {
-    height: 100%; } }
-
 #learnathon {
   position: relative;
   display: flex;
   width: 100%;
-  height: 50vw; }
+  height: 100vw; }
   @media only screen and (max-width: 670px) {
     #learnathon {
       height: 25vw; } }
@@ -279,7 +275,7 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: 50vw; }
+  height: 100vw; }
   @media only screen and (max-width: 670px) {
     #uhsg {
       height: 25vw; } }
