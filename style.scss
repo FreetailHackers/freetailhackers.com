@@ -313,7 +313,6 @@ $columnMargin : 2%;
 
 #mobileImg{
 	height: 50%;
-	@include breakpoint(small) {height: 100%;}
 }
 
 
