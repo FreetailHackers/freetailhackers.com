@@ -315,7 +315,7 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	@include breakpoint(small) {
-		height: 100%;
+		height: 50vh;
 		display: block;
 	}
 }
@@ -338,7 +338,7 @@ $columnMargin : 2%;
 	position: relative;
 	display: flex;
 	@include breakpoint(small) {
-		height: 100%;
+		height: 50vh;
 		display: block;
 	}
 }

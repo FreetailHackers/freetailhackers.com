@@ -255,7 +255,7 @@ a {
   display: flex; }
   @media only screen and (max-width: 670px) {
     #learnathon {
-      height: 100%;
+      height: 50vh;
       display: block; } }
 
 #learnathonbutton {
@@ -275,7 +275,7 @@ a {
   display: flex; }
   @media only screen and (max-width: 670px) {
     #uhsg {
-      height: 100%;
+      height: 50vh;
       display: block; } }
 
 #uhsgbutton {
