@@ -250,6 +250,12 @@ a {
     background-image: url("img/assets/joinButtonHover.png");
     cursor: pointer; }
 
+#mobileImg {
+  height: 50%; }
+  @media only screen and (max-width: 670px) {
+    #mobileImg {
+      height: 100%; } }
+
 #learnathon {
   position: relative;
   display: flex;
