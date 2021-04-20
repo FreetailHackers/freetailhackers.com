@@ -357,9 +357,6 @@ $columnMargin : 2%;
 #uhsg {
 	position: relative;
 	display: flex;
-	width: 100%;
-	height: 75vw;
-	@include breakpoint(small) {height: 25vw;}
 }
 
 #uhsgbutton {
