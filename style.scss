@@ -311,32 +311,48 @@ $columnMargin : 2%;
 	}
 }
 
-#mobileImg{
-	height: 50%;
-}
-
-
-#learnathon {
+#changeathon {
 	position: relative;
 	display: flex;
-	width: 100%;
-	height: 75vw;
-	@include breakpoint(small) {height: 25vw;}
 }
 
-#learnathonbutton {
+#changeathonbutton {
 	position: absolute;
 	width: 33vw;
 	height: 11vw;
-	left: 30%;
-	top: 48%; 
-	background-image: url('img/assets/siteButton.png');
+	left: 33%;
+	top: 55%; 
+	background-image: url('img/assets/visitSite.png');
 	background-size: cover;
 	&:hover {
-		background-image: url('img/assets/siteButtonHover.png');
+		background-image: url('img/assets/visitSiteHover.png');
 		cursor: pointer;
 	}
 }
+
+
+// #learnathon {
+// 	position: relative;
+// 	display: flex;
+// 	width: 100%;
+// 	height: 75vw;
+// 	@include breakpoint(small) {height: 25vw;}
+// }
+
+// #learnathonbutton {
+// 	position: absolute;
+// 	width: 33vw;
+// 	height: 11vw;
+// 	left: 30%;
+// 	top: 48%; 
+// 	background-image: url('img/assets/siteButton.png');
+// 	background-size: cover;
+// 	&:hover {
+// 		background-image: url('img/assets/siteButtonHover.png');
+// 		cursor: pointer;
+// 	}
+// }
+
 
 #uhsg {
 	position: relative;
