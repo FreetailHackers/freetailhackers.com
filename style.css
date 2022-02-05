@@ -224,7 +224,9 @@ a {
     cursor: pointer; }
 
 #recruiting {
-  position: relative; }
+  position: relative; 
+  margin-top:100px;
+}
 
 #infosessionbutton {
   position: absolute;
@@ -430,7 +432,13 @@ a {
 
 @media only screen and (max-width: 670px) {
   #sponsor img {
-    height: 80px; } }
+    height: 80px; } 
+  
+    #recruiting {
+      position: relative; 
+      margin-top:50px;
+    }
+  }
 
 #sponsorContainer {
   display: flex;
