@@ -284,6 +284,20 @@ a {
     background-image: url("img/assets/uhsgButtonHover.png");
     cursor: pointer; }
 
+#hackforhumanitybutton {
+  position: absolute;
+  width: 20vw;
+  height: 5.5vw;
+  left: 59vw;
+  top: 62%;
+  background-image: url("img/assets/plankbutton.png");
+  background-size: cover; }
+  #hackforhumanitybutton:hover {
+    width: 24vw;
+    left: 57vw;
+    height: 6.5vw;
+  cursor: pointer; }
+
 #hackathons {
   background-image: url("img/assets/transparentBatSparkleBackground.gif");
   background-size: contain;
