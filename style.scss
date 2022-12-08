@@ -288,7 +288,7 @@ $columnMargin : 2%;
 	width: 33vw;
 	height: 11vw;
 	left: 4%;
-	top: 34%; 
+	top: 34%;
 	background-image: url('img/assets/sessionButton.png');
 	background-size: cover;
 	&:hover {
@@ -302,7 +302,7 @@ $columnMargin : 2%;
 	width: 33vw;
 	height: 11vw;
 	left: 4%;
-	top: 71%; 
+	top: 71%;
 	background-image: url('img/assets/joinButton.png');
 	background-size: cover;
 	&:hover {
@@ -321,7 +321,7 @@ $columnMargin : 2%;
 	width: 33vw;
 	height: 11vw;
 	left: 33%;
-	top: 55%; 
+	top: 55%;
 	background-image: url('img/assets/visitSite.png');
 	background-size: cover;
 	&:hover {
@@ -329,30 +329,6 @@ $columnMargin : 2%;
 		cursor: pointer;
 	}
 }
-
-
-// #learnathon {
-// 	position: relative;
-// 	display: flex;
-// 	width: 100%;
-// 	height: 75vw;
-// 	@include breakpoint(small) {height: 25vw;}
-// }
-
-// #learnathonbutton {
-// 	position: absolute;
-// 	width: 33vw;
-// 	height: 11vw;
-// 	left: 30%;
-// 	top: 48%; 
-// 	background-image: url('img/assets/siteButton.png');
-// 	background-size: cover;
-// 	&:hover {
-// 		background-image: url('img/assets/siteButtonHover.png');
-// 		cursor: pointer;
-// 	}
-// }
-
 
 #uhsg {
 	position: relative;
@@ -364,7 +340,7 @@ $columnMargin : 2%;
 	width: 50vw;
 	height: 9.25vw;
 	left: 25%;
-	top: 60%; 
+	top: 60%;
 	background-image: url('img/assets/uhsgButton.png');
 	background-size: cover;
 	&:hover {
@@ -629,7 +605,7 @@ button {
 }
 
 .row {
-	display: flex; 
+	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 20px;
 	@include breakpoint(medium) {
@@ -637,9 +613,6 @@ button {
 		padding: 0px;
 	}
 
-}
-.middleRow {
-	justify-content: space-between;
 }
 
 .person {

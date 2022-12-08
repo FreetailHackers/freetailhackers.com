@@ -224,9 +224,7 @@ a {
     cursor: pointer; }
 
 #recruiting {
-  position: relative; 
-  margin-top:100px;
-}
+  position: relative; }
 
 #infosessionbutton {
   position: absolute;
@@ -283,20 +281,6 @@ a {
   #uhsgbutton:hover {
     background-image: url("img/assets/uhsgButtonHover.png");
     cursor: pointer; }
-
-#hackforhumanitybutton {
-  position: absolute;
-  width: 20vw;
-  height: 5.5vw;
-  left: 59vw;
-  top: 62%;
-  background-image: url("img/assets/plankbutton.png");
-  background-size: cover; }
-  #hackforhumanitybutton:hover {
-    width: 24vw;
-    left: 57vw;
-    height: 6.5vw;
-  cursor: pointer; }
 
 #hackathons {
   background-image: url("img/assets/transparentBatSparkleBackground.gif");
@@ -446,13 +430,7 @@ a {
 
 @media only screen and (max-width: 670px) {
   #sponsor img {
-    height: 80px; } 
-  
-    #recruiting {
-      position: relative; 
-      margin-top:50px;
-    }
-  }
+    height: 80px; } }
 
 #sponsorContainer {
   display: flex;
@@ -561,9 +539,6 @@ button {
     .row {
       display: block;
       padding: 0px; } }
-
-.middleRow {
-  justify-content: space-between; }
 
 .person {
   width: 300px;
