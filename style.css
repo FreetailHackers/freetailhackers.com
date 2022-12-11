@@ -34,8 +34,7 @@ p {
     font-size: 0.8em; } }
 
 .teamName {
-  font-weight: bolder;
-  text-decoration: underline; }
+  font-weight: bolder; }
 
 .heading {
   font-size: 1.5em;
@@ -45,7 +44,6 @@ hr {
   margin: 20px 0 40px 0; }
 
 a {
-  text-decoration: none;
   color: #fbfffe;
   padding: 2px; }
   a:hover {

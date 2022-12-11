@@ -72,7 +72,6 @@ p {
 
 .teamName {
 	font-weight: bolder;
-	text-decoration: underline;
 }
 
 .heading {
@@ -85,7 +84,6 @@ hr {
 }
 
 a {
-	text-decoration: none;
 	color: $white;
 	padding: 2px;
 	&:hover {
