@@ -360,8 +360,7 @@ a {
         justify-content: center; } }
     .yearRow div h4 {
       font-family: Avenir;
-      font-weight: bolder;
-      margin: 16px; }
+      font-weight: bolder; }
     .yearRow div img {
       display: block; }
       .yearRow div img:hover {
