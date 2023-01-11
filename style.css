@@ -42,6 +42,7 @@ p {
     font-size: 0.8em; } }
 
 .teamName {
+  padding-top: 50px;
   font-weight: bolder; }
 
 .heading {
@@ -345,7 +346,6 @@ a {
       height: 200px; } }
   @media only screen and (max-width: 670px) {
     .yearRow {
-      flex-direction: column;
       height: auto;
       padding-bottom: 2vh; } }
   .yearRow div {
@@ -560,7 +560,7 @@ button {
       width: 225px; } }
   @media only screen and (max-width: 870px) {
     .person {
-      margin: 50px auto; } }
+      margin: 0px auto; } }
   .person img {
     display: block;
     margin-left: auto;
