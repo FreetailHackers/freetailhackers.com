@@ -121,7 +121,6 @@ a {
 	@include breakpoint(small) {
 		height: 32px;
 		flex-direction: column;
-		background-color: $navbarcolor;
 	}
 	position: fixed;
 	top: 0;
@@ -153,12 +152,16 @@ a {
 	@include breakpoint(small) {
 		width: 100%;
 		display: none;
-		padding-top: 8px;
 		background-color: rgba($color: $navbarcolor, $alpha: 0.8);
+		padding-top: 4px;
 		a {
 			width: 100%;
 			text-align: center;;
-			border-bottom: 1px solid $white;
+			border-top: 1px solid $white;
+			
+				&:last-child {
+					border-bottom: 1px solid;
+				}
 			padding: 8px 0;
 		}
 	}
@@ -190,6 +193,7 @@ a {
 }
 
 .navbar-toggled {
+	background-color: $navbarcolor !important;
 	@include breakpoint(small) {
 		height: 240px;
 	}
@@ -534,7 +538,6 @@ $containerSize: 90%;
 }
 
 #sponsorInformation {
-	width: 40vw;
 	@include breakpoint(medium) {margin: auto};
 	text-align: center;
 }
@@ -568,6 +571,10 @@ button {
 #sponsorButton {
 	width: 25vw;
 	height: 25vw;
+	@include breakpoint(small) {
+			width: 100%;
+			height: 100%;
+		}
 	background-image: url("img/assets/SponsorUsButton.png");
 	background-size: contain;
 	background-position: center;

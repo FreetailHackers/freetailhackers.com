@@ -82,8 +82,7 @@ a {
   @media only screen and (max-width: 670px) {
     .navbar {
       height: 32px;
-      flex-direction: column;
-      background-color: #411ba3; } }
+      flex-direction: column; } }
 
 .navbar.scrolled {
   background-color: #411ba3; }
@@ -112,13 +111,15 @@ a {
     .options {
       width: 100%;
       display: none;
-      padding-top: 8px;
-      background-color: rgba(65, 27, 163, 0.8); }
+      background-color: rgba(65, 27, 163, 0.8);
+      padding-top: 4px; }
       .options a {
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid #fbfffe;
-        padding: 8px 0; } }
+        border-top: 1px solid #fbfffe;
+        padding: 8px 0; }
+        .options a:last-child {
+          border-bottom: 1px solid; } }
   .options a {
     text-decoration: none;
     color: #fbfffe;
@@ -143,9 +144,11 @@ a {
     display: flex;
     flex-direction: column; } }
 
-@media only screen and (max-width: 670px) {
-  .navbar-toggled {
-    height: 240px; } }
+.navbar-toggled {
+  background-color: #411ba3 !important; }
+  @media only screen and (max-width: 670px) {
+    .navbar-toggled {
+      height: 240px; } }
 
 #splash {
   background: #471bae;
@@ -460,7 +463,6 @@ a {
     transform: translateY(-100px); }
 
 #sponsorInformation {
-  width: 40vw;
   text-align: center; }
   @media only screen and (max-width: 870px) {
     #sponsorInformation {
@@ -505,6 +507,10 @@ button {
   z-index: 99;
   position: relative;
   outline: none; }
+  @media only screen and (max-width: 670px) {
+    #sponsorButton {
+      width: 100%;
+      height: 100%; } }
 
 #sponsorButton:hover {
   background-image: url("img/assets/SponsorUsButton(HOVER).png");
