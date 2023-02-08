@@ -1,0 +1,355 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: "jaf-domus", sans-serif;
+	color: #333;
+	background: #f7f7f7;
+	line-height: 1.4;
+}
+
+body {
+	border: 0 solid #2f9fa7;
+	border-width: 7px 0;
+}
+
+::selection {
+	color: #f7f7f7;
+	background: #24797f;
+}
+
+h1, h1 img {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+h1, h2, p {
+	margin: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+@media all and (min-width: 400px) {
+	h1, h2, p {
+		margin-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	h1, h2, p {
+		margin-bottom: 16px;
+	}
+}
+
+h2 {
+	position: relative;
+	display: flex;
+	font-size: 1.7em;
+	margin-bottom: 12px;
+}
+@media all and (min-width: 400px) {
+	h2 {
+		margin-bottom: 24px;
+	}
+}
+h2:after {
+	content: "";
+	display: block;
+	border-bottom: 3px solid #2f9fa7;
+	height: 0.7em;
+	flex-grow: 1;
+	margin-left: 8px;
+}
+@media all and (min-width: 400px) {
+	h2:after {
+		margin-left: 16px;
+	}
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	color: #2f9fa7;
+}
+a:hover {
+	border-bottom-width: 2px;
+}
+
+header, .bar > div, main > div, footer {
+	max-width: 800px;
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
+		margin-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
+		margin-bottom: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
+		padding-left: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
+		padding-right: 16px;
+	}
+}
+@media (min-width: 1032px) {
+	header, .bar > div, main > div, footer {
+		padding-left: 108px;
+	}
+}
+
+main > div, footer {
+	margin-top: 24px;
+}
+@media all and (min-width: 400px) {
+	main > div, footer {
+		margin-top: 48px;
+	}
+}
+
+header {
+	text-align: center;
+}
+header img {
+	max-width: 9em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
+@media all and (min-width: 400px) {
+	header img {
+		margin-top: 80px;
+	}
+}
+@media all and (min-width: 400px) {
+	header img {
+		margin-bottom: 64px;
+	}
+}
+@media all and (min-width: 400px) {
+	header .more {
+		font-size: 1.5em;
+	}
+}
+header .more strong {
+	display: block;
+	font-size: 1.2em;
+}
+
+.pullaway {
+	padding-bottom: 4px;
+}
+@media all and (min-width: 400px) {
+	.pullaway {
+		padding-bottom: 8px;
+	}
+}
+.pullaway > i {
+	font-style: normal;
+	display: inline-block;
+	min-width: 100px;
+}
+.pullaway > i, .pullaway > span {
+	opacity: 0.7;
+}
+.pullaway p {
+	margin: 0;
+}
+@media (min-width: 1032px) {
+	.pullaway {
+		position: relative;
+		margin-top: 0;
+	}
+	.pullaway > i {
+		display: block;
+		position: absolute;
+		right: 100%;
+		text-align: right;
+		padding-right: 8px;
+	}
+}
+@media all and (min-width: 1032px) and (min-width: 400px) {
+	.pullaway > i {
+		padding-right: 16px;
+	}
+}
+
+.bar {
+	background: #2f9fa7;
+	color: #f7f7f7;
+	margin-top: 32px;
+}
+@media all and (min-width: 400px) {
+	.bar {
+		margin-top: 64px;
+	}
+}
+.bar > div {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+@media all and (min-width: 400px) {
+	.bar > div {
+		padding-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar > div {
+		padding-bottom: 16px;
+	}
+}
+.bar > div > span {
+	flex: 1;
+}
+.bar .cta {
+	display: inline-block;
+	padding: 9.6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #f7f7f7;
+	margin-left: 4px;
+	border-radius: 4px;
+	border-bottom-width: 0;
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
+		padding: 19.2px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
+		padding-top: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
+		padding-bottom: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
+		margin-left: 8px;
+	}
+}
+.bar .cta span {
+	transition: ease-in-out transform 0.1s;
+	display: inline-block;
+	transform: translateX(0);
+}
+.bar .cta:hover span {
+	transform: translateX(4px);
+}
+@media all and (max-width: 533.3333333333px) {
+	.bar > div {
+		display: block;
+	}
+	.bar .cta {
+		display: block;
+		margin: 0;
+		margin-top: 8px;
+		text-align: center;
+	}
+}
+@media all and (max-width: 533.3333333333px) and (min-width: 400px) {
+	.bar .cta {
+		margin-top: 16px;
+	}
+}
+
+#schedule .pullaway {
+	padding-bottom: 1.6px;
+}
+@media all and (min-width: 400px) {
+	#schedule .pullaway {
+		padding-bottom: 3.2px;
+	}
+}
+
+#faq div {
+	transition: ease-in-out padding 0.1s;
+	padding-top: 4px;
+	padding-bottom: 5.6px;
+}
+@media all and (min-width: 400px) {
+	#faq div {
+		padding-top: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	#faq div {
+		padding-bottom: 11.2px;
+	}
+}
+#faq div.collapsed {
+	overflow: hidden;
+	white-space: nowrap;
+	padding-top: 0;
+	padding-bottom: 1.6px;
+}
+@media all and (min-width: 400px) {
+	#faq div.collapsed {
+		padding-bottom: 3.2px;
+	}
+}
+#faq div.collapsed p {
+	display: none;
+}
+#faq div:first-of-type {
+	padding-top: 0;
+}
+#faq div:last-of-type {
+	padding-bottom: 0;
+}
+#faq strong {
+	display: block;
+	cursor: pointer;
+}
+#faq strong:hover {
+	color: #2f9fa7;
+}
+#faq p {
+	margin: 0;
+	padding-top: 1.6px;
+	opacity: 0.7;
+}
+@media all and (min-width: 400px) {
+	#faq p {
+		padding-top: 3.2px;
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 8px;
+	opacity: 0.9;
+}
+footer:before {
+	content: "";
+	display: block;
+	border-bottom: 3px solid #2f9fa7;
+	max-width: 120px;
+	margin: auto;
+	margin-bottom: 8px;
+}
+@media all and (min-width: 400px) {
+	footer:before {
+		margin-bottom: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	footer {
+		padding: 16px;
+	}
+}

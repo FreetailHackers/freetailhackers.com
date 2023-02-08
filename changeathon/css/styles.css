@@ -1,0 +1,204 @@
+/* LEARNATHON STUFF START */
+/* That one pink: #F8A68C
+   Yellow Freetail: #FCE6C4 
+   Other Yellow: #EAE55A*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFF;
+}
+
+#slide {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#title {
+    position: absolute;
+    width: 56vw;
+    height: 16vw;
+    left: 22%;
+    top: 0%;
+    z-index: 4;
+}
+@media only screen and (max-width: 670px) {
+    #title {
+      width: 80vw;
+      height: 23vw;
+      left: 10%;
+      top: 5%;
+    }}
+#date {
+    position: absolute;
+    width: 18vw;
+    left: 41%;
+    top: 32%;
+    z-index: 4;
+}
+@media only screen and (max-width: 670px) {
+    #date {
+      left: 39%;
+      top: 23%;
+      width: 26vw;
+    }}
+
+#clouds {
+    position: absolute;
+    width: 100vw;
+    height: 123vh;
+    left: 0%;
+    top: -22%;
+    z-index: 1;
+}
+@media only screen and (max-width: 670px) {
+    #clouds {
+      height: 100vh;
+      top:0%
+    }}
+
+#registerbutton {
+    position: absolute;
+    width: 18vw;
+    height: 3.25vw;
+    left: 30%;
+    top: 42%;
+    background-image: url("../assets/registerButton.png");
+    background-size: cover;
+    z-index: 2; }
+    #registerbutton:hover {
+      background-image: url("../assets/registerButtonHover.png");
+      cursor: pointer; }
+      @media only screen and (max-width: 670px) {
+        #registerbutton {
+          width: 50vw;
+          height: 9vw;
+          left: 25%;
+          top: 30%;
+        }}
+  
+#mentorbutton {
+    position: absolute;
+    width: 18vw;
+    height: 3.25vw;
+    left: 51%;
+    top: 42%;
+    background-image: url("../assets/mentorButton.png");
+    background-size: cover;
+    z-index: 2; 
+}
+    #mentorbutton:hover {
+      background-image: url("../assets/mentorButtonHover.png");
+      cursor: pointer; 
+    }
+    @media only screen and (max-width: 670px) {
+        #mentorbutton {
+          width: 50vw;
+          height: 9vw;
+          left: 25%;
+          top: 45%;
+        }}
+
+#what1 {
+    position: absolute;
+    width: 42vw;
+    left: 6%;
+    top: 58%;
+    z-index: 5;
+}
+@media only screen and (max-width: 670px) {
+    #what1 {
+      width: 66vw;
+      left: 15%;
+      top: 56%;
+    }}
+
+#what2 {
+    position: absolute;
+    width: 42vw;
+    left: 51%;
+    top: 62%;
+    z-index: 5;
+}
+@media only screen and (max-width: 670px) {
+    #what2 {
+        width: 66vw;
+        left: 15%;
+        top: 75%;
+    }}
+
+#a1 {
+    position: absolute;
+    left: 74%;
+    top: -22%;
+    width: 35vw;
+    z-index: 2;
+}
+@media only screen and (max-width: 670px) {
+    #a1 {
+        position: absolute;
+        left: 74%;
+        top: 0%;
+        width: 35vw;
+        z-index: 2;
+    }}
+
+#a2 {
+    position: absolute;
+    left: -3%;
+    top: -7%;
+    width: 30vw;
+    z-index: 2;
+}
+@media only screen and (max-width: 670px) {
+    #a2 {
+        position: absolute;
+        left: -5%;
+        top: 20%;
+        width: 35vw;
+        z-index: 2;
+    }}
+
+#a5 {
+    position: absolute;
+    left: 18%;
+    top: 48%;
+    width: 27vw;
+    z-index: 2;
+}
+@media only screen and (max-width: 670px) {
+    #a5 {
+        position: absolute;
+        left: 35%;
+        top: 60%;
+        width: 35vw;
+        z-index: 2;
+    }}
+
+.footer{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2vw;
+    color:black; 
+    font-family:Montserrat;
+    top: 55vw;
+    margin-bottom: 5%;
+}
+@media only screen and (max-width: 670px) {
+    .footer {
+      font-size: 1.8vw;
+      top: 240vw; } }
+

@@ -1,0 +1,366 @@
+<html class="no-js" lang="en" dir="ltr" style="background-color: #012124;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnathon</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+    <meta name="theme-color" content="#012124">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-80884741-5"></script>
+</head>
+
+<body>
+    <main>
+        <div class="title-slide" id="title-slide">
+            <canvas id="pond-canvas" style="width: 100%; height: 120vh;"></canvas>
+            <div id="overlay">
+                <img class="title" draggable="false" id="title" src="assets/title.png">
+                <img class="freetail-logo" draggable="false" src="assets/logo.png">
+                <img class="home-overlay" draggable="false" id="overlay" src="assets/homeOverlay.png">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScNYWYgbNj-y50x33rriOlZyqShic8VbSTdFtc1oTG1yiG5WA/viewform?usp=sf_link">
+                        <div class="button-register"></div>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVKQz8SP04vcJxs-w4GfpyVTVm6ehdeWZu-E-fiVp06Xc4eQ/viewform?usp=sf_link">
+                        <div class="button-mentor"></div>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf9oYjisS3SuRuCR9B_QYixrTdPk5N9GJ_Lr0Adk0W0VrRSg/viewform?usp=sf_link">
+                        <div class="button-workshop"></div>
+                    </a>
+            </div>
+            <img class="frog-mush" draggable="false" src="assets/frogMush.gif">
+        </div>
+        <div class="what-slide">
+            <div class="slanted-text">
+                A Learnathon is a virtual two-day event held on April 3rd and 4th by Freetail Hackers for students of ALL backgrounds to learn about technology. 
+                We want to create an inclusive space for anyone interested in technology to learn and explore it. Attendees will get the chance to learn new skills, 
+                meet other people going through the learning journey, and create a project to showcase! 
+            </div>
+            <img class="what-bar" draggable="false" src="assets/whatBar.png">
+        </div>
+        <div class="info-slide">
+            <div class="two-column">
+                <img class="rain-gif" draggable="false" src="assets/rain.gif">
+                <div class="left-column" style="z-index: 3;">
+                    <div class="heading"> A growing experience!
+                    </div>
+                    <div class="normal-text" style="width: 85%;">
+                        The Learnathon is designed to help people from all backgrounds transform from tadpoles to code toads! 
+                        On Saturday, April 3rd, we will have a day specifically designed for workshops. 
+                        Most of these workshops will assume no prior knowledge and will be a space for anyone to learn. 
+                        On Sunday, April 4th, we will have a hackathon that will give attendees a chance to use what they have learned to build a project. 
+                        This can sound scary at first but we will give you the tools you need to go from no programming experience to building a project! 
+                        Of course, the experience can be personalized as attendees have the option of attending just one or both of the two events.
+                    </div>
+                </div>
+                <div class="right-column" style="margin-top: 5%; z-index: 3;" >
+                    <img class="tadpole-rain" draggable="false" src="assets/tadpoleRain.png">
+                </div>
+            </div>
+            <div class="two-column">
+                <div class="left-column">
+                    <img class="frog-kid" draggable="false" src="assets/frogKid.png">
+                </div>
+                <div class="right-column">
+                    <div class="heading">
+                        Who can attend?
+                    </div>
+                    <div class="normal-text" style="width: 85%;">
+                        Anyone! We especially welcome and encourage students with little to no technical background to join us. 
+                        Even if you’re just vaguely interested in what the buzz around tech is, we are happy and excited to give you a glimpse into it. 
+                        Additionally, all workshops will be recorded unless noted otherwise, so don’t worry if you can’t make it to a specific time; 
+                        you can always watch afterwards.
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="schedule" style="margin: 5% 0% 15% 0%;">
+                <div class="info-slide">
+                    <div class="heading parent-center" style="font-size: 5vw; margin-bottom: 2%;">Schedule</div>
+
+                    <div class="pill-button">
+                        <div id="learnathon-button" class="pill-button-option active">LEARNATHON (Apr 3)</div>
+                        <div id="hackathon-button" class="pill-button-option">HACKATHON (Apr 4)</div>
+                    </div>
+                    <div class="normal-text-subtitle parent-center" style="width: 70%; margin-left: 15%; display: inline-block;">
+                        Most workshops will be hosted on Zoom and will require you to sign in with ANY Zoom account. All workshops will also be streamed and recorded on our <a class="links" href='https://www.youtube.com/c/FreetailHackers'>Youtube Channel</a>.</div>
+                    <div class="schedule-container">
+                        <div id="learnathon-schedule" class="schedule-grid">
+                            <div class="schedule-header" id="schedule-time">Start Time</div>
+                            <div class="schedule-header" id="schedule-title">Title</div>
+                            <div class="schedule-header" id="schedule-blurb">Blurb</div>
+
+                            <div class="schedule-time">
+                                9:00 am</div>
+                            <div class="schedule-label">Opening Ceremony | <a class="links" href='https://www.youtube.com/watch?v=7LBNssLUDc0&ab_channel=FreetailHackers'>Youtube</a></div>
+                            <div class="blurb">Join us as we kick off our event with some general information and resources to guide you throughout the weekend.</div>
+
+                            <div class="schedule-time">
+                                9:15 am</div>
+                            <div class="schedule-label">What is a hackathon? | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">The What is a Hackathon workshop is where you can learn more about creating hackathon projects and build connections!</div>
+                        
+                            <div class="schedule-time">
+                                10:00 am</div>
+                            <div class="schedule-label">Intro to Git | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Learn how to use a system to keep track of your code changes and collaborate on software development. Please have <a class="links" href="https://desktop.github.com/">Github Desktop</a> downloaded beforehand!</div>
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Postman Workshop | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a>
+                            </div>
+                            <div class="blurb">Do you know what an API is? Come learn about what an API is and how we use APIs in our everyday lives, sponsored by Postman!</div>
+
+                            <div class="schedule-time">
+                                11:00 am</div>
+                            <div class="schedule-label">Python Beginner - Programming Basics | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">Let’s learn how to code in Python! Beginner friendly, assumes no prior coding experience :)</div>
+
+                            <div class="schedule-time">
+                                12:00 pm</div>
+                            <div class="schedule-label">Python Intermediate - Libraries for Python | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Learn more about Python-specific features and commonly used libraries!</div>
+
+                            <div class="schedule-time">
+                                1:00 pm</div>
+                            <div class="schedule-label">Python Advanced - ML with APIs in Python | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">In this workshop, we’ll take the techniques we’ve learned from the past two workshops and learn how to use libraries for two cutting edge tasks: Natural Language Processing (NLP) and Computer Vision (CV).</div>
+
+                            <div class="schedule-time">
+                                2:00 pm</div>
+                            <div class="schedule-label">Intro to Firebase | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">An introduction to getting familiar with and using Firebase to host a basic web app! Has a quick and easy setup.</div>
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Entrepreneurship ft. Professor McDermott | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Come hear from one of UT’s own engineering professors that is very experienced with starting companies and all things entrepreneurship!</div>
+
+                            <div class="schedule-time">
+                                3:00 pm</div>
+                            <div class="schedule-label">Intro to Databases | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">Fix an intergalactic faster than light spaceship and learn the fundamentals of SQL, MongoDB, and Neo4j</div>
+
+                            <div class="schedule-time">
+                                4:00 pm</div>
+                            <div class="schedule-label">Intro to Web Developement | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">Learn React, HTML, and CSS by building a todo list. These are useful technologies for building any website or web-based application.</div>
+
+                            <div class="schedule-time">
+                                5:00 pm</div>
+                            <div class="schedule-label">Intro to App Dev | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb"> Learn how to create an app in less than an hour, compatible with both Android and iPhone! We will be using React Native, be sure to have <a class="links" href="https://reactnative.dev/docs/environment-setup">Expo</a> and <a class="links" href="https://code.visualstudio.com/docs/setup/setup-overview">VS Code</a> (or any other IDE)  installed!</div>
+
+                            <div class="schedule-time">
+                                6:00 pm</div>
+                            <div class="schedule-label">Intro to AWS | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">A quick overview of Amazon Web Services and cloud computing in general. Come learn how to host a very basic website on AWS as well!</div>
+
+                            <div class="schedule-time">
+                                7:00 pm</div>
+                            <div class="schedule-label">Game Night | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Come join us for some chill online games!</div>
+                        </div>
+
+                        <div id="hackathon-schedule" class="schedule-grid">
+                            <div class="schedule-header">Start Time</div>
+                            <div class="schedule-header">Title</div>
+                            <div class="schedule-header" id="blurb">Blurb</div>
+
+                            <div class="schedule-time">
+                                9:00 am</div>
+                            <div class="schedule-label">Hacking begins</div>
+                            <div class="blurb">Begin working on your projects!</div>
+
+                            <div class="schedule-time">
+                                10:00 am</div>
+                            <div class="schedule-label">Ideation workshop | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">We will discuss our process for forming good hackathon/project ideas</div>
+
+                            <div class="schedule-time">
+                                11:00 am</div>
+                            <div class="schedule-label">How to make beautiful designs | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Aesthetics are an essential part of selling an idea. Learn tips on how to create stunning projects taught by Freetail’s very own creative team!</div>
+                            
+                            
+                            <div class="schedule-time">
+                                12:00 pm</div>
+                            <div class="schedule-label">Getting Started in the Tech Industry | <a class="links" href='https://utexas.zoom.us/my/pepe.room'>Pepe Room</a></div>
+                            <div class="blurb">Want to get into the tech industry but don’t know where to start? Come learn and ask questions about resources, advice, skills, and anything you’re curious about!</div>
+                            
+
+                            <div class="schedule-time">
+                                1:00 pm</div>
+                            <div class="schedule-label">Office Hours/Resume Review | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Feel free to hop in and get help with your project, resume, submission, or anything else</div>
+                            
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Diversity and Inclusion in STEM | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Let’s discuss diversity, ethics, and inclusion in tech!</div>
+                            
+
+                            <div class="schedule-time">
+                                2:00 pm</div>
+                            <div class="schedule-label">Office Hours/Resume Review | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Feel free to hop in and get help with your project, resume, submission, or anything else!</div>
+                            
+
+                            <div class="schedule-time">
+                                3:00 pm</div>
+                            <div class="schedule-label">Office Hours/Resume Review | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Feel free to hop in and get help with your project, resume, submission, or anything else!</div>
+                            
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Tech and Society ft. A4C (ACM for Change) | <a class="links" href='https://utexas.zoom.us/my/kermit.room'>Kermit Room</a></div>
+                            <div class="blurb">Tech and Society discusses and explores the different ways we as people in tech have the power to impact society, the role societal issues play in the context of tech culture, and how we can better equip ourselves to be impactful technologists within society.</div>
+                            
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Snack pickup @ GDC (UT Austin's Gates Dell Complex)</div>
+                            <div class="blurb">Come to the GDC and get a goodie bag!</div>
+                            
+
+                            <div class="schedule-time">
+                                4:00 pm</div>
+                            <div class="schedule-label">Office Hours/Resume Review | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Feel free to hop in and get help with your project or resume!</div>
+                            
+
+                            <div class="schedule-time">
+                                </div>
+                            <div class="schedule-label">Snack pickup @ GDC (UT Austin's Gates Dell Complex)</div>
+                            <div class="blurb">Come to the GDC and get a goodie bag!</div>
+                            
+
+                            <div class="schedule-time">
+                                5:00 pm</div>
+                            <div class="schedule-label">Office Hours/Resume Review | <a class="links" href='https://utexas.zoom.us/my/politoed.room'>Politoed Room</a></div>
+                            <div class="blurb">Feel free to hop in and get help with your project or resume!</div>
+                            
+
+                            <div class="schedule-time">
+                                6:00 pm</div>
+                            <div class="schedule-label">Hackathon Ends. Judging Begins</div>
+                            <div class="blurb">Submit your projects with a video to the Devpost by this time. Devpost and more information will be sent in the Discord.</div>
+                            
+
+                            <div class="schedule-time">
+                                9:00 pm</div>
+                            <div class="schedule-label">Closing Ceremony - <a class="links" href='https://www.youtube.com/c/FreetailHackers'>Youtube Channel</a></div>
+                            <div class="blurb"></div>
+                                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="info-slide">
+            <div class="heading parent-center" style="margin-bottom: 2%;">
+                Resources
+            </div>
+            <div class="normal-text parent-center" style="width: 70%; margin-left: 15%; display: inline-block;">
+                There are many resources we've prepared to help learn this weekend. The first is our <a class="links" href="https://freetailhackers.com/uhsg/">Ultimate Hackathon Starting Guide (UHSG)</a>. 
+                This was created by our teach and consists of tutorials, starter code, and links to more resources for the main technologies people use at hackathons.
+                It goes over common hackathon logistics, whether or not you should use a certain technology, and where to get started with your project.
+                The second resource is our <a class="links" href='https://www.youtube.com/c/FreetailHackers'>Youtube Channel</a> which contains all the workshops from our past year of events. 
+                If you don't see a topic you are interested in or just want to learn more about a certain area, feel free to browse around our channel and look for it.
+                Finally, all of the organizers and mentors will be active on Discord to support you. We are all here to see you learn and succeed. 
+                Don't hesistate to reach out to us if you are feeling uncertain or have any questions!
+                <img class="freetail-bats" draggable="false" src="assets/freetailBats.png">
+            </div>
+
+            <div class="heading parent-center" style="margin-bottom: 2%;">
+                Who are the Freetail Hackers?
+            </div>
+            <div class="normal-text parent-center" style="width: 70%; margin-left: 15%; display: inline-block;">
+                We're a group of UT Austin students who love organizing hackathons for college students.
+                We also love going to them. If you enjoy both of these, you should apply to our team when applications open in December!
+                Applications will be posted on our Facebook page. Need to reach out to us for any further questions or want to work with us for the next event?
+                Email us at hello@freetailhackers.com or visit our <a class="links" href="https://freetailhackers.com">website</a>!
+                <!-- <img class="freetail-bats" draggable="false" src="assets/freetailBats.png"> -->
+            </div>
+            
+            <div class="heading parent-center" style="margin-bottom: 2%;">
+                Inclusion
+            </div>
+            <div class="normal-text parent-center" style="width: 70%; margin-left: 15%; display: inline-block;">
+                As mentioned, the Learnathon is designed for everyone. In order to have a space that truly fosters growth, 
+                we require that all our attendees, mentors, and organizers are respectful of each other. 
+                To that end, all participants are expected to follow the 
+                <a class="links" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
+                to facilitate a safe space and positive hackathon experience for everyone!
+            </div>
+            <br/>
+            <div class="heading parent-center" style="margin-bottom: 2%;">
+                FAQ
+            </div>
+            <div class="fireflies">
+                <div id="firefly1"></div>
+                <div id="firefly2"></div>
+                <div id="firefly3"></div>
+                <div id="firefly4"></div>
+                <div id="firefly5"></div>
+                <div id="firefly6"></div>
+            </div>
+            <div class="two-column" style="position: absolute;">
+                <div class="left-column normal-text">
+                    <p class="question">How do teams work?</p>
+                    <p>Teams can be up to 4 members. If you don't have a team, don’t worry!  
+                        Joining a team of new friends is the best part of a hackathon. 
+                        Complete <a class="links" href="https://docs.google.com/forms/d/e/1FAIpQLSeot2aSr80DmjPmxD8Ifa-9fDQwgtbbIMFUluy2eVOOQrhC4Q/viewform">this form</a>
+                        by 4pm on Saturday, April 3rd and we will match you with a team based on your preferences which will be released by 6pm on Saturday, April 3rd.
+                    </p>
+
+                    <p class="question">How do I volunteer?</p>
+                    <p>We are in great of need of mentors to coach teams throughout the process, and anyone with tech experience is welcome to help out. 
+                        Fill out the mentor form above! If you have any other questions email us at hello@freetailhackers.com! 
+                    </p>
+
+                    <p class="question">How much money will this cost me?</p>
+                    <p>Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free. Freetail Hackers will provide all students with mentors, tech talks, and prizes!</p>
+                </div>
+                <div class="right-column normal-text">
+                    <p class="question">Any rules?</p>
+                    <p>All work must be done during the 12-hour period of the event. 
+                        You can't demo something you didn't build. Don't talk about Fight Club. 
+                        All attendees (hackers, supporters, mentors, volunteers, etc.) must abide by the MLH Code of Conduct.</p>
+                    
+                    <p class="question">When is the Learnathon?</p>
+                    <p>The Learnathon will be Saturday April 3rd, and the Hackathon will be Sunday April 4th.</p>
+                    
+                    <p class="question">When does registration close?</p>
+                    <p>Registration closes when the Learnathon starts! Because of the online setting, we want to open up the opportunity to as many people as possible. 
+                        However, we would love it if you could fill out the application as soon as possible to help us plan for the event :) </p>
+                    
+                    <p class="question">Will there be prizes?</p>
+                    <p>Yes! We plan to give prizes to the top placing team in each category. More information coming soon!
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            Made with &lt;3 in Austin
+        </footer>
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.3/paper-full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+    <script src="js/app.js "></script>
+
+</body>
+
+</html>
