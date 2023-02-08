@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="map.css">
+        <title>Hack For Humanity</title>
+        <script src="../index.js"></script>
+    </head>
+    <body> 
+        <div class="page-head">
+            <h1>FAQ</h1>
+        </div>
+        <div class="assets">
+            <div class="mountains"></div>
+            <div class="snow"></div>
+            <img class="top-penguin" src="../assets/penguinIcon.svg" />
+            <img class="middle-penguin" src="../assets/penguinIcon.svg" />
+            <img class="bottom-penguin" src="../assets/penguinIcon.svg" />
+        </div>
+        <div style = "
+        margin-top: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>How do teams work?</b>
+                    <br>
+                    Teams can be up to 3 members. If you don't have a team, don’t worry! Joining a team of new friends is the best part of a hackathon. We will have team matching available for everyone on the day of the event, but if you would like to message our channel and create a team beforehand, that's okay too! We will have a form to fill out and confirm team information.
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>When does registration close?</b>
+                    <br>
+                    Registration closes when the Hackathon starts! Because of the in-person setting, we want to open up the opportunity to as many people as possible, however do fill up spots on a first come first serve basis. We will open waitlists and allow for a limited number of walk-ins on the day of! We would love it if you could fill out the application as soon as possible to help us plan for the event :) 
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Will there be prizes and tracks?</b>
+                    <br>
+                    Yes! We plan to give prizes to the top placing team in each category. More information on this will be available <a style= "color: blue"href="https://freetailhackers.com/hack-for-humanity/info-site/pages/challenges.html">here</a>.
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Will there be food at the event?</b>
+                    <br>
+                    Yes! We will provide lunch to all registered attendees (mindful of dietary restrictions and accommodations based on the registration form). We will also be providing specialty snack items around dinner and have a profit-share with Gong Cha Boba from 4 - 8PM (mention Freetail Hackers) that is also a part of the event!
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Where will walk-in check-in be?</b>
+                    <br>
+                    It will be on the 3rd floor bridge of the Gates Dell Computer Science Building (GDC 3.100) 
+                </p>
+        </div>
+        
+        <div id="map-div" class="map">
+            <div id="challenge">
+                <img onclick="window.location.href='challenges.html'" id="imgINSIDE" src="../assets/map/challengesButton.svg" />
+            </div>
+            <div id="FAQ">
+                <img onclick="window.location.href='faq.html'" id="imgINSIDE" src="../assets/map/FAQButton.svg" />
+            </div>
+            <div id="home">
+                <img onclick="window.location.href='../index.html'" id="imgINSIDE" src="../assets/map/homeButton.svg" />
+            </div>
+            <div id="resources">
+                <img onclick="window.location.href='resources.html'" id="imgINSIDE" src="../assets/map/resourcesButton.svg" />
+            </div>
+            <div id="schedule"> 
+                <img onclick="window.location.href='schedule.html'" id="imgINSIDE" src="../assets/map/scheduleButton.svg" />
+            </div>
+        </div>
+        <div id="map-div-mobile" class="mapmobile">
+            <p  class="text" onclick="window.location.href='../index.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px; width: 70%;">
+                <b>Home</b>
+            </p>
+            <p  class="text" onclick="window.location.href='resources.html'" style="margin-bottom: 20px; left: 5vw;  text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Resources</b>
+            </p>
+            <p  class="text" onclick="window.location.href='schedule.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Schedule</b>
+            </p>
+            <p  class="text" onclick="window.location.href='faq.html'" style="margin-bottom: 40px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>FAQ</b>
+            </p>
+
+        </div>
+        <button class="map-button" onclick="pullDownSchedule()"></button>
+    </body>
+</html>

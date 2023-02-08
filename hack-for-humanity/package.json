@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "rellax": "^1.12.1"
+  }
+}

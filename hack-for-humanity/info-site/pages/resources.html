@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="map.css">
+        <title>Hack For Humanity</title>
+        <script src="../index.js"></script>
+    </head>
+    <body> 
+        <div class="page-head">
+            <h1>Resources</h1>
+        </div>
+        <div class="assets">
+            <div class="mountains"></div>
+            <div class="snow"></div>
+            <img class="top-penguin" src="../assets/penguinIcon.svg" />
+            <img class="middle-penguin" src="../assets/penguinIcon.svg" />
+            <img class="bottom-penguin" src="../assets/penguinIcon.svg" />
+            <div class="top-info-blurb">
+                <h1>Devpost</h1>
+                <ul>
+                    <a href="https://freetail-hackers-changeathon.devpost.com/?ref_feature=challenge&ref_medium=discover"><li>Change-a-thon 2021 (Spring Hackathon #2)</li></a>
+                    <a href="https://freetail-hackers-learnathon.devpost.com/?ref_feature=challenge&ref_medium=discover"><li>Learnathon 2021 (Spring Hackathon #1)</li></a>
+                    <a href="https://hacktx-2021.devpost.com/?ref_feature=challenge&ref_medium=discover"><li>HackTX 2021</li></a>
+                </ul>
+            </div>
+            <div class="middle-info-blurb">
+                <h1>Other Links</h1>
+                <ul>
+                    <a href="https://www.youtube.com/c/FreetailHackers"><li>Freetail YouTube</li></a>
+                    <a href="https://docs.google.com/document/d/1tf70PXudu2Pk9xfJw8Ro0ZeZiNTKQtL_0bqpZ3Dmfm0/view "><li>Judging Rubric</li></a>
+                    <a href="https://discord.gg/vJazyEnv"><li>Hackathon Discord</li></a>
+                </ul>
+            </div>
+            <div class="bottom-info-blurb">
+                <div class="emergency-contact">
+                    <h1>UTPD Contact Numbers</h1>
+                    <ul>
+                        <a><li>Emergency: 911</li></a>
+                        <a><li>Non-Emergency: 512-471-4441</li></a>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div id="map-div" class="map">
+            <div id="challenge">
+                <img onclick="window.location.href='challenges.html'" id="imgINSIDE" src="../assets/map/challengesButton.svg" />
+            </div>
+            <div id="FAQ">
+                <img onclick="window.location.href='faq.html'" id="imgINSIDE" src="../assets/map/FAQButton.svg" />
+            </div>
+            <div id="home">
+                <img onclick="window.location.href='../index.html'" id="imgINSIDE" src="../assets/map/homeButton.svg" />
+            </div>
+            <div id="resources">
+                <img onclick="window.location.href='resources.html'" id="imgINSIDE" src="../assets/map/resourcesButton.svg" />
+            </div>
+            <div id="schedule"> 
+                <img onclick="window.location.href='schedule.html'" id="imgINSIDE" src="../assets/map/scheduleButton.svg" />
+            </div>
+        </div>
+        <div id="map-div-mobile" class="mapmobile">
+            <p  class="text" onclick="window.location.href='../index.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px; width: 70%;">
+                <b>Home</b>
+            </p>
+            <p  class="text" onclick="window.location.href='challenges.html'" style="margin-bottom: 20px; left: 5vw;  text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Challenges</b>
+            </p>
+            <p  class="text" onclick="window.location.href='schedule.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Schedule</b>
+            </p>
+            <p  class="text" onclick="window.location.href='faq.html'" style="margin-bottom: 40px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>FAQ</b>
+            </p>
+
+        </div>
+        <button class="map-button" onclick="pullDownSchedule()"></button>
+    </body>
+</html>

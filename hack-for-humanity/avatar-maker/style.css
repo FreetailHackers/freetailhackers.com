@@ -1,0 +1,285 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.finish {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.save {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+
+img {
+  border: none;
+}
+
+.emptyImg {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+
+#base {
+  height: 200px;
+  margin-top: 50px;
+}
+
+
+.editContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgTag {
+  height: 50px;
+  width: 50px;
+}
+
+.delBtn {
+  
+}
+
+/* Outfits */
+.outfitBase {
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: auto;
+}
+
+.outfitSupp0 {
+  top: 126px;
+  height: 120px;
+}
+
+.outfitSupp1 {
+  top: 117px;
+  height: 112px;
+}
+
+.outfitSupp2 {
+  top: 135px;
+  height: 107px;
+}
+
+.outfitSupp3 {
+  top: 135px;
+  height: 111px;
+}
+
+.outfitSupp4 {
+  top: 144px;
+  height: 94px;
+}
+
+/* Headwear */
+.headwearBase {
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 92px;
+}
+
+.headwearSupp0 {
+  top: 99px;
+}
+
+.headwearSupp1 {
+  top: 117px;
+}
+
+/* Accessories */
+
+.accessoryBase {
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* Artist hat  */
+.accessorySupp0 {
+  width: 92px; 
+  top: 50px;
+}
+
+/* Winter hat  */
+.accessorySupp1 {
+  width: 110px; 
+  top: 10px;
+}
+
+/* Sensei & farmer hat */
+.accessorySupp2 {
+  width: 185px; 
+  top: 10px;
+}
+
+/* Chef hat  */
+.accessorySupp3 {
+  width: 160px; 
+  top: -38px;
+}
+
+/* Right hand mitten */
+.accessorySupp4 {
+  width: 50px;
+  top: 180px;
+}
+
+/* Ski */
+.accessorySupp5 {
+  width: 100px;
+  height: 100px;
+  top: 215px;
+}
+
+/* ski pole  */
+.accessorySupp6 {
+  width: 100px;
+  height: 100px;
+  top: 160px;
+}
+
+/* Clover */
+.accessorySupp7 {
+  width: 20px;
+  height: 20px;
+  top: 40px;
+}
+
+/* Left hand glove */
+.accessorySupp8 {
+  width: 50px;
+  top: 180px;
+}
+
+/* Love balloon  */
+.accessorySupp9 {
+  width: 60px;
+  top: 110px;
+}
+
+/* Artist paint and laptop */
+.accessorySupp10 {
+  width: 90px;
+  top: 150px;
+}
+
+/* Shovel */
+.accessorySupp11 {
+  width: 60px;
+  top: 110px;
+}
+
+/* Chef spoon */
+.accessorySupp12 {
+  width: 40px;
+  top: 120px;
+}
+
+/* Artist brush */
+.accessorySupp13 {
+  width: 100px;
+  height: 100px;
+  top: 120px;
+}
+
+/* Hacker sunglasses */
+.accessorySupp14 {
+  width: 120px;
+  height: 100px;
+  top: 65px;
+}
+
+/* Earmuffs */
+.accessorySupp15 {
+  width: 145px; 
+  top: 51px;
+}
+
+/* Ukraine flg */
+.accessorySupp17 {
+  width: 70px; 
+  top: 130px;
+}
+
+/* Winter scarf */
+.accessorySupp18 {
+  top: 130px;
+  width: 150px;
+}
+
+/* Sandals */
+.accessorySupp19 {
+  top: 237px;
+  width: 130px;
+}
+
+/* Carrot */
+.accessorySupp20 {
+  width: 65px;
+  height: 65px;
+  top: 135px;
+}
+
+/* Love headband */
+.accessorySupp16 {
+  width: 115px; 
+  top: 15px;
+}
+#exporting{
+  position: relative;
+}
+.temporary{
+  margin-top: -9px
+}
+#outfits{
+  margin-top:245px;
+  position: absolute;
+}
+#accessories{
+  margin-top:245px;
+  position: absolute;
+}
+#headwear{
+  margin-top:245px;
+  position: absolute;
+}
+
+#logo{
+  width: 300px;
+  padding-left: 10px;
+  padding-top: 10px;
+  align-items: center;
+}
+

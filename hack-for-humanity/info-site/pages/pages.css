@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ABeeZee;
+  src: url("../assets/fonts/ABeeZee-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-image: url("../assets/Sky.svg");
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.map-button {
+    position: fixed;
+    width: 121px;
+    height: 141px;
+    left: 45px; 
+    bottom: 45px;
+    background: url("../assets/map/map.svg") no-repeat center;
+    background-size: cover;
+    font-size: 25px;
+    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+}
+
+.map-button:hover { 
+    transform: scale(1.2);
+}
+
+.schedule {
+  margin-left: 10vh;
+  width: 88%;
+  height: 83vh;
+  display: grid;
+  grid-gap: 0.1vh;
+  grid-template-rows: [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+  grid-template-columns: [times] 0fr [track-start-start] 0.2fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.2fr [track-start2-end track-boba-start] 0.02fr [track-boba-start track-boba-end] 0.2fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
+}
+
+.schedule::after {
+  display: block;
+  content: "";
+  position: sticky;
+  top: 0;
+  grid-column: track-1 / -1;
+  grid-row: tracks;
+  z-index: 999;
+}
+
+.track-slot {
+  display: block;
+  position: sticky;
+  margin-top: 2.5vh;
+  z-index: 1000;
+  font-family: "ABeeZee";
+  font-weight: 200;
+  color: white;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.time-slot {
+  margin: -2.5vh;
+  font-size: 1.8vh;
+  font-weight: 200;
+  margin-left: -6vh;
+  z-index: 999;
+}
+  
+.title {
+  margin: -2.5vh;
+  font-size: 1.5vh;
+  line-height: 30px;
+}
+
+h2,
+.title,
+.timing {
+  font-family: "ABeeZee";
+  color: white;
+}
+
+.title,
+.timing {
+  position: relative;
+  text-align: center;
+  margin-top: 0.1vh;
+}
+
+.timing {
+  font-size: 1.3vh;
+  padding-top: 2vh;
+}
+
+span {
+  display: block;
+}
+
+.track,
+.important {
+  align-items: center;
+  color: #fff;
+  z-index: 900;
+  font-size: 1.4vh;
+  border-radius: 1.5vh;
+}
+.track {
+  background-color: rgba(29, 29, 29, 0.8);
+}
+.important {
+  background-color: rgba(40, 129, 70, 0.8);
+}
+
+.hiddenText {
+  position: absolute;
+  margin-top: -1.2vh;
+  font-size: 1.2vh;
+  display: none;
+  margin-left: -2.5vh;
+  font-family: "ABeeZee";
+}
+
+.track:hover {
+  align-items: center;
+  text-align: center;
+  transform: scale(1.2);
+}
+
+.track:hover .title {
+  margin-top: -0.5vh;
+  transform: scale(0.83);
+}
+
+.track:hover .timing {
+  margin-top: -1vh;
+  transform: scale(0.83);
+}
+
+.track:hover .hiddenText {
+  padding-top: 0.7vh;
+  display: inline-block;
+}
+
+.hide {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sixthScreen {
+  border-radius: 1vh;
+  position: absolute;
+  top: 120vh;
+  width: 75%;
+  height: 87%;
+  left: 12.5%;
+  background: rgba(0, 0, 0, 0.12);
+  transform: scale(1.25);
+  z-index: 200;
+}
+
+.page-head {
+  position: absolute;
+  font-family:"ABeeZee";
+  width: 100%;
+  font-size: 350%;
+  z-index: 20;
+  letter-spacing: 18px;
+  top: 25%;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.assets {
+  position: absolute;
+  width: 100%;
+  min-height: 4000px;
+  overflow: hidden;
+  /* border: 5px blue dotted; */
+}
+
+.mountains {
+  background-image: url("../assets/MountainView.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 1050px;
+  z-index: 2;
+}
+
+.snow {
+  position: absolute;
+  top: 1100px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/SnowPath.svg"), url("../assets/SnowBackground.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: top 500px center, top center;
+  z-index: 3;
+}
+
+.top-penguin {
+  position: absolute;
+  width: 17%;
+  height: auto;
+  z-index: 100;
+  right: 7%;
+  top: 80vh;
+}
+
+.middle-penguin {
+  position: absolute;
+  width: 17%;
+  height: auto;
+  z-index: 100;
+  left: 7%;
+  top: 195vh;
+}
+
+.bottom-penguin {
+  position: absolute;
+  width: 17%;
+  height: auto;
+  z-index: 100;
+  right: 7%;
+  top: 310vh;
+  bottom: 5;
+}
+
+.top-info-blurb {
+  background-image: url("../assets/InfoBlurb.svg");
+  background-image: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: absolute;
+  font-family: "ABeeZee";
+  width: 916px;
+  height: 428px;
+  z-index: 12;
+  top: 70vh;
+  left: 10%;
+  object-fit: contain;
+}
+
+.middle-info-blurb {
+  background-image: url("../assets/InfoBlurb.svg");
+  background-image: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 916px;
+  height: 428px;
+  z-index: 12;
+  top: 185vh;
+  right: 5%; 
+  font-family: "ABeeZee";
+}
+
+.bottom-info-blurb {
+  background-image: url("../assets/InfoBlurb.svg");
+  background-image: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 916px;
+  height: 428px;
+  z-index: 12;
+  top: 300vh;
+  left: 10%;
+  font-family: "ABeeZee";
+}
+
+.top-info-blurb h1, .middle-info-blurb h1, .bottom-info-blurb h1 {
+  position: absolute;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 50px;
+  height: auto;
+  /* border: 5px red dashed; */
+  transform: translateY(20%);
+}
+
+ul a {
+  margin: 50px;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.emergency-contact {
+  margin-top: 50px;
+}
+
+.top-inf0-blurb ul a:hover, .middle-info-blurb ul a:hover {
+  color: gray;
+}
+
+.friday{
+  display: none;
+  position: absolute;
+  top: 800px;
+  z-index: 1000;
+}
+.saturday{
+  display: none;
+  position: absolute;
+  top: 1600px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sixthScreen{
+    display: none;
+  }
+  .page-head {
+    font-size: 5vw;
+  }
+  .friday{
+    display: block;
+    position: absolute;
+    top: 850px;
+    z-index: 1000;
+  }
+  .saturday{
+    display: block;
+    position: absolute;
+    top: 1600px;
+    z-index: 1000;
+  }
+}

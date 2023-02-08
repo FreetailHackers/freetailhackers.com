@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: ABeeZee;
+    src: url(assets/fonts/ABeeZee-Regular.ttf);
+}
+
+body {
+    background-image: url("assets/Sky.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.assets {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.mountains {
+    position: absolute;
+    width: 1920px;
+    height: auto;
+    top: 30px;
+    left: 0px;
+    z-index: -1;
+    object-fit: contain;
+    overflow-x: hidden;
+}
+
+.hfh-logo {
+    position: absolute;
+    width: 458px;
+    height: 338px;
+    right: 73px;
+    top: 0px;
+    z-index: 1;
+}
+
+.skii-penguin {
+    position: relative;
+    width: 17%;
+    height: auto;
+    top: 45%;
+    left: 37%;
+    z-index: 100;
+}
+
+.home-blurb {
+    position: absolute;
+    z-index: 500;
+    height: 30%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.home-blurb a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-blurb h1 {
+    font-family: "ABeeZee";
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 230%;
+}
+
+.home-blurb:hover {
+    transform: scale(1.2);
+}
+
+#top.home-blurb {
+    top: 15%;
+    left: 8%;
+}
+
+#bottom.home-blurb {
+    right: 10%;
+    bottom: 3%;
+}
+
+#top.home-blurb h1 {
+    line-height: 150%;
+    transform: translate(-50%, -85%);
+}
+
+#bottom.home-blurb h1 {
+    line-height: 150%;
+    transform: translate(-50%, -57%);
+}
+
+.text{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    font-family: "ABeeZee";
+    font-weight: 200;
+    color: black;
+    border-radius: 40px;
+    z-index: 50;
+    width: 50vh;
+    padding: 2vh;
+    background: rgba(255, 255, 255, 0.885);
+}

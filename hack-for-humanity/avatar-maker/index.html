@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Avatar Maker</title>
+<!--   WIP -->
+<!--   <script src= "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+  </script> -->
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="buttons.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style = "background: lightblue url('Images/background.jpg') no-repeat fixed center;">
+  <img src="Images/LOGOhackforhumanity.svg" id="logo">
+  <div class="container">
+    
+    <div class="buttonsLeft buttons">
+      <button class="topButtonBack">❮</button>      
+      <button class="midButtonBack">❮</button>
+      <button class="lowButtonBack">❮</button>
+    </div>
+    
+    <div id="exporting">
+      <img src="Images/base.svg" id="base">
+    </div>
+
+    <div class="buttonsRight buttons">
+      <button class="topButtonForward">❯</button>
+      <button class="midButtonForward">❯</button>
+      <button class="lowButtonForward">❯</button>
+    </div>
+
+
+  </div>
+  
+  <div class="overlays">
+      <img id="headwear">
+      <img id="outfits">
+      <img id="accessories">
+  </div>
+
+
+
+
+  <div class="save">
+    <button class="saveBtn">Add</button>
+  </div>
+  <div class="save">
+    <button class="downloadBtn">Download</button>
+  </div>
+  
+  <div class = "temp">
+  </div>
+
+
+<!-- WIP -->
+<!--   <div class="finish">
+      <button class="finishButton" onclick="takeshot()">FINISH</button>
+  </div> -->
+
+  
+  <div id="output"></div>
+  <script src="dom-to-image.min.js"></script>
+  <script src="FileSaver.min.js"></script>
+  <script src="script.js"></script>
+  <script src="cssStyling.js"></script>
+<!--   WORK IN PROGRESS -->
+<!--   <script type="text/javascript">
+        function takeshot() {
+          console.log(document.querySelector('#exporting'))
+            let div =
+                document.querySelector('#exporting');
+            html2canvas(div).then(
+                function (canvas) {
+                    document
+                    .getElementById('output')
+                    .appendChild(canvas);
+                  console.log()
+                })
+        }
+    </script> -->
+</body>
+
+</html>

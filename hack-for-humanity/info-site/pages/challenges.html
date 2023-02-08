@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="map.css">
+        <title>Hack For Humanity</title>
+        <script src="../index.js"></script>
+    </head>
+    <body> 
+        <div class="page-head">
+            <h1>Challenges</h1>
+        </div>
+        <div class="assets">
+            <div class="mountains"></div>
+            <div class="snow"></div>
+            <img class="top-penguin" src="../assets/penguinIcon.svg" />
+            <img class="middle-penguin" src="../assets/penguinIcon.svg" />
+            <img class="bottom-penguin" src="../assets/penguinIcon.svg" />
+        </div>
+        <div style = "
+        margin-top: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Best Novice Hack</b>
+                    <br>
+                    New to hackathons? Feel like there is too much competition? We got you covered! This challenge is for teams where at least 2 members or, if you are competing solo and you are new to the scene. To qualify as a beginner, either Longhorn Hack for Humanity must be your first-ever hackathon **OR** you must have less than 1 year of programming experienc
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Best Overall Hack</b>
+                    <br>
+                    The ultimate winner of Longhorn Hack for Humanity!! This is the team that scores the highest on both Gavel and our <a style= "color: blue"href="https://docs.google.com/document/d/1tf70PXudu2Pk9xfJw8Ro0ZeZiNTKQtL_0bqpZ3Dmfm0/edit">judging rubric</a>. 
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Best Human Rights Hack</b>
+                    <br>
+                    In light of new policies and current events that threaten human rights worldwide, we’ve added this challenge geared towards a hack that best provides a solution or mechanism to improve the rights of an individual, group, or community. Some examples of sub-categories within this one include LGBTQ+ Rights, Accessibility, Security, Privacy, Tech Policy, and Healthcare Assistance, to name a few. We encourage you to deeply think about what it means to advocate for one or more of these causes and provide solutions that improve the quality of life of many. 
+                </p>
+        </div>
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+                <p  class="text"  style="text-align: left; font-size: 30px; line-height: 40px; margin-bottom: 15px; width: 70%;">
+                    <b>Best Humanitarian Aid Hack</b>
+                    <br>
+                    It’s not a surprise that the Russia-Ukraine crisis keeps everyone on their toes. Or, for that matter, any humanitarian crisis happening domestically or worldwide. In this challenge, we are looking for the best hack that provides humanitarian aid or assists in obtaining it. Sub-categories within this challenge include, but are not limited to: refugee and asylum assistance, addressing resource scarcity (food, water, health, access to medical care, education, shelter, etc.), war crises (Russia-Ukraine, Syria, Yemen, indigenous genocide, etc.), and tech for organizations that are trying to help (UNHCR, UNICEF, Red Cross, etc.). 
+                </p>
+        </div>
+        
+        <div id="map-div" class="map">
+            <div id="challenge">
+                <img onclick="window.location.href='challenges.html'" id="imgINSIDE" src="../assets/map/challengesButton.svg" />
+            </div>
+            <div id="FAQ">
+                <img onclick="window.location.href='faq.html'" id="imgINSIDE" src="../assets/map/FAQButton.svg" />
+            </div>
+            <div id="home">
+                <img onclick="window.location.href='../index.html'" id="imgINSIDE" src="../assets/map/homeButton.svg" />
+            </div>
+            <div id="resources">
+                <img onclick="window.location.href='resources.html'" id="imgINSIDE" src="../assets/map/resourcesButton.svg" />
+            </div>
+            <div id="schedule"> 
+                <img onclick="window.location.href='schedule.html'" id="imgINSIDE" src="../assets/map/scheduleButton.svg" />
+            </div>
+        </div>
+        <div id="map-div-mobile" class="mapmobile">
+            <p  class="text" onclick="window.location.href='../index.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px; width: 70%;">
+                <b>Home</b>
+            </p>
+            <p  class="text" onclick="window.location.href='resources.html'" style="margin-bottom: 20px; left: 5vw;  text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Resources</b>
+            </p>
+            <p  class="text" onclick="window.location.href='schedule.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>Schedule</b>
+            </p>
+            <p  class="text" onclick="window.location.href='faq.html'" style="margin-bottom: 40px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+                <b>FAQ</b>
+            </p>
+
+        </div>
+        <button class="map-button" onclick="pullDownSchedule()"></button>
+    </body>
+</html>

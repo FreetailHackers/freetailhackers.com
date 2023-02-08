@@ -1,0 +1,26 @@
+<svg width="1333" height="712" viewBox="0 0 1333 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_71_29)">
+<path d="M-158.83 356.408L584.141 -163.826L938.472 -70.1142C938.472 -70.1142 646.519 -10.8633 601.454 35.245C512.071 126.697 446.246 193.299 329.01 271.181C234.235 334.142 139.549 359.617 71.0532 406.636C-1.25051 456.268 -183.284 651.867 -183.284 651.867L-158.83 356.408Z" fill="url(#paint0_linear_71_29)" fill-opacity="0.8"/>
+<path d="M154.229 373.884L897.2 -146.349L1251.53 -52.6377C1251.53 -52.6377 1022.07 9.39125 977 55.4995C887.617 146.951 711.735 150.618 594.5 228.5C499.724 291.461 385.496 404.981 317 452C244.696 501.632 129.775 669.344 129.775 669.344L154.229 373.884Z" fill="url(#paint1_linear_71_29)" fill-opacity="0.8"/>
+<path d="M482.229 384.884L1225.2 -135.35L1274 -63.0009C1274 -63.0009 1118.06 51.3912 1073 97.4994C983.617 188.951 1035.24 229.118 918 306.999C823.224 369.96 715.496 364.981 647 411.999C574.696 461.632 523 528.999 523 528.999L482.229 384.884Z" fill="url(#paint2_linear_71_29)" fill-opacity="0.8"/>
+</g>
+<defs>
+<filter id="filter0_f_71_29" x="-198.284" y="-178.826" width="1487.28" height="863.17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_71_29"/>
+</filter>
+<linearGradient id="paint0_linear_71_29" x1="-356.98" y1="572.046" x2="-236.529" y2="744.069" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BFA7D" stop-opacity="0"/>
+<stop offset="0.942708" stop-color="#3A9744"/>
+</linearGradient>
+<linearGradient id="paint1_linear_71_29" x1="-43.9204" y1="589.523" x2="76.5307" y2="761.545" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BFA7D" stop-opacity="0"/>
+<stop offset="0.942708" stop-color="#3A9744"/>
+</linearGradient>
+<linearGradient id="paint2_linear_71_29" x1="284.08" y1="600.523" x2="404.531" y2="772.545" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BFA7D" stop-opacity="0"/>
+<stop offset="0.895833" stop-color="#3A9744"/>
+</linearGradient>
+</defs>
+</svg>

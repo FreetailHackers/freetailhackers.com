@@ -1,0 +1,25 @@
+@font-face {
+  font-family: ABeeZee;
+  src: url(./assets/fonts/ABeeZee-Regular.ttf);
+}
+
+button {
+  border: none;
+  background-color: #006adb;
+  transition: 0.3s;
+  font-size:38px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-family: ABeeZee;
+  color: white;
+}
+
+
+button:hover {
+  background-color: #00226a;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  transition: .5s;
+}

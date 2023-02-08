@@ -1,0 +1,21 @@
+- Integrate assets into penguin
+  - This may be a little tricky since a lot of the assets have unique positioning. Lots of conditionals...
+  - Also maybe call another function within the changeItem conditionals that see whether any adjustments must be changed to the pictures positioning
+
+- 
+
+- General styling(refer to figma file)
+
+- Export
+  - This will require us to create a new image with all the assets combined. Maybe just take a screenshot??
+
+
+
+Charles
+----------
+Finish the supplemtary classes for accessories
+
+^This will require changing css classes in js since the left css attribute will be relative to screen size(https://usefulangle.com/post/39/adding-css-to-stylesheet-with-javascript#:~:text=You%20can%20insert%20a%20new,rule%20to%20the%20stylesheet%20sheet.)
+
+Start change the js class rules(especially for the top attributes)
+Allow layering of assets. Give option to save. That will call a function which takes any of the current temporary assets on the screen and makes a copy of that element with the same exact classes etc. Will have some tagging associated with it like permenant. Then add it to a list on the actual HTML which allows them to delete it or not(which then calls another function...) Hopefully has a little image next to it which identifies which element the user is deleting.
