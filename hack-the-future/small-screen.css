@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.trishs-mobile-responsive-wire-child {
+  position: absolute;
+  top: 185px;
+  left: 0;
+  background-color: #15282f;
+  width: 320px;
+  height: 2575px;
+}
+
+.anyone-we-especially {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.anyone-we-especially-container {
+  position: absolute;
+  top: 2156px;
+  left: 38px;
+  line-height: 9.26px;
+  display: inline-block;
+  width: 244.97px;
+  height: 78.22px;
+}
+
+.group-icon,
+.sky-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 324px;
+  height: 392px;
+}
+
+.group-icon {
+  height: 3.83%;
+  width: 144.38%;
+  top: 2.68%;
+  right: -44.37%;
+  bottom: 93.49%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.scene1-icon {
+  position: absolute;
+  top: 456px;
+  left: 48.57px;
+  width: 222.7px;
+  height: 229.76px;
+  object-fit: cover;
+}
+
+.anyone-we-especially-container1 {
+  position: absolute;
+  top: 747.51px;
+  left: 37.43px;
+  line-height: 9.26px;
+  display: inline-block;
+  width: 244.97px;
+  height: 78.22px;
+}
+
+.scene2-icon {
+  position: absolute;
+  top: 887.49px;
+  left: 31.96px;
+  width: 255.92px;
+  height: 158.51px;
+  object-fit: cover;
+}
+
+.anyone-we-especially-container2 {
+  position: absolute;
+  top: 1126.28px;
+  left: 37.43px;
+  line-height: 9.26px;
+  display: inline-block;
+  width: 244.97px;
+  height: 78.22px;
+}
+
+.scene3-icon {
+  position: absolute;
+  top: 1266.26px;
+  left: 42.58px;
+  width: 234.67px;
+  height: 187.74px;
+  object-fit: cover;
+}
+
+.log1-icon,
+.log2-icon,
+.scene4-icon {
+  position: absolute;
+  top: 1512px;
+  left: 0;
+  width: 323.54px;
+  height: 77.97px;
+}
+
+.log2-icon,
+.scene4-icon {
+  top: 1840px;
+  height: 63.85px;
+}
+
+.scene4-icon {
+  top: 1912px;
+  left: 42px;
+  width: 236.45px;
+  height: 215.06px;
+  object-fit: cover;
+}
+
+.endpage-log-icon,
+.vine-icon {
+  position: absolute;
+  top: 2708px;
+  left: 0;
+  width: 323.54px;
+  height: 52.13px;
+}
+
+.vine-icon {
+  top: 2378px;
+  height: 73.14px;
+}
+
+.schedule,
+.sponsors {
+  position: absolute;
+  top: 2458px;
+  left: 110px;
+  font-size: var(--content-size);
+  line-height: 20px;
+  display: inline-block;
+  width: 101px;
+  height: 20px;
+}
+
+.schedule {
+  top: 1590px;
+  left: 108px;
+  width: 104px;
+}
+
+.canopy-icon {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  width: 324px;
+  height: 156px;
+}
+
+.layer-8-icon,
+.title-planets-icon {
+  position: absolute;
+  height: 12.19%;
+  width: 101.25%;
+  top: 0.47%;
+  right: -1.25%;
+  bottom: 87.34%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.layer-8-icon {
+  height: 2.46%;
+  width: 21.25%;
+  top: 6.88%;
+  right: 6.56%;
+  bottom: 90.65%;
+  left: 72.19%;
+}
+
+.trishs-mobile-responsive-wire {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2760px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--content);
+}
