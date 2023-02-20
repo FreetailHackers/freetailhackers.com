@@ -1,45 +1,52 @@
-:root {
-  /* fonts */
-  --content: Roboto;
-  --font-inter: Inter;
-
-  /* font sizes */
-  --content-size: 1rem;
-  --font-size-lg: 2rem;
-  --font-size-xl: 3rem;
-
-  /* Colors */
-  --color-white: #fff;
-  --color-skyblue: #80bee1;
-  --color-darkgray: #8c9f90;
-  --color-dimgray: #6a6149;
-  --color-darkslategray: #213723;
-  --color-black: #000;
-  --color-gainsboro: #d9d9d9;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-/* Media query for screens less than 960px */
-@media screen and (max-width: 960px) {
-  .adis-website-wireframe {
-    display: none;
-  }
+p, h2 {
+  color: white;
+  font-family:'Poppins';
 }
 
-/* Media query for screens greater than 960px */
-@media screen and (min-width: 960px) {
-  :root {
-    /* fonts */
-    --content: Roboto;
-
-    /* font sizes */
-    --font-size-sm: 10.29px;
-    --content-size: 16px;
-
-    /* Colors */
-    --color-white: #fff;
-  }
-  
-  .trishs-mobile-responsive-wire {
-    display: none;
-  }
+h3, .title {
+  font-family:'Poppins';
+  font-weight: bold;
+  font-size: 27px;
+  color:#BFDFDC;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
 }
+
+p {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.title-center {
+  font-family:'Poppins';
+  font-weight: bold;
+  font-size: 25px;
+  color:#BFDFDC;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+.faq-title {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:#a8dfff;
+  font-size: 20px;
+}
+
+

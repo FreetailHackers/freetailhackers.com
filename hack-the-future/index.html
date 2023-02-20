@@ -2,215 +2,333 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./large-screen.css" />
-    <link rel="stylesheet" href="./small-screen.css" />
-
+    <meta name="viewport" content="width=device-width" />
+    <title>Hack The Future</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:bold,regular|Space+Grotesk:bold,regular"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-    />
+    <link href="tailwind.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="adis-website-wireframe">
-      <img class="sky-icon" alt="" src="public/sky.svg" />
-      <div class="adis-website-wireframe-child"></div>
+    <div
+      class="grid grid-cols-1 justify-center min-h-min bg-cover bg-no-repeat bg-center"
+      style="background-image: url('public/sky.svg')"
+    >
       <img
-        class="title-planets-icon"
-        alt=""
         src="public/title-planets.svg"
-      /><img class="scene1-icon" alt="" src="public/scene1@2x.png" /><img
-        class="scene2-icon"
-        alt=""
-        src="public/scene2@2x.png"
-      /><img class="scene3-icon" alt="" src="public/scene3@2x.png" /><img
-        class="canopy-icon"
-        alt=""
+        class="w-screen mt-24 hidden md:block"
+      />
+      <img src="public/mobile-planets.svg" class="w-screen mt-20 md:hidden" />
+
+      <div
+        class="grid grid-cols-1 gap-5 mx-auto md:grid-cols-3 items-center -mt-20 sm:mt-0"
+      >
+        <a
+          target="_blank"
+          href="https://forms.gle/q1ndMdLPi8AsiL6j8"
+          class="z-20"
+          onmouseover="hover(1);"
+          onmouseout="unhover(1);"
+        >
+          <img src="public/mentor.png" class="w-36 lg:w-48 xl:w-64" id="one" />
+        </a>
+        <a
+          target="_blank"
+          href="https://rodeo.freetailhackers.com"
+          class="z-20"
+          onmouseover="hover(2);"
+          onmouseout="unhover(2);"
+        >
+          <img
+            src=" public/register.png"
+            class="w-36 lg:w-48 xl:w-64"
+            id="two"
+          />
+        </a>
+        <a
+          target="_blank"
+          href="https://rodeo.freetailhackers.com/schedule"
+          class="z-20"
+          onmouseover="hover(3);"
+          onmouseout="unhover(3);"
+        >
+          <img src="public/live.png" class="w-36 lg:w-48 xl:w-64" id="three" />
+        </a>
+      </div>
+
+      <img
         src="public/canopy.svg"
-      /><img class="log1-icon" alt="" src="public/log1.svg" /><img
-        class="log2-icon"
-        alt=""
-        src="public/log2.svg"
-      /><img class="vine-icon" alt="" src="public/vine.svg" /><img
-        class="endpage-log-icon"
-        alt=""
-        src="public/endpage-log.svg"
-      /><img class="scene4-icon" alt="" src="public/scene4@2x.png" />
-      <div class="website-sketch">
-        <img class="frame-icon" alt="" src="public/frame.svg" />
-        <div class="website-sketch-child"></div>
-        <div class="website-sketch-item"></div>
-        <div class="website-sketch-inner"></div>
-        <div class="button">button</div>
-        <div class="button1">button</div>
-        <div class="button2">button</div>
-        <img class="ellipse-icon" alt="" src="public/ellipse-1.svg" /><img
-          class="website-sketch-child1"
-          alt=""
-          src="public/ellipse-2.svg"
-        />
-        <div class="rectangle-div"></div>
-        <img
-          class="website-sketch-child2"
-          alt=""
-          src="public/ellipse-3.svg"
-        /><img
-          class="website-sketch-child3"
-          alt=""
-          src="public/ellipse-4.svg"
-        /><img
-          class="website-sketch-child4"
-          alt=""
-          src="public/ellipse-10.svg"
-        /><img
-          class="website-sketch-child5"
-          alt=""
-          src="public/ellipse-10.svg"
-        /><img
-          class="website-sketch-child6"
-          alt=""
-          src="public/ellipse-10.svg"
-        /><img
-          class="website-sketch-child7"
-          alt=""
-          src="public/ellipse-10.svg"
-        /><textarea class="the-learnathon-is-container">
-<p class="the-learnathon-is">The Learnathon is designed to help people from all backgrounds transform from tadpoles to code toads! On Saturday, April 3rd, we will have a day specifically designed for workshops. Most of these workshops will assume no prior knowledge and will be a space for anyone to learn. On Sunday, April 4th, we will have a hackathon that will give attendees a chance to use what they have learned to build a project. This can sound scary at first but we will give you the tools you need to go from no programming experience to building a project! Of course, the experience can be personalized as attendees have the option of attending just one or both of the two events.
-</p></textarea
-        ><img
-          class="website-sketch-child8"
-          alt=""
-          src="public/ellipse-4.svg"
-        /><img
-          class="website-sketch-child9"
-          alt=""
-          src="public/ellipse-4.svg"
-        /><img
-          class="website-sketch-child10"
-          alt=""
-          src="public/ellipse-4.svg"
-        /><img
-          class="website-sketch-child11"
-          alt=""
-          src="public/ellipse-9.svg"
-        /><img
-          class="website-sketch-child12"
-          alt=""
-          src="public/ellipse-8.svg"
-        />
-        <div class="a-learnathon-is">
-          A Learnathon is a virtual two-day event held on April 3rd and 4th by
-          Freetail Hackers for students of ALL backgrounds to learn about
-          technology. We want to create an inclusive space for anyone interested
-          in technology to learn and explore it. Attendees will get the chance
-          to learn new skills, meet other people going through the learning
-          journey, and create a project to showcase!
-        </div>
-        <div class="anyone-we-especially-container">
-          <p class="the-learnathon-is">
-            Anyone! We especially welcome and encourage students with little to
-            no technical background to join us. Even if you’re just vaguely
-            interested in what the buzz around tech is, we are happy and excited
-            to give you a glimpse into it. Additionally, all workshops will be
-            recorded unless noted otherwise, so don’t worry if you can’t make it
-            to a specific time; you can always watch afterwards.
+        class="w-screen z-10 -mt-16 sm:-mt-8 md:-mt-28 lg:-mt-64"
+      />
+    </div>
+
+    <div
+      class="grid grid-cols-1 bg-[#15282F] h-full place-items-center text-center -mt-16 md:-mt-20 lg:-mt-36"
+    >
+      <div
+        class="grid grid-cols-1 gap-5 mx-12 md:grid-cols-2 mt-20 items-center"
+      >
+        <img src="public/scene1.png" class="m-auto w-full md:w-4/5" />
+        <div class="whatDiv">
+          <h2 class="title">What is Hack the Future?</h2>
+          <p>
+            Hack the Future is an event held on March 3rd and 4th hosted by
+            <a href="https://freetailhackers.com/">Freetail Hackers!</a> Hack
+            The Future serves to promote innovative ideas, implementations, and
+            conversations centered around sustainability. This event aims to
+            create a safe space for people both inside and outside the tech
+            community to converse and collaborate to make lasting change and a
+            better environment for everyone.
           </p>
         </div>
-        <div class="anyone-we-especially-container1">
-          <p class="the-learnathon-is">
-            Anyone! We especially welcome and encourage students with little to
-            no technical background to join us. Even if you’re just vaguely
-            interested in what the buzz around tech is, we are happy and excited
-            to give you a glimpse into it. Additionally, all workshops will be
-            recorded unless noted otherwise, so don’t worry if you can’t make it
-            to a specific time; you can always watch afterwards.
+      </div>
+      <div
+        class="grid grid-cols-1 gap-5 mx-12 md:grid-cols-2 mt-20 items-center"
+      >
+        <img src="public/scene2.png" class="m-auto md:order-last w-full" />
+        <div class="whyDiv">
+          <h2 class="title">Why Come to Hack the Future?</h2>
+          <p>
+            If you've ever thought how the tech space could be used to be more
+            inclusive or better promote sustainability, Hack the Future is the
+            event for you! Hack the Future aims to help foster discussions and
+            ideas that will change the tech community for the better, and we
+            highly encourage and welcome all who want to make a lasting
+            difference! As always we'll have mentors to help answer any
+            questions for your projects, technical or otherwise!
           </p>
         </div>
-        <div class="scheldule">scheldule</div>
-        <div class="website-sketch-child13"></div>
-        <div class="website-sketch-child14"></div>
       </div>
-      <div class="a-learnathon-is1">
-        A Learnathon is a virtual two-day event held on April 3rd and 4th by
-        Freetail Hackers for students of ALL backgrounds to learn about
-        technology. We want to create an inclusive space for anyone interested
-        in technology to learn and explore it. Attendees will get the chance to
-        learn new skills, meet other people going through the learning journey,
-        and create a project to showcase!
+      <div
+        class="grid grid-cols-1 gap-5 mx-12 md:grid-cols-2 mt-20 items-center"
+      >
+        <img src="public/scene3.png" class="m-auto w-full" />
+        <div class="whocanDiv">
+          <h2 class="title">Who Can Attend?</h2>
+          <p>
+            The event is open to all UT Austin students! This includes
+            undergraduate and graduate students from all majors. All levels of
+            experience and all majors are welcome! Beginner? No problem! We'll
+            have mentors and workshops to help you develop new skills. All you
+            need to come in with is a desire to create. Interested in learning
+            something new? We'll have plenty of people to help teach you how to
+            make an impact right from your own desk! Check out our beginner
+            hackathon starting guide here!
+          </p>
+        </div>
       </div>
-      <div class="anyone-we-especially-container2">
-        <p class="the-learnathon-is">
-          Anyone! We especially welcome and encourage students with little to no
-          technical background to join us. Even if you’re just vaguely
-          interested in what the buzz around tech is, we are happy and excited
-          to give you a glimpse into it. Additionally, all workshops will be
-          recorded unless noted otherwise, so don’t worry if you can’t make it
-          to a specific time; you can always watch afterwards.
-        </p>
+      <img src="public/log1.svg" class="w-screen mt-5" />
+      <div class="schedule">
+        <h2 class="title-center mb-8">Schedule</h2>
+        <div class="schedule">
+          <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-fit">
+            <div class="Friday w-fit md:mr-5">
+              <h3 class="text-center text-[20px] text-[#a8dfff]">Friday</h3>
+              <p class="text-center">5:00 - 6:00pm | Opening Ceremony</p>
+              <p class="text-center">6:00pm | Hacking Starts!</p>
+              <p class="text-center">6:00 - 10:00pm | Gong Cha Profit Share</p>
+            </div>
+            <div class="Saturday w-fit md:ml-5">
+              <h3 class="text-center text-[20px] text-[#a8dfff]">Saturday</h3>
+              <p class="text-center">12:00 - 2:00pm | Lunch: Kismet Cafe</p>
+              <p class="text-center">5:00 - 6:30pm | Dinner: Baguette House</p>
+              <p class="text-center">5:00pm | Hacking Ends!</p>
+              <p class="text-center">6:30 - 8:00pm | Judging</p>
+              <p class="text-center">8:30 - 9:30pm | Closing Ceremony</p>
+            </div>
+          </div>
+          <p class="text-center mt-10 col-span-2">
+            More detailed schedule can be found
+            <a href="https://rodeo.freetailhackers.com/schedule" target="_blank"
+              >here</a
+            >!
+          </p>
+        </div>
+        <img src="public/log2.svg" class="w-screen mt-5" />
+        <div
+          class="grid grid-cols-1 gap-5 mx-12 md:grid-cols-2 mt-10 items-center"
+        >
+          <img src="public/scene4.png" class="m-auto w-full" />
+          <div class="grid grid-cols-1">
+            <div class="inclusion">
+              <h2 class="title">Inclusion</h2>
+              <p>
+                As mentioned, Hack the Future is designed for everyone. In order
+                to have a space that truly fosters growth, we require that all
+                our attendees, mentors, and organizers are respectful of each
+                other. To that end, all participants are expected to follow the
+                <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  >MLH Code of Conduct</a
+                >
+                to facilitate a safe space and positive hackathon experience for
+                everyone!
+              </p>
+            </div>
+            <div class="whoDiv mt-8">
+              <h2 class="title">Who are the Freetail Hackers?</h2>
+              <p>
+                We're a group of UT Austin students who love organizing
+                hackathons for college students. We also love going to them. If
+                you enjoy both of these, you should apply to our team when
+                applications open in Fall or Spring! Applications will be posted
+                on our Instagram (<a
+                  href="https://www.instagram.com/freetailhackers/"
+                  >@FreetailHackers</a
+                >). Need to reach out to us for any further questions or want to
+                work with us for the next event? Email us at
+                <a href="mailto:hello@freetailhackers.com"
+                  >hello@freetailhackers.com</a
+                >
+                or visit our website!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="public/vine.svg" class="w-screen mt-5" />
+        <h2 class="title-center">FAQ</h2>
+        <div
+          class="faq grid grid-cols-1 gap-5 mx-12 md:grid-cols-2 mt-10 items-top"
+        >
+          <div>
+            <h2 class="faq-title mb-3">How do teams work?</h2>
+            <p class="mb-3">
+              Teams can be up to 4 members. If you don't have a team, don't
+              worry! Joining a team of new friends is the best part of a
+              hackathon. We will have team matching available for everyone on
+              the day of the event, but if you would like to message our channel
+              and create a team beforehand, that's okay too! We will have a form
+              to fill out and confirm team information.
+            </p>
+            <h2 class="faq-title mb-3">How much money will this cost me?</h2>
+            <p class="mb-3">
+              Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free!!! Freetail
+              Hackers will provide all attendees workshops, food, tech talks,
+              fun events, and prizes at no cost to you!!
+            </p>
+            <h2 class="faq-title mb-3">Any Rules?</h2>
+            <p class="mb-3">
+              All work must be done during the 24-hour period of the event. You
+              can't demo something you didn't build. All attendees (hackers,
+              supporters, mentors, volunteers, etc.) must abide by the
+              <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                >MLH Code of Conduct</a
+              >.
+            </p>
+            <h2 class="faq-title mb-3">When is Hack the Future?</h2>
+            <p class="mb-3">
+              Friday, March 3rd - Saturday, March 4th. Opening Ceremony will be
+              on March 3rd at 5PM at the Computer Science Gates Dell Complex
+              (GDC) in the lecture hall 2.216.
+            </p>
+            <h2 class="faq-title mb-3">When does registration close?</h2>
+            <p class="mb-3">
+              Registration closes when the Hackathon starts! Because of the
+              in-person setting, we want to open up the opportunity to have as
+              many people as possible, however, we do fill up spots on a first
+              come first serve basis. We will open waitlists and allow for a
+              limited number of walk-ins on the day of! We would love it if you
+              could fill out the application as soon as possible to help us plan
+              for the event. :)
+            </p>
+            <h2 class="faq-title mb-3">How do I volunteer?</h2>
+            <p class="mb-3">
+              We are in great of need of mentors to coach teams throughout the
+              process, and anyone with tech experience is welcome to help out.
+              Fill out the mentor form above! If you have any other questions,
+              email us at hello@freetailhackers.com!
+            </p>
+          </div>
+          <div>
+            <h2 class="faq-title mb-3">Where will walk-in / check-in be?</h2>
+            <p class="mb-3">
+              It will be in the atrium of the Gates Dell Computer Science
+              Building.
+            </p>
+            <h2 class="faq-title mb-3">Will there be prizes?</h2>
+            <p class="mb-3">
+              Yes! We plan to give prizes to the top placing team in each
+              category. More information on this coming soon!
+            </p>
+            <h2 class="faq-title mb-3">Will there be food at the event?</h2>
+            <p class="mb-3">
+              Yes! We will provide lunch and dinner to all registered attendees
+              (mindful of dietary restrictions and accommodations based on the
+              registration form). We will also be having a profit share with
+              Gong Cha on Friday from 6 - 10pm (mention Freetail Hackers) which
+              is also part of the event!
+            </p>
+
+            <h2 class="faq-title mb-3">
+              Can I attend any of the events or workshops virtually?
+            </h2>
+            <p class="mb-3">
+              No, this is a completely in-person hackathon. However, we will
+              make workshop recordings available later on our Youtube Channel!
+            </p>
+            <h2 class="faq-title mb-3">
+              How can I get access to the Discord Server and be up-to date on
+              everything that is happening?
+            </h2>
+            <p class="mb-3">
+              We will send a link to the server (via email) within a week
+              leading up to the event! Be on the lookout for an email on the
+              account that you registered for the event. All our announcements
+              will be available on this server, in-person screens, and on our
+              day-of-site which will be available as soon as the hackathon
+              begins!
+            </p>
+            <h2 class="faq-title mb-3">I am a mentor, what should I expect?</h2>
+            <p class="mb-3">
+              We thank you for taking the time to guide our students in
+              technical and non-technical aspects to help them design,
+              implement, present, and think about their projects! You do not
+              need any prior programming knowledge to mentor. We do not require
+              that you stay on-call or be available throughout the entire
+              hackathon, but at least contribute 2 hours at your flexibility and
+              help students at either the mentor lounge, office hours or through
+              the discord server. We will be providing all mentors with lunch,
+              dinner, snacks, a complimentary boba drink, and the opportunity to
+              interact with students through games, workshops, or other events!
+            </p>
+          </div>
+        </div>
+        <img src="public/endpage_log.svg" class="w-screen mt-24" />
       </div>
-      <div class="anyone-we-especially-container3">
-        <p class="the-learnathon-is">
-          Anyone! We especially welcome and encourage students with little to no
-          technical background to join us. Even if you’re just vaguely
-          interested in what the buzz around tech is, we are happy and excited
-          to give you a glimpse into it. Additionally, all workshops will be
-          recorded unless noted otherwise, so don’t worry if you can’t make it
-          to a specific time; you can always watch afterwards.
-        </p>
-      </div>
-      <div class="scheldule1">scheldule</div>
     </div>
-    <div class="trishs-mobile-responsive-wire">
-      <div class="trishs-mobile-responsive-wire-child"></div>
-      <div class="anyone-we-especially-container">
-        <p class="anyone-we-especially">
-          Anyone! We especially welcome and encourage students with little to no
-          technical background to join us. Even if you’re just vaguely
-          interested in what the buzz around tech is, we are happy and excited
-          to give you a glimpse into it. Additionally, all workshops will be
-          recorded unless noted otherwise, so don’t worry if you can’t make it
-          to a specific time; you can always watch afterwards.
-        </p>
-      </div>
-      <img class="sky-icon" alt="" src="public/sky.svg" /><img class="group-icon" alt="" src="public/group.svg" /><img
-        class="scene1-icon" alt="" src="public/scene1@2x.png" />
-      <div class="anyone-we-especially-container1">
-        <p class="anyone-we-especially">
-          Anyone! We especially welcome and encourage students with little to no
-          technical background to join us. Even if you’re just vaguely
-          interested in what the buzz around tech is, we are happy and excited
-          to give you a glimpse into it. Additionally, all workshops will be
-          recorded unless noted otherwise, so don’t worry if you can’t make it
-          to a specific time; you can always watch afterwards.
-        </p>
-      </div>
-      <img class="scene2-icon" alt="" src="public/scene2@2x.png" />
-      <div class="anyone-we-especially-container2">
-        <p class="anyone-we-especially">
-          Anyone! We especially welcome and encourage students with little to no
-          technical background to join us. Even if you’re just vaguely
-          interested in what the buzz around tech is, we are happy and excited
-          to give you a glimpse into it. Additionally, all workshops will be
-          recorded unless noted otherwise, so don’t worry if you can’t make it
-          to a specific time; you can always watch afterwards.
-        </p>
-      </div>
-      <img class="scene3-icon" alt="" src="public/scene3@2x.png" /><img class="log1-icon" alt=""
-        src="public/log1.svg" /><img class="log2-icon" alt="" src="public/log2.svg" /><img class="scene4-icon" alt=""
-        src="public/scene4@2x.png" /><img class="endpage-log-icon" alt="" src="public/endpage-log.svg" /><img
-        class="vine-icon" alt="" src="public/vine.svg" />
-      <div class="sponsors">
-        <p class="anyone-we-especially">SPONSORS</p>
-      </div>
-      <div class="schedule">SCHEDULE</div>
-      <img class="canopy-icon" alt="" src="public/canopy.svg" /><img class="title-planets-icon" alt=""
-        src="public/title-planets.svg" /><img class="layer-8-icon" alt="" src="public/layer-8.svg" />
-    </div>
+    <script>
+      function hover(num) {
+        if (num === 1) {
+          document
+            .querySelector("#one")
+            .setAttribute("src", "public/mentor-hover.png");
+        } else if (num === 2) {
+          document
+            .querySelector("#two")
+            .setAttribute("src", "public/register-hover.png");
+        } else {
+          document
+            .querySelector("#three")
+            .setAttribute("src", "public/live-hover.png");
+        }
+      }
+      function unhover(num) {
+        if (num === 1) {
+          document
+            .querySelector("#one")
+            .setAttribute("src", "public/mentor.png");
+        } else if (num === 2) {
+          document
+            .querySelector("#two")
+            .setAttribute("src", "public/register.png");
+        } else {
+          document
+            .querySelector("#three")
+            .setAttribute("src", "public/live.png");
+        }
+      }
+    </script>
   </body>
 </html>
