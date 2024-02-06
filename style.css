@@ -15,13 +15,6 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
-
-  .square-image {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-
 p {
   color: #fbfffe;
   font-family: Avenir;
