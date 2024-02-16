@@ -67,7 +67,7 @@ a {
 
 .navbar {
   display: flex;
-  height: 64px;
+  height: 32px;
   padding: 1% 0;
   position: fixed;
   top: 0;
