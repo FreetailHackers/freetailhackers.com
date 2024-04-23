@@ -579,4 +579,79 @@ button {
       .person p {
         font-size: 1.0em; } }
 
+
+.alumTitle {
+  text-align: center;
+  font-size: 70px;
+}
+
+.alumni-card {
+  background-color: -webkit-linear-gradient(top left, #471bae, #db935f);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 150px;
+  height: 200px;
+  font-size: 12px;
+}
+
+.alumni-card h3, .alumni-card p {
+  margin: 10px 0;
+}
+
+.alumni-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+  justify-content: center; /* Center the cards within the container */
+  max-height: 600px; /* Set a max height for the scrolling area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional: Adds padding inside the container */
+  flex: 1 1 80%;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+#filters {
+  padding-right: 20px;
+  max-width: 20%;
+}
+.filter-btn {
+  display: inline-block;
+  padding: 8px;
+  margin: 5px;
+  background-color: #D9D9D9;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  background-color: #8c548c;
+  /* 
+  background-color: #007BFF;
+  color: white;*/
+}
+
+#resetFilters {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #D9D9D9;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#resetFilters:hover {
+  background-color: #da190b; /* Darker red on hover */
+}
+
         
