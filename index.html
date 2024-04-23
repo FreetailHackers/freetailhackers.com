@@ -1,480 +1,520 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="theme-color" content="#1b1b1e">
-        <title>Freetail Hackers</title>
-        <link rel="icon" type="image/x-icon" href="img/assets/favicon.ico"/>
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <script src="index.js"></script>
-        <meta name="description" content="Freetail Hackers is an organization focused on bringing students who are passionate about technology together to build cool tech, learn new skills, and become involved in the hackathon and tech communities. We put on HackTX, an annual hackathon that brings students from all over the country to build new technology.">
-        <meta name="og:title" content="Freetail Hackers">
-        <meta name="og:description" content="Freetail Hackers is an organization focused on bringing students who are passionate about technology together to build cool tech, learn new skills, and become involved in the hackathon and tech communities. We put on HackTX, an annual hackathon that brings students from all over the country to build new technology.">
-        <meta name="og:image" content="https://freetailhackers.com/img/assets/freetailLogo.png">
-        <link rel="preload" href="img/assets/uhsgButtonHover.png" as="image">
-        <link rel="preload" href="img/assets/SponsorUsButton(HOVER).png" as="image">
-    </head>
-    <body>
-        <section id="splash">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/assets/freetailLogo.png" height="100%" width="auto"/>
-                </div>
-                <div class="toggle">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <div class="options">
-                    <a href="#">HOME</a>
-                    <a href="#about">ABOUT US</a>
-                    <a href="#hackathons">HACKATHONS</a>
-                    <a href="#sponsor">SPONSOR</a>
-                    <a href="#family">OUR TEAM</a>
-                    <a href="#contact">CONTACT</a>
-                </div>
-            </div>
-            <div id="title">
-                <img src="img/assets/freeTailTitleBATS.gif" width="100%"/>
-            </div>
-        </section>
 
-        <section id="about">
-            <div id="about-container">
-                <div id="aboutDescription">
-                    <img src="img/headers/AboutUs.png" width="100%"/>
-                    <p>Freetail Hackers is an organization focused on bringing students who are passionate about technology together to build cool tech, learn new skills, and become involved in the hackathon and tech communities. We put on HackTX, an annual hackathon that brings students from all over the country to build new technology.</p>
-                    <img id="skyline"src="img/assets/skyline.png" width="100%"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alumni.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1b1b1e">
+    <title>Freetail Hackers</title>
+    <link rel="icon" type="image/x-icon" href="img/assets/favicon.ico" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+    <meta name="description"
+        content="Freetail Hackers is an organization focused on bringing students who are passionate about technology together to build cool tech, learn new skills, and become involved in the hackathon and tech communities. We put on HackTX, an annual hackathon that brings students from all over the country to build new technology.">
+    <meta name="og:title" content="Freetail Hackers">
+    <meta name="og:description"
+        content="Freetail Hackers is an organization focused on bringing students who are passionate about technology together to build cool tech, learn new skills, and become involved in the hackathon and tech communities. We put on HackTX, an annual hackathon that brings students from all over the country to build new technology.">
+    <meta name="og:image" content="https://freetailhackers.com/img/assets/freetailLogo.png">
+    <link rel="preload" href="img/assets/uhsgButtonHover.png" as="image">
+    <link rel="preload" href="img/assets/SponsorUsButton(HOVER).png" as="image">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+<body>
+    <section id="splash">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/assets/freetailLogo.png" height="100%" width="auto" />
+            </div>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="options">
+                <a href="#">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#hackathons">HACKATHONS</a>
+                <a href="#sponsor">SPONSOR</a>
+                <a href="#family">OUR TEAM</a>
+                <a href="#alumni">ALUMNI</a>
+                <a href="#contact">CONTACT</a>
+
+            </div>
+        </div>
+        <div id="title">
+            <img src="img/assets/freeTailTitleBATS.gif" width="100%" />
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="about-container">
+            <div id="aboutDescription">
+                <img src="img/headers/AboutUs.png" width="100%" />
+                <p>Freetail Hackers is an organization focused on bringing students who are passionate about technology
+                    together to build cool tech, learn new skills, and become involved in the hackathon and tech
+                    communities. We put on HackTX, an annual hackathon that brings students from all over the country to
+                    build new technology.</p>
+                <img id="skyline" src="img/assets/skyline.png" width="100%" />
+            </div>
+            <div id="familyPhoto">
+                <img src="img/assets/familyPhoto.jpg" width="100%" />
+            </div>
+        </div>
+    </section>
+
+
+    <section id="uhsg">
+        <img src="img/assets/startingGuideSlide.png" width="100%" height="100%" />
+        <a href="https://uhsg.freetailhackers.com">
+            <div id="uhsgbutton"></div>
+        </a>
+    </section>
+    <section id="hackathons">
+        <div id="hackathons-container">
+            <div id="hackathon-title">
+                <img src="img/headers/Hackathons.png" width="100%" />
+            </div>
+            <p>A hackathon is a space for students of any major to come together and create any technical project. They
+                are a space to learn, to meet others, and to create. We design our hackathons to be beginner friendly
+                and will have mentors and workshops to guide you!</p>
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>SPRING 2024</h4>
+                    <a href="https://freetailhackers.com/formula-hacks"><img src="img/logos/formula-hacks.png"
+                            width="100%" style="border-radius: 25px;" /></a>
                 </div>
-                <div id="familyPhoto">
-                    <img src="img/assets/familyPhoto.jpg" width="100%"/>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2023</h4>
+                    <a href="https://hacktx.com"><img src="img/logos/hacktx23.png" width="100%"></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2023</h4>
+                    <a href="https://freetailhackers.com/hack-the-future"><img src="img/logos/hack-the-future.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2022</h4>
+                    <a href="https://hacktx.com/22"><img src="img/logos/hacktx22.png" width="100%"></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2022</h4>
+                    <a href="https://freetailhackers.com/hack-for-humanity/"><img src="img/logos/hack22S.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2021</h4>
+                    <a href="https://hacktx.com/21"><img src="img/logos/hacktx21.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2021</h4>
+                    <a href="https://freetailhackers.com/changeathon"><img src="img/logos/changeAthon.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>SPRING 2021</h4>
+                    <a href="https://freetailhackers.com/learnathon"><img src="img/logos/learnAthon.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2020</h4>
+                    <a href="https://hacktx.com/20"><img src="img/logos/hacktxButton.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SUMMER 2020</h4>
+                    <a href="https://freetailhackers.com/summerhacks"><img src="img/logos/summerhacksButton.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>SPRING 2020</h4>
+                    <a href="https://freetailhackers.com/leap-hacks"><img src="img/logos/LeapHacksButton.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2019</h4>
+                    <a href="https://hacktx.com/19"><img src="img/logos/hacktx19.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2019</h4>
+                    <a href="https://freetailhackers.com/hack-together/"><img src="img/logos/hacktogether.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2018</h4>
+                    <a href="https://hacktx.com/18"><img src="img/logos/hacktx18.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2018</h4>
+                    <a href="https://freetailhackers.com/wholesome-hacks/"><img src="img/logos/wholesomehacks.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2017</h4>
+                    <a href="https://hacktx.com/17"><img src="img/logos/hacktx17.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2017</h4>
+                    <a href="https://freetailhackers.com/music-hacks"><img src="img/logos/musichacks.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+            <img src="img/assets/hackathonSeperationBars.png" width="100%" />
+            <div class="yearRow">
+                <div class="hackathon">
+                    <h4>FALL 2016</h4>
+                    <a href="https://hacktx.com/16/"><img src="img/logos/hacktx16.png" width="100%" /></a>
+                </div>
+                <div class="hackathon">
+                    <h4>SPRING 2016</h4>
+                    <a href="https://freetailhackers.com/design-hacks"><img src="img/logos/designhacks.png"
+                            width="100%" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="supersection">
+        <section id="sponsor" class="infoSlide">
+            <img class="centered" src="img/headers/Sponsor(title).png" height="100px" />
+            <div id="sponsorContainer">
+                <div id="laptopLeft">
+                    <img src="img/assets/laptopGraphic(left).png" width="100%" />
+                </div>
+                <div id="sponsorInformation">
+                    <p>Interested in sponsoring us? We'd love to have you come sponsor one of our hackathons and
+                        interact with all of our attendees! We provide benefits including social media shoutouts, resume
+                        books, sponsored challenges, tech talks/workshops, and much more.</p>
+                    <p class="smallText">P.S. Ask about our new startup and year-long sponsorship tiers!</p>
+                    <a href="mailto:corporate@freetailhackers.com" id="sponsorButtonLink">
+                        <button id="sponsorButton"></button>
+                    </a>
+                </div>
+                <div id="laptopRight">
+                    <img src="img/assets/laptopGraphic(right).png" width="100%" />
                 </div>
             </div>
         </section>
+        <section id="family" class="infoSlide">
+            <img class="desktop" src="img/headers/freetailFamily(title).png" width="100%" />
+            <img class="mobile" src="img/headers/freetailFamily(title) mobile.png" width="100%" />
+            <div id="leaders">
+                <div class="heading">
+                    <p>LEADERSHIP</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p class="teamName">CO-LEAD</p>
+                        <img src="img/ppl/sid.jpg" width="100%" />
+                        <p><a href="https://www.sidsabhnani.com" target="_blank">Sid Sabhnani</a></p>
+                    </div>
+                    <div class="person">
+                        <p class="teamName">CO-LEAD</p>
+                        <img src="img/ppl/nihita.jpg" width="100%" />
+                        <p><a href="https://www.linkedin.com/in/nihita-sarma/" target="_blank">Nihita Sarma</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p class="teamName">CORPORATE</p>
+                        <img src="img/ppl/marcuez.jpg" width="100%" />
+                        <p>Marcuez Lard</p>
+                    </div>
+                    <div class="person">
+                        <p class="teamName">CREATIVE</p>
+                        <img src="img/ppl/daniela.jpg" width="100%" />
+                        <p><a href="https://www.linkedin.com/in/daniela-a-lozano/" target="_blank">Daniela Lozano</a>
+                        </p>
+                    </div>
+                    <div class="person">
+                        <p class="teamName">LOGISTICS</p>
+                        <img src="img/ppl/vibha.jpg" width="100%" />
+                        <p><a href="https://www.linkedin.com/in/vibha-k" target="_blank">Vibha Kolathaya</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p class="teamName">OUTREACH</p>
+                        <img src="img/ppl/paula.jpg" width="100%" />
+                        <p><a href="https://www.linkedin.com/in/paula-botello-842661270" target="_blank">Paula
+                                Botello</a></p>
 
-
-        <section id="uhsg">
-            <img src="img/assets/startingGuideSlide.png" width="100%" height="100%"/>
-            <a href="https://uhsg.freetailhackers.com">
-                <div id="uhsgbutton"></div>
-            </a>
-        </section>
-        <section id="hackathons">
-            <div id="hackathons-container">
-                <div id="hackathon-title">
-                    <img src="img/headers/Hackathons.png" width="100%"/>
-                </div>
-                <p>A hackathon is a space for students of any major to come together and create any technical project. They are a space to learn, to meet others, and to create. We design our hackathons to be beginner friendly and will have mentors and workshops to guide you!</p>
-                <div class="yearRow">
-					<div class="hackathon">
-                        <h4>SPRING 2024</h4>
-                        <a href="https://freetailhackers.com/formula-hacks"><img src="img/logos/formula-hacks.png" width="100%" style="border-radius: 25px;"/></a>
+                    </div>
+                    <div class="person">
+                        <p class="teamName">TECH</p>
+                        <img src="img/ppl/luis.jpg" width="100%" />
+                        <p><a href="https://qyuo.dev/" target="_blank">Luis Pabon</a></p>
+                    </div>
+                    <div class="person">
+                        <p class="teamName">EVENTUM</p>
+                        <img src="img/ppl/namish.jpg" width="100%" />
+                        <p><a href="https://www.linkedin.com/in/namish-kukreja/" target="_blank">Namish Kukreja</a></p>
                     </div>
                 </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2023</h4>
-                        <a href="https://hacktx.com"><img src="img/logos/hacktx23.png" width="100%"></a>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>CORPORATE</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/zayaan-rahman" target="_blank">Zayaan Rahman</a></p>
                     </div>
-					<div class="hackathon">
-                        <h4>SPRING 2023</h4>
-                        <a href="https://freetailhackers.com/hack-the-future"><img src="img/logos/hack-the-future.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/kbhargavautaustin/" target="_blank">Komal Bhargava</a>
+                        </p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://abinavraj5427.github.io/" target="_blank">Abinavraj Ganesh Sudhakar</a></p>
                     </div>
                 </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2022</h4>
-                        <a href="https://hacktx.com/22"><img src="img/logos/hacktx22.png" width="100%"></a>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/grace-choii/" target="_blank">Grace Choi</a></p>
                     </div>
-					<div class="hackathon">
-                        <h4>SPRING 2022</h4>
-                        <a href="https://freetailhackers.com/hack-for-humanity/"><img src="img/logos/hack22S.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="#" class="nohover" target="_blank">Anaya Malik</a></p>
                     </div>
-                </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2021</h4>
-                        <a href="https://hacktx.com/21"><img src="img/logos/hacktx21.png" width="100%"/></a>
-                    </div>
-					<div class="hackathon">
-                        <h4>SPRING 2021</h4>
-                        <a href="https://freetailhackers.com/changeathon"><img src="img/logos/changeAthon.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="#" class="nohover" target="_blank">Parul Gupta</a></p>
                     </div>
                 </div>
-				<div class="yearRow">
-					<div class="hackathon">
-                        <h4>SPRING 2021</h4>
-                        <a href="https://freetailhackers.com/learnathon"><img src="img/logos/learnAthon.png" width="100%"/></a>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/anshul-gulati" target="_blank">Anshul Gulati</a></p>
                     </div>
-				</div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2020</h4>
-                        <a href="https://hacktx.com/20"><img src="img/logos/hacktxButton.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/anvi-bajpai" target="_blank">Anvi Bajpai</a></p>
                     </div>
-					<div class="hackathon">
-                        <h4>SUMMER 2020</h4>
-                        <a href="https://freetailhackers.com/summerhacks"><img src="img/logos/summerhacksButton.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="#" class="nohover" target="_blank">Manisha Sakthivelnathan</a></p>
                     </div>
                 </div>
-				<div class="yearRow">
-					<div class="hackathon">
-                        <h4>SPRING 2020</h4>
-                        <a href="https://freetailhackers.com/leap-hacks"><img src="img/logos/LeapHacksButton.png" width="100%"/></a>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>CREATIVE</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="#" class="nohover">Danielle Cox</a></p>
                     </div>
-				</div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2019</h4>
-                        <a href="https://hacktx.com/19"><img src="img/logos/hacktx19.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/khang-tran-43b362258/" target="_blank">Khang Tran</a>
+                        </p>
                     </div>
-                    <div class="hackathon">
-                        <h4>SPRING 2019</h4>
-                        <a href="https://freetailhackers.com/hack-together/"><img src="img/logos/hacktogether.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="#" class="nohover">Naomi Lin</a></p>
                     </div>
                 </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2018</h4>
-                        <a href="https://hacktx.com/18"><img src="img/logos/hacktx18.png" width="100%"/></a>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="#" class="nohover">Harean Park</a></p>
                     </div>
-                    <div class="hackathon">
-                        <h4>SPRING 2018</h4>
-                        <a href="https://freetailhackers.com/wholesome-hacks/"><img src="img/logos/wholesomehacks.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="#" class="nohover">Allie Zhang</a></p>
                     </div>
                 </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2017</h4>
-                        <a href="https://hacktx.com/17"><img src="img/logos/hacktx17.png" width="100%"/></a>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>EVENTUM</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/krisha-patel-716089241" target="_blank">Krisha Patel</a>
+                        </p>
                     </div>
-                    <div class="hackathon">
-                        <h4>SPRING 2017</h4>
-                        <a href="https://freetailhackers.com/music-hacks"><img src="img/logos/musichacks.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/ye-un-christina-go-b68333215/" target="_blank">Christina
+                                Go</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/jannie-nguyen/" target="_blank">Jannie Nguyen</a></p>
                     </div>
                 </div>
-                <img src="img/assets/hackathonSeperationBars.png" width="100%"/>
-                <div class="yearRow">
-                    <div class="hackathon">
-                        <h4>FALL 2016</h4>
-                        <a href="https://hacktx.com/16/"><img src="img/logos/hacktx16.png" width="100%"/></a>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/jayant-patil-967075233/" target="_blank">Jayant
+                                Patil</a></p>
                     </div>
-                    <div class="hackathon">
-                        <h4>SPRING 2016</h4>
-                        <a href="https://freetailhackers.com/design-hacks"><img src="img/logos/designhacks.png" width="100%"/></a>
+                    <div class="person">
+                        <p><a href="www.linkedin.com/in/huynhr/" target="_blank">Ryan Huynh</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>LOGISTICS</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/aditipulukuru/" target="_blank">Aditi Pulukuru</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/natelumax/" target="_blank">Nathan Lu</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/shriya-danam-12199a1b5/" target="_blank">Shriya
+                                Danam</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/drishti-gupta05/" target="_blank">Drishti Gupta</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="#" class="nohover">Harshadeep Kambhampati</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/banah-abdeljaber/" target="_blank">Banah Abdeljaber</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>OUTREACH</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/camille-kuwahara-61b588205/" target="_blank">Camille
+                                Kuwahara</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/shyamli-channabasappa/" target="_blank">Shyamli
+                                Channabasappa</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/qianyu-chen-092427218" target="_blank">Qianyu Chen</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/rachel-huang-a28b19220/" target="_blank">Rachel
+                                Huang</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://linkedin.com/in/shelbyyang" target="_blank">Shelby Yang</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="#" class="nohover">Darwan Barzani</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="#" class="nohover">Carlos Balli</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="leaders">
+                <div class="heading">
+                    <p>TECH</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/annie-grace-hu/" target="_blank">Annie Hu</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/fatimacamci/" target="_blank">Fatima Camci</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/migopp/" target="_blank">Michael Goppert</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/nathan-cheng-0950431a6/" target="_blank">Nathan
+                                Cheng</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/nikshitakurva/" target="_blank">Nikshita Kurva</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/phillipphan24" target="_blank">Phillip Phan</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="person">
+                        <p><a href="https://www.linkedin.com/in/truongthoithang/" target="_blank">Thang Truong</a></p>
+                    </div>
+                    <div class="person">
+                        <p><a href="https://danielzting.github.io/" target="_blank">Daniel Ting</a></p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="supersection">
-            <section id="sponsor" class="infoSlide">
-                <img class="centered" src="img/headers/Sponsor(title).png" height="100px"/>
-                <div id="sponsorContainer">
-                    <div id="laptopLeft">
-                        <img src="img/assets/laptopGraphic(left).png" width="100%"/>
-                    </div>
-                    <div id="sponsorInformation">
-                        <p>Interested in sponsoring us? We'd love to have you come sponsor one of our hackathons and interact with all of our attendees! We provide benefits including social media shoutouts, resume books, sponsored challenges, tech talks/workshops, and much more.</p>
-                        <p class="smallText">P.S. Ask about our new startup and year-long sponsorship tiers!</p>
-                        <a href="mailto:corporate@freetailhackers.com" id="sponsorButtonLink">
-                            <button id="sponsorButton"></button>
-                        </a>
-                    </div>
-                    <div id="laptopRight">
-                        <img src="img/assets/laptopGraphic(right).png" width="100%"/>
-                    </div>
-                </div>
-            </section>
-            <section id="family" class="infoSlide">
-                <img class="desktop" src="img/headers/freetailFamily(title).png" width="100%"/>
-                <img class="mobile" src="img/headers/freetailFamily(title) mobile.png" width="100%"/>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>LEADERSHIP</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p class="teamName">CO-LEAD</p>
-                            <img src="img/ppl/sid.jpg" width="100%"/>
-                            <p><a href="https://www.sidsabhnani.com" target="_blank">Sid Sabhnani</a></p>
-                        </div>
-                        <div class="person">
-                            <p class="teamName">CO-LEAD</p>
-                            <img src="img/ppl/nihita.jpg" width="100%"/>
-                            <p><a href="https://www.linkedin.com/in/nihita-sarma/" target="_blank">Nihita Sarma</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p class="teamName">CORPORATE</p>
-                            <img src="img/ppl/marcuez.jpg" width="100%"/>
-                            <p>Marcuez Lard</p>
-                        </div>
-                        <div class="person">
-                            <p class="teamName">CREATIVE</p>
-                            <img src="img/ppl/daniela.jpg" width="100%"/>
-                            <p><a href="https://www.linkedin.com/in/daniela-a-lozano/" target="_blank">Daniela Lozano</a></p>
-                        </div>
-                        <div class="person">
-                            <p class="teamName">LOGISTICS</p>
-                            <img src="img/ppl/vibha.jpg" width="100%"/>
-                            <p><a href="https://www.linkedin.com/in/vibha-k" target="_blank">Vibha Kolathaya</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p class="teamName">OUTREACH</p>
-                            <img src="img/ppl/paula.jpg" width="100%"/>
-                            <p><a href="https://www.linkedin.com/in/paula-botello-842661270" target="_blank">Paula Botello</a></p>
-
-                        </div>
-                        <div class="person">
-                            <p class="teamName">TECH</p>
-                            <img src="img/ppl/luis.jpg" width="100%"/>
-                            <p><a href="https://qyuo.dev/" target="_blank">Luis Pabon</a></p>
-                        </div>
-                        <div class="person">
-                            <p class="teamName">EVENTUM</p>
-                            <img src="img/ppl/namish.jpg" width="100%"/>
-                            <p><a href="https://www.linkedin.com/in/namish-kukreja/" target="_blank">Namish Kukreja</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>CORPORATE</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/zayaan-rahman" target="_blank">Zayaan Rahman</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/kbhargavautaustin/" target="_blank">Komal Bhargava</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://abinavraj5427.github.io/" target="_blank">Abinavraj Ganesh Sudhakar</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/grace-choii/" target="_blank">Grace Choi</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover" target="_blank">Anaya Malik</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover" target="_blank">Parul Gupta</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/anshul-gulati" target="_blank">Anshul Gulati</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/anvi-bajpai" target="_blank">Anvi Bajpai</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover" target="_blank">Manisha Sakthivelnathan</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>CREATIVE</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="#" class="nohover">Danielle Cox</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/khang-tran-43b362258/" target="_blank">Khang Tran</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover">Naomi Lin</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="#" class="nohover">Harean Park</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover">Allie Zhang</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>EVENTUM</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/krisha-patel-716089241" target="_blank">Krisha Patel</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/ye-un-christina-go-b68333215/" target="_blank">Christina Go</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/jannie-nguyen/" target="_blank">Jannie Nguyen</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/jayant-patil-967075233/" target="_blank">Jayant Patil</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="www.linkedin.com/in/huynhr/" target="_blank">Ryan Huynh</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>LOGISTICS</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/aditipulukuru/" target="_blank">Aditi Pulukuru</a></p>
-                        </div>
-						<div class="person">
-                            <p><a href="https://www.linkedin.com/in/natelumax/" target="_blank">Nathan Lu</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/shriya-danam-12199a1b5/" target="_blank">Shriya Danam</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-						<div class="person">
-                            <p><a href="https://www.linkedin.com/in/drishti-gupta05/" target="_blank">Drishti Gupta</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover">Harshadeep Kambhampati</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/banah-abdeljaber/" target="_blank">Banah Abdeljaber</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>OUTREACH</p>
-                    </div>
-					<hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/camille-kuwahara-61b588205/" target="_blank">Camille Kuwahara</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/shyamli-channabasappa/" target="_blank">Shyamli Channabasappa</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/qianyu-chen-092427218" target="_blank">Qianyu Chen</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/rachel-huang-a28b19220/" target="_blank">Rachel Huang</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://linkedin.com/in/shelbyyang" target="_blank">Shelby Yang</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="#" class="nohover">Darwan Barzani</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="#" class="nohover">Carlos Balli</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="leaders">
-                    <div class="heading">
-                        <p>TECH</p>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/annie-grace-hu/" target="_blank">Annie Hu</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/fatimacamci/" target="_blank">Fatima Camci</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/migopp/" target="_blank">Michael Goppert</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/nathan-cheng-0950431a6/" target="_blank">Nathan Cheng</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/nikshitakurva/" target="_blank">Nikshita Kurva</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/phillipphan24" target="_blank">Phillip Phan</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="person">
-                            <p><a href="https://www.linkedin.com/in/truongthoithang/" target="_blank">Thang Truong</a></p>
-                        </div>
-                        <div class="person">
-                            <p><a href="https://danielzting.github.io/" target="_blank">Daniel Ting</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="infoSlide">
-                <img class="centered" src="img/headers/contactUs.png" height="100px"/>
-                <div id="contactInfo">
-                    <p>Email: <a href="mailto:admin@freetailhackers.com">admin@freetailhackers.com</a></p>
-                    <p>Facebook: <a href="http://facebook.com/freetailhackers">facebook.com/freetailhackers</a></p>
-                    <p>Instagram: <a href="https://www.instagram.com/freetailhackers/">@freetailhackers</a></p>
-                    <p>Twitter: <a href="https://twitter.com/freetailhackers">@freetailhackers</a></p>
-                </div>
-            </section>
-            <section>
-                <!-- the title needs to be an image with the same style as others-->
-                <p class="alumTitle">PAST ALUMNI</p>
-            <body>
-            <div class="container">
-                <div id="filters">
-                    <h3>Filters</h3>
-                    <div>
-                        <h4>Team</h4>
-                        <button class="filter-btn" data-type="team" data-value="Tech">Tech</button>
-                        <button class="filter-btn" data-type="team" data-value="Creative">Creative</button>
-                        <button class="filter-btn" data-type="team" data-value="Logistics">Logistics</button>
-                        <button class="filter-btn" data-type="team" data-value="Eventum">Eventum</button>
-                        <button class="filter-btn" data-type="team" data-value="Corporate">Corporate</button>
-                    </div>
-                    <div>
-                        <h4>Role</h4>
-                        <button class="filter-btn" data-type="role" data-value="Leadership">Leadership</button>
-                        <button class="filter-btn" data-type="role" data-value="Director">Director</button>
-                        <button class="filter-btn" data-type="role" data-value="Organizer">Organizer</button>
-                    </div>
-                    <button id="resetFilters">Reset Filters</button>
-                </div>
-                <div class="alumni-container" id="alumniContainer" style="flex: 3;"></div>
+        <section id="alumni" class="infoSlide">
+            <img class="desktop" src="img/headers/alumni(title).png" width="100%" />
+            <img class="mobile" src="img/headers/alumni(title) mobile.png" width="100%" />
+            <div class="heading">
+                <p>FILTERS</p>
             </div>
-            </body>
-        </html>
-              
-            </section>
-            
+            <div class="filters">
+                <button class="filter-btn" data-type="team" data-value="Tech">
+                    Tech
+                </button>
+                <button class="filter-btn" data-type="team" data-value="Creative">
+                    Creative
+                </button>
+                <button class="filter-btn" data-type="team" data-value="Logistics">
+                    Logistics
+                </button>
+                <button class="filter-btn" data-type="team" data-value="Eventum">
+                    Eventum
+                </button>
+                <button class="filter-btn" data-type="team" data-value="Corporate">
+                    Corporate
+                </button>
+                <button class="filter-btn" data-type="team" data-value="E-Team">
+                    E-Team
+                </button>
+                <button class="filter-btn" id="resetFilters">Reset Filters</button>
+            </div>
+            <div class="alumni-container" id="alumniContainer"></div>
         </section>
-    </body>
+        <section id="contact" class="infoSlide">
+            <img class="centered" src="img/headers/contactUs.png" height="100px" />
+            <div id="contactInfo">
+                <p>Email: <a href="mailto:admin@freetailhackers.com">admin@freetailhackers.com</a></p>
+                <p>Facebook: <a href="http://facebook.com/freetailhackers">facebook.com/freetailhackers</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/freetailhackers/">@freetailhackers</a></p>
+                <p>Twitter: <a href="https://twitter.com/freetailhackers">@freetailhackers</a></p>
+            </div>
+        </section>
+    </section>
+</body>
+
 </html>
