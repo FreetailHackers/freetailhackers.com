@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (errors.length === 0) {
         data.forEach((row) => {
           const name = row.Name || null;
-          const team = row.Team || null;
+          const team = row.Team ? row.Team.replace(/\s/g, "").split(",") : null;
           const position = row.Position || null;
           const graduationDate = row["Graduation Date"] || null;
           const url = row.LinkedIn || null;
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error fetching CSV:", error);
     });
 
-  // Function to create alumni cards
   function createAlumniCards(alumni) {
     const container = document.getElementById("alumniContainer");
     container.innerHTML = "";
@@ -80,27 +79,36 @@ document.addEventListener("DOMContentLoaded", function () {
       const card = document.createElement("div");
       card.classList.add("alumni-card");
 
-      const name = document.createElement("a");
-      name.href = alumnus.url;
-      name.textContent = alumnus.name;
+      if (alumnus.name !== null) {
+        const name = document.createElement("a");
+        name.href = alumnus.url === null ? "#" : alumnus.url;
+        name.textContent = alumnus.name;
+        card.appendChild(name);
+      }
 
-      const team = document.createElement("p");
-      team.textContent = `Team: ${alumnus.team}`;
+      if (alumnus.team !== null) {
+        const team = document.createElement("p");
+        team.textContent = `Team: ${alumnus.team.join(", ")}`;
+        card.appendChild(team);
+      }
 
-      const position = document.createElement("p");
-      position.textContent = `Position: ${alumnus.position}`;
+      if (alumnus.position !== null) {
+        const position = document.createElement("p");
+        position.textContent = `Position: ${alumnus.position}`;
+        card.appendChild(position);
+      }
 
-      const graduationDate = document.createElement("p");
-      graduationDate.textContent = `Graduation Date: ${alumnus.graduationDate}`;
+      if (alumnus.graduationDate !== null) {
+        const graduationDate = document.createElement("p");
+        graduationDate.textContent = `Graduation Date: ${alumnus.graduationDate}`;
+        card.appendChild(graduationDate);
+      }
 
-      const employment = document.createElement("p");
-      employment.textContent = `Employment: ${alumnus.employment}`;
-
-      card.appendChild(name);
-      card.appendChild(team);
-      card.appendChild(position);
-      card.appendChild(graduationDate);
-      card.appendChild(employment);
+      if (alumnus.employment !== null) {
+        const employment = document.createElement("p");
+        employment.textContent = `Employment: ${alumnus.employment}`;
+        card.appendChild(employment);
+      }
 
       container.appendChild(card);
     });
@@ -110,8 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (selectedTeams.length === 0) {
       createAlumniCards(alumni);
     } else {
-      const filteredAlumni = alumni.filter((alumnus) =>
-        selectedTeams.includes(alumnus.team)
+      const filteredAlumni = alumni.filter(
+        (alumnus) =>
+          alumnus.team &&
+          alumnus.team.some((team) => selectedTeams.includes(team))
       );
       createAlumniCards(filteredAlumni);
     }

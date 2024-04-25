@@ -763,6 +763,7 @@ button {
 }
 
 /* Alumni Page */
+/* For desktop */
 .alumni-container {
   display: flex;
   flex-wrap: wrap;
@@ -773,6 +774,7 @@ button {
 }
 
 .alumni-card {
+  width: 200px;
   flex: 0 0 calc(30% - 20px);
   max-width: 200px;
   background: #db935fb8;
@@ -783,6 +785,20 @@ button {
   text-align: center;
   font-size: large;
   font-family: Avenir;
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+  .alumni-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alumni-card {
+    flex: 1 0 100%;
+    max-width: calc(100% - 40px);
+    margin-bottom: 20px;
+  }
 }
 
 .alumni-card > p {
