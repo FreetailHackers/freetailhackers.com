@@ -30,7 +30,7 @@
     <link rel="modulepreload" as="script" crossorigin="" href="app/immutable/chunks/parse.bee59afc.js">
     <link rel="modulepreload" as="script" crossorigin="" href="app/immutable/chunks/SvelteMarkdown.c7482654.js">
     <link rel="modulepreload" as="script" crossorigin="" href="app/immutable/chunks/markdown-editor.d1cd28ea.js">
-    <link rel="modulepreload" as="script" crossorigin="" href="app/immutable/chunks/_commonjsHelpers.725317a4.js">
+    <link rel="modulepreload" as="script" crossorigin="" href="app/immutable/chunks/commonjsHelpers.725317a4.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -436,7 +436,7 @@
 
 					Promise.all([
 						import("./app/immutable/entry/start.69d3e8d4.js"),
-						// import("./_app/immutable/entry/app.626848c0.js")
+						import("./app/immutable/entry/app.626848c0.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
