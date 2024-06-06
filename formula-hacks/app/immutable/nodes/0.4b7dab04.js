@@ -477,35 +477,6 @@ function yl(f) {
     }
 }
 
-function Ll(f) {
-    let t, e;
-    return {
-        c() {
-            t = m("a"), e = A("Login"), this.h()
-        },
-        l(o) {
-            t = v(o, "A", {
-                class: !0,
-                href: !0
-            });
-            var s = p(t);
-            e = I(s, "Login"), s.forEach(i), this.h()
-        },
-        h() {
-            l(t, "class", "login svelte-6afqtj"), l(t, "href", "login"), q(t, "active", f[1].url.pathname.startsWith("login"))
-        },
-        m(o, s) {
-            j(o, t, s), a(t, e)
-        },
-        p(o, s) {
-            s & 2 && q(t, "active", o[1].url.pathname.startsWith("login"))
-        },
-        d(o) {
-            o && i(t)
-        }
-    }
-}
-
 function Pt(f) {
     let t, e, o;
     return e = new ql({}), {
