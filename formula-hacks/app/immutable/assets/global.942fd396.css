@@ -1,0 +1,195 @@
+@import"https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Geologica&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Geo&display=swap";
+html {
+  scroll-behavior:smooth
+}
+:root {
+  --font-family: "Geologica", "Helvetica Neue", "Arial", sans-serif;
+  --font-size: 16px;
+  --highlight-color: #f2ebd9;
+  --secondary-color: #4e656d;
+  --background-color: #1c1c1c;
+  --primary-accent: #e1563f
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:Zen Dots,ruddy,sans-serif;
+  font-weight:700;
+  font-style:normal;
+  text-transform:uppercase;
+  cursor:default
+}
+p {
+  cursor:default
+}
+html {
+  box-sizing:border-box;
+  overflow-y:scroll
+}
+*,
+*:before,
+*:after {
+  box-sizing:inherit
+}
+body {
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  margin:0 auto;
+  overflow-wrap:anywhere
+}
+nav {
+  margin:1rem 0
+}
+button {
+  font-family:var(--font-family);
+  height:2.5rem;
+  font-size:var(--font-size);
+  color:#fff;
+  background-color:var(--primary-accent);
+  border:none;
+  transition:all .1s ease-in-out
+}
+button:not(:disabled):hover {
+  cursor:pointer;
+  opacity:90%
+}
+button:not(:disabled):active {
+  scale:.99
+}
+button[disabled] {
+  opacity:.5;
+  cursor:not-allowed
+}
+input {
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  height:2.5rem;
+  padding-left:.5rem;
+  border:2px solid gray
+}
+input[type=checkbox],
+input[type=radio] {
+  height:1.5rem;
+  min-height:1.5rem;
+  width:1.5rem;
+  min-width:1.5rem;
+  margin:0;
+  margin-right:1rem
+}
+textarea {
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  padding:1rem;
+  resize:vertical;
+  border:2px solid gray;
+  height:10rem
+}
+form {
+  display:flex;
+  flex-direction:column
+}
+a {
+  color:var(--primary-accent)
+}
+::selection {
+  background:var(--primary-accent);
+  color:#fff
+}
+fieldset {
+  padding:1rem
+}
+select {
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  height:2.5rem;
+  padding-left:.5rem;
+  border:2px solid gray;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+input[type=file] {
+  padding-left:0;
+  width:100%
+}
+::file-selector-button {
+  padding:0 1rem;
+  margin-right:1rem;
+  height:100%;
+  font-size:var(--font-size);
+  color:#fff;
+  background-color:var(--primary-accent);
+  border:none
+}
+table {
+  width:100%;
+  border-collapse:collapse
+}
+th,
+td {
+  padding:.5rem;
+  text-align:left;
+  border:2px solid #000
+}
+pre {
+  overflow:auto;
+  background-color:#eee;
+  padding:.5rem 1rem
+}
+code {
+  background-color:#eee
+}
+blockquote {
+  margin:0;
+  padding-left:1rem;
+  border-left:4px solid #000
+}
+dialog {
+  min-width:20rem;
+  max-width:40rem;
+  padding:0 1rem;
+  box-shadow:.5rem .5rem 1rem #000
+}
+dialog div {
+  display:flex;
+  flex-direction:row-reverse;
+  gap:1rem
+}
+dialog button {
+  padding:0 1rem;
+  margin-bottom:1rem
+}
+.main-content {
+  min-height:calc(100vh - 219px);
+  max-width:50rem;
+  margin:60px auto 0;
+  padding:0 1rem
+}
+@media(max-width:450px) {
+  dialog {
+    margin-block-end:0;
+    width:100%
+  }
+  dialog div {
+    flex-direction:column-reverse;
+    gap:0
+  }
+}
+dialog::backdrop {
+  -webkit-backdrop-filter:blur(1px) brightness(.75);
+  backdrop-filter:blur(1px) brightness(.75)
+}
+img {
+  max-width:100%
+}
+footer {
+  background-color:#303030;
+  color:#f2ebd9;
+  text-align:left;
+  padding:1em
+}

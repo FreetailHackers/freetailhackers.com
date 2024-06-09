@@ -1,0 +1,21 @@
+#social-logins.svelte-1s7u1is.svelte-1s7u1is {
+  display:flex;
+  gap:1rem;
+  margin-bottom:1rem
+}
+.social.svelte-1s7u1is.svelte-1s7u1is {
+  flex-grow:1
+}
+.social.svelte-1s7u1is button.svelte-1s7u1is {
+  width:100%
+}
+svg.svelte-1s7u1is.svelte-1s7u1is {
+  height:75%;
+  vertical-align:middle;
+  padding-right:.25rem
+}
+@media (max-width: 1064px) {
+  .btn-text.svelte-1s7u1is.svelte-1s7u1is {
+    display:none
+  }
+}
