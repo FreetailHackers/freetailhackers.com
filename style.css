@@ -730,6 +730,7 @@ button {
   width: 300px;
   text-align: center;
 }
+
 @media only screen and (max-width: 1070px) {
   .person {
     width: 225px;
