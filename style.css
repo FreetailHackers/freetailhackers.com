@@ -731,12 +731,6 @@ button {
   text-align: center;
 }
 
-.person img{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
 @media only screen and (max-width: 1070px) {
   .person {
     width: 225px;
