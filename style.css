@@ -752,6 +752,9 @@ button {
   margin: 10px;
   font-family: Avenir Light;
 }
+.person a {
+  text-decoration: none;
+}
 @media only screen and (max-width: 870px) {
   .person p {
     font-size: 1.2em;
