@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "lugoj";
+  src: url(../src/assets/Lugoj_Demo_400.otf);
+}
+
+@theme {
+  --font-main: "Farro", sans-serif;
+  --font-heading: "Grandstander", cursive;
+  --font-lugoj: "lugoj", sans-serif;
+
+  --color-white: #fcfaf1;
+  --color-black: #030303;
+  --color-gray: #9e9691;
+  --color-orange: #fa881f;
+  --color-pink: #e4bcd2;
+  --color-pink2: #c85b9c;
+  --color-red: #f34340;
+  --color-yellow: #fcc658;
+}
+
+@layer base {
+  :root {
+    @apply font-main bg-white text-base leading-[1] font-normal text-black md:text-xl;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  #root {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply m-0 flex min-h-screen max-w-[100vw] min-w-[320px] place-items-center;
+  }
+
+  section {
+    @apply mx-auto my-4 scroll-mt-20;
+  }
+
+  img {
+    @apply align-middle;
+  }
+
+  a {
+    @apply hover:text-orange text-black decoration-inherit transition-all delay-100 duration-100;
+  }
+
+  p {
+    @apply m-0;
+  }
+
+  .accent-text {
+    @apply text-orange;
+  }
+
+  .button {
+    @apply bg-orange hover:bg-red w-fit cursor-pointer rounded-full border-none px-[0.65em] py-[0.4rem] text-[1em] font-bold transition-[background-color] duration-[250ms] hover:text-black;
+  }
+}
