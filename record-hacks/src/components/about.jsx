@@ -1,5 +1,3 @@
-import leftVector from "../assets/About_Left_Vectors.svg";
-import rightVector from "../assets/About_Right_Vectors.svg";
 import React, { useEffect } from "react";
 
 const About = () => {
@@ -47,7 +45,7 @@ const About = () => {
           width: "clamp(12rem, 33%, 33%)",
         }}
         className="absolute top-0 -left-16 -z-[1] h-auto"
-        src={leftVector}
+        src="./assets/About_Left_Vectors.svg"
         draggable="false"
       />
       <img
@@ -55,7 +53,7 @@ const About = () => {
           width: "clamp(12rem, 33%, 33%)",
         }}
         className="absolute -right-16 bottom-0 -z-[1] h-auto"
-        src={rightVector}
+        src="./assets/About_Right_Vectors.svg"
         draggable="false"
       />
       <div className="mx-auto max-w-[30rem] py-48 text-2xl leading-[1]">

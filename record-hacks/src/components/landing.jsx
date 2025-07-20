@@ -1,7 +1,3 @@
-import React from "react";
-
-import landingImage from "../assets/Landing_Page_Mascot.png";
-
 const Landing = () => {
   return (
     <section
@@ -47,7 +43,7 @@ const Landing = () => {
       <div className="relative h-auto max-h-full max-w-[90vw]">
         <img
           className="h-auto w-full object-cover"
-          src={landingImage}
+          src="/record-hacks/assets/Landing_Page_Mascot.png"
           alt="Splash picture"
           draggable="false"
         />

@@ -1,18 +1,10 @@
-import React from "react";
-import fhLogo from "../assets/freetail-bat.svg";
-import linkedinLogo from "../assets/FTLinkedin.svg";
-import instagramLogo from "../assets/FTInstagram.svg";
-import facebookLogo from "../assets/FTFacebook.svg";
-import twitterLogo from "../assets/FTTwitter.svg";
-import tiktokLogo from "../assets/FTTiktok.svg";
-
 const Footer = () => {
   return (
     <footer className="mx-auto max-w-[50rem]">
       <div className="flex flex-wrap justify-between gap-8">
         <div className="flex basis-[40%] flex-col gap-4">
           <div className="flex items-center gap-2">
-            <img src={fhLogo} id="freetail-bat" />
+            <img src="./assets/freetail-bat.svg" id="freetail-bat" />
             Freetail Hackers
           </div>
 
@@ -35,7 +27,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={linkedinLogo}
+                src="./assets/FTLinkedin.svg"
                 alt="media"
               />
             </a>
@@ -47,7 +39,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={instagramLogo}
+                src="./assets/FTInstagram.svg"
                 alt="media"
               />
             </a>
@@ -59,7 +51,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={facebookLogo}
+                src="./assets/FTFacebook.svg"
                 alt="media"
               />
             </a>
@@ -71,7 +63,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={tiktokLogo}
+                src="./assets/FTTiktok.svg"
                 alt="media"
               />
             </a>
@@ -83,7 +75,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={twitterLogo}
+                src="./assets/FTTwitter.svg"
                 alt="media"
               />
             </a>
