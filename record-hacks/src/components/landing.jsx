@@ -1,5 +1,4 @@
 import React from "react";
-
 import landingImage from "../assets/Landing_Page_Mascot.png";
 
 const Landing = () => {
