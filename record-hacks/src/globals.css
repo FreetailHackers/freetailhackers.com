@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "lugoj";
-  src: url(../src/assets/Lugoj_Demo_400.otf);
+  src: url("./assets/Lugoj_Demo_400.otf");
 }
 
 @theme {

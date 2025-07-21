@@ -1,3 +1,5 @@
+import leftVector from "../assets/About_Left_Vectors.svg";
+import rightVector from "../assets/About_Right_Vectors.svg";
 import React, { useEffect } from "react";
 
 const About = () => {
@@ -30,12 +32,11 @@ const About = () => {
       Math.floor((distance % (1000 * 60)) / 1000),
     ).padStart(2, "0");
 
-    return {
-      days,
-      hours,
-      minutes,
-      seconds,
-    };
+    if (distance > 0) {
+      return { days, hours, minutes, seconds };
+    } else {
+      return { days: "00", hours: "00", minutes: "00", seconds: "00" };
+    }
   }
 
   return (
@@ -45,7 +46,7 @@ const About = () => {
           width: "clamp(12rem, 33%, 33%)",
         }}
         className="absolute top-0 -left-16 -z-[1] h-auto"
-        src="./assets/About_Left_Vectors.svg"
+        src={leftVector}
         draggable="false"
       />
       <img
@@ -53,7 +54,7 @@ const About = () => {
           width: "clamp(12rem, 33%, 33%)",
         }}
         className="absolute -right-16 bottom-0 -z-[1] h-auto"
-        src="./assets/About_Right_Vectors.svg"
+        src={rightVector}
         draggable="false"
       />
       <div className="mx-auto max-w-[30rem] py-48 text-2xl leading-[1]">

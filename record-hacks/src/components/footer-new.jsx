@@ -1,10 +1,9 @@
-import React from "react";
-import fhLogo from "../assets/freetail-bat.svg";
-import linkedinLogo from "../assets/FTLinkedin.svg";
-import instagramLogo from "../assets/FTInstagram.svg";
-import facebookLogo from "../assets/FTFacebook.svg";
-import twitterLogo from "../assets/FTTwitter.svg";
-import tiktokLogo from "../assets/FTTiktok.svg";
+import freetailBat from '../assets/freetail-bat.svg';
+import linkedinIcon from '../assets/FTLinkedin.svg';
+import instagramIcon from '../assets/FTInstagram.svg';
+import facebookIcon from '../assets/FTFacebook.svg';
+import tiktokIcon from '../assets/FTTiktok.svg';
+import twitterIcon from '../assets/FTTwitter.svg';
 
 const Footer = () => {
   return (
@@ -12,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-wrap justify-between gap-8">
         <div className="flex basis-[40%] flex-col gap-4">
           <div className="flex items-center gap-2">
-            <img src={fhLogo} id="freetail-bat" />
+            <img src={freetailBat} id="freetail-bat" />
             Freetail Hackers
           </div>
 
@@ -35,7 +34,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={linkedinLogo}
+                src={linkedinIcon}
                 alt="media"
               />
             </a>
@@ -47,7 +46,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={instagramLogo}
+                src={instagramIcon}
                 alt="media"
               />
             </a>
@@ -59,7 +58,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={facebookLogo}
+                src={facebookIcon}
                 alt="media"
               />
             </a>
@@ -71,7 +70,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={tiktokLogo}
+                src={tiktokIcon}
                 alt="media"
               />
             </a>
@@ -83,7 +82,7 @@ const Footer = () => {
               <img
                 className="footer-media"
                 width="auto"
-                src={twitterLogo}
+                src={twitterIcon}
                 alt="media"
               />
             </a>
@@ -94,7 +93,7 @@ const Footer = () => {
           <div className="font-bold">Hacker Resources</div>
           <div className="flex flex-col gap-2 underline">
             <a target="_blank" href="https://uhsg.freetailhackers.com/">
-              Hackathon Starter's Guide
+              Hackathon Starter&apos;s Guide
             </a>
           </div>
         </div>

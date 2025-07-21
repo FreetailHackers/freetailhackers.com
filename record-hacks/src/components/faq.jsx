@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import supabase from "../supabaseClient";
 import Markdown from "react-markdown";
+import FAQIcon from "../assets/FAQ-icon.svg";
 import "./faq.css"
 
 const FAQ = () => {
@@ -63,7 +64,7 @@ const FAQQuestion = ({ question, answer }) => {
       className={`ml-5`}
     >
       <h3 onClick={() => setIsOpen(!isOpen)} className={`cursor-pointer select-none pb-2 font-bold`}>
-        <img src="./assets/FAQ-icon.svg" className={`relative left-[-24px] top-[18px] transition-transform duration-300 ${isOpen ? "transform-[rotate(135deg)]" : "transform-[rotate(0)] colors"}`}/>
+        <img src={FAQIcon} className={`relative left-[-24px] top-[18px] transition-transform duration-300 ${isOpen ? "transform-[rotate(135deg)]" : "transform-[rotate(0)] colors"}`}/>
         {question}
       </h3>
       <div className={`whitespace-pre-line max-h-0 overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[300px] opacity-100 block' : ''}`}>
