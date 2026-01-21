@@ -2,5 +2,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "papaparse": "^5.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }
