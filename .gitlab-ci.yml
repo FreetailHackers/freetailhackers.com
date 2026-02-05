@@ -13,10 +13,6 @@ pages:
     - when: never # Don't run for other branches
   script:
     #build React project for record-hacks and duckhacks
-    - cd record-hacks
-    - npm install
-    - npm run build
-    - cd ..
 
     - cd duckduckhacks
     - npm install
