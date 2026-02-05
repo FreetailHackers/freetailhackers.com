@@ -14,10 +14,10 @@ pages:
   cache:
     key:
       files:
-        - duckduckhacks/package-lock.json
+        - package-lock.json
       prefix: npm
     paths:
-      - node_modules/
+      - duckduckhacks/node_modules/
   script:
     #build React project for record-hacks and duckhacks
     - cd duckduckhacks
