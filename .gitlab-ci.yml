@@ -5,9 +5,26 @@
 
 # Full project: https://gitlab.com/pages/plain-html
 pages:
+  image: node:22-alpine3.19
   stage: deploy
   environment: production
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - when: never # Don't run for other branches
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: npm
+    paths:
+      - duckduckhacks/node_modules/
   script:
+    #build React project for record-hacks and duckhacks
+    - cd duckduckhacks
+    - npm install
+    - npm run build
+    - cd ..
+    
     - mkdir .public
     - cp -r ./* .public
     - rm -rf public
@@ -15,5 +32,4 @@ pages:
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
