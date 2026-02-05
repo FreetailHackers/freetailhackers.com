@@ -20,19 +20,16 @@ pages:
       - duckduckhacks/node_modules/
   script:
     #build React project for record-hacks and duckhacks
-    - cd duckduckhacks
+    - cd hackhackgoose
     - npm install
     - npm run build
     - cd ..
-    
+
     - mkdir .public
     - cp -r ./* .public
-    - cp -r duckduckhacks/dist .public/duckduckhacks-temp
-    - rm -rf .public/duckduckhacks
-    - mv .public/duckduckhacks-temp .public/duckduckhacks
+    - cp -r hackhackgoose/dist .public/hackhackgoose
     - rm -rf public
     - mv .public public
   artifacts:
     paths:
       - public
-
