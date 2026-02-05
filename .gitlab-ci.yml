@@ -27,7 +27,9 @@ pages:
     
     - mkdir .public
     - cp -r ./* .public
-    - cp -r duckduckhacks/dist .public/duckduckhacks
+    - cp -r duckduckhacks/dist .public/duckduckhacks-temp
+    - rm -rf .public/duckduckhacks
+    - mv .public/duckduckhacks-temp .public/duckduckhacks
     - rm -rf public
     - mv .public public
   artifacts:
