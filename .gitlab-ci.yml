@@ -11,9 +11,15 @@ pages:
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
     - when: never # Don't run for other branches
+  cache:
+    key:
+      files:
+        - duckduckhacks/package-lock.json
+      prefix: npm
+    paths:
+      - node_modules/
   script:
     #build React project for record-hacks and duckhacks
-
     - cd duckduckhacks
     - npm install
     - npm run build
