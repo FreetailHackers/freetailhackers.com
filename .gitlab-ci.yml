@@ -20,7 +20,9 @@ build-job:
     - cd ..
     - mkdir .public
     - cp -r ./* .public
-    - cp -r hackhackgoose/dist .public/hackhackgoose
+    - cp -r hackhackgoose/dist .public/hackhackgoose-temp
+    - rm -rf .public/hackhackgoose
+    - mv .public/hackhackgoose-temp .public/hackhackgoose
     - rm -rf public
     - mv .public public
   artifacts:
