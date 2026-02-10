@@ -1,30 +1,23 @@
-# To contribute improvements to CI/CD templates, please follow the Development guide at:
-# https://docs.gitlab.com/ee/development/cicd/templates.html
-# This specific template is located at:
-# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Pages/HTML.gitlab-ci.yml
+stages:
+  - build
+  - deploy-staging
+  - deploy-production
 
-# Full project: https://gitlab.com/pages/plain-html
-pages:
+build-job:
   image: node:22-alpine3.19
-  stage: deploy
-  environment: production
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-    - when: never # Don't run for other branches
+  stage: build
   cache:
     key:
       files:
         - package-lock.json
       prefix: npm
     paths:
-      - duckduckhacks/node_modules/
+      - hackhackgoose/node_modules/
   script:
-    #build React project for record-hacks and duckhacks
     - cd hackhackgoose
     - npm install
     - npm run build
     - cd ..
-
     - mkdir .public
     - cp -r ./* .public
     - cp -r hackhackgoose/dist .public/hackhackgoose
@@ -33,3 +26,36 @@ pages:
   artifacts:
     paths:
       - public
+
+pages-staging:
+  stage: deploy-staging
+  environment:
+    name: staging
+    url: https://freetailhackers.com/staging  # Update with your staging URL
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "Deploying to staging..."
+
+  artifacts:
+    paths:
+      - public
+  needs:
+    - build-job
+
+pages:
+  image: node:22-alpine3.19
+  stage: deploy-production
+  environment:
+    name: production
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: manual  # This requires manual approval
+  script:
+    - echo "Deploying to production..."
+  artifacts:
+    paths:
+      - public
+  needs:
+    - build-job
+    - pages-staging
