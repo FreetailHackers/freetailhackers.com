@@ -1,23 +1,30 @@
-stages:
-  - build
-  - deploy-staging
-  - deploy-production
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Pages/HTML.gitlab-ci.yml
 
-build-job:
+# Full project: https://gitlab.com/pages/plain-html
+pages:
   image: node:22-alpine3.19
-  stage: build
+  stage: deploy
+  environment: production
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - when: never # Don't run for other branches
   cache:
     key:
       files:
         - package-lock.json
       prefix: npm
     paths:
-      - hackhackgoose/node_modules/
+      - duckduckhacks/node_modules/
   script:
+    #build React project for record-hacks and duckhacks
     - cd hackhackgoose
     - npm install
     - npm run build
     - cd ..
+
     - mkdir .public
     - cp -r ./* .public
     - cp -r hackhackgoose/dist .public/hackhackgoose-temp
@@ -28,37 +35,3 @@ build-job:
   artifacts:
     paths:
       - public
-
-pages-staging:
-  stage: deploy-staging
-  environment:
-    name: staging
-    url: https://freetail-hackers-staginggitlabio.vercel.app/
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  script:
-    - npm install -g vercel
-    - vercel deploy --prod --token=$VERCEL_TOKEN --yes public/
-    - echo "Deploying to staging..."
-
-  needs:
-    - build-job
-  only:
-    - master
-
-pages:
-  image: node:22-alpine3.19
-  stage: deploy-production
-  environment:
-    name: production
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-      when: manual  # This requires manual approval
-  script:
-    - echo "Deploying to production..."
-  artifacts:
-    paths:
-      - public
-  needs:
-    - build-job
-    - pages-staging
