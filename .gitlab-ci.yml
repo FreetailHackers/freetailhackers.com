@@ -31,17 +31,18 @@ pages-staging:
   stage: deploy-staging
   environment:
     name: staging
-    url: https://freetailhackers.com/staging  # Update with your staging URL
+    url: https://freetail-hackers-staginggitlabio.vercel.app/
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
+    - npm install -g vercel
+    - vercel deploy --prod --token=$VERCEL_TOKEN --yes public/
     - echo "Deploying to staging..."
 
-  artifacts:
-    paths:
-      - public
   needs:
     - build-job
+  only:
+    - master
 
 pages:
   image: node:22-alpine3.19
