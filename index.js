@@ -7,6 +7,14 @@ function toggleNavbar() {
 
 window.onload = function () {
   document.querySelector(".toggle").addEventListener("click", toggleNavbar);
+
+  // Trigger MLH badge drop-down animation
+  setTimeout(() => {
+    const mlhBadge = document.getElementById("mlh-trust-badge");
+    if (mlhBadge) {
+      mlhBadge.classList.add("show");
+    }
+  }, 300);
 };
 
 function imageHover(element) {
@@ -58,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const employment = row.Employment || null;
 
           alumni.push(
-            new Alumn(name, team, position, graduationDate, url, employment)
+            new Alumn(name, team, position, graduationDate, url, employment),
           );
         });
 
@@ -121,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const filteredAlumni = alumni.filter(
         (alumnus) =>
           alumnus.team &&
-          alumnus.team.some((team) => selectedTeams.includes(team))
+          alumnus.team.some((team) => selectedTeams.includes(team)),
       );
       createAlumniCards(filteredAlumni);
     }
@@ -132,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", () => {
       btn.classList.toggle("active");
       const selectedTeams = Array.from(
-        document.querySelectorAll(".filter-btn[data-type='team'].active")
+        document.querySelectorAll(".filter-btn[data-type='team'].active"),
       ).map((btn) => btn.dataset.value);
       applyTeamFilter(selectedTeams);
     });
